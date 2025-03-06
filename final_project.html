@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.5.57">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Project</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="final_project_files/libs/clipboard/clipboard.min.js"></script>
+<script src="final_project_files/libs/quarto-html/quarto.js"></script>
+<script src="final_project_files/libs/quarto-html/popper.min.js"></script>
+<script src="final_project_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="final_project_files/libs/quarto-html/anchor.min.js"></script>
+<link href="final_project_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="final_project_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="final_project_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="final_project_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="final_project_files/libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+
+
+</head>
+
+<body class="fullcontent">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Project</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<p>As a “capstone” project for the course, you will work in small groups to produce a report documenting a data set of your group’s choosing. This report will draw on your data wrangling, visualization, summarization and ethics knowledge built throughout the course. Importantly, this report must be <em>reproducible</em>, meaning that another person must be able to easily recreate your report based on the raw materials you provide without modifying those materials.</p>
+<p>The report that your group produces will be the result of a structured, asynchronous brainstorming activity that takes place in six phases. The labor for the first five phases technically takes place individually; however, team work is still crucial to your group’s success, because your individual work in each phase of the project builds directly on your group mate’s work from a previous phase. This means that groups where each person engages consistently over time will be the most successful.</p>
+<p>The timeline, requirements, and logistics for each phase of the project are described below.</p>
+<ul>
+<li><a href="#phase1">Phase 1: Preparation (Weeks 4-6)</a></li>
+<li><a href="#phase2">Phase 2: Description (Weeks 7-9)</a></li>
+<li><a href="#phase3">Phase 3: Summarization (Weeks 10-11)</a></li>
+<li><a href="#phase4">Phase 4: Visualization (Week 12-13)</a></li>
+<li><a href="#phase5">Phase 5: Ethics and Citations (Week 14)</a></li>
+<li><a href="#phase6">Phase 6: Final Report (Weeks 15)</a></li>
+</ul>
+</section>
+<section id="phase1" class="level2">
+<h2 class="anchored" data-anchor-id="phase1">Phase 1: Preparation (Weeks 4-6)</h2>
+<p>During this preparatory phase, you will have two tasks:</p>
+<ol type="1">
+<li><strong>Finding a group</strong>
+<ul>
+<li>You should find two other classmates from your section of SDS 100 to form a group with, in order to make <strong>groups of three</strong></li>
+<li>If the number of students enrolled in your section of SDS 100 is not divisible by three, you may be able to form a group of two, group of four, or work with a student enrolled in another section. If you are unable to form a group of three from the pool of students enrolled in your section of SDS 100, please consult your instructor.</li>
+<li>When you have formed your group, please fill out the Final Project Group Form, which is linked on the Moodle page.</li>
+</ul></li>
+<li><strong>Finding a data set</strong>
+<ul>
+<li>Each member of the group will find and contribute a data set suitable for use during the remaining phases</li>
+<li>The criteria for suitable data sets is explained in the <a href="#data-set-criteria">Data Set Criteria</a> section below.</li>
+<li>When you have chosen a suitable data set, please fill out the Submit your Project Data quiz, which is linked on the Moodle page.</li>
+</ul></li>
+</ol>
+<section id="data-set-criteria" class="level4">
+<h4 class="anchored" data-anchor-id="data-set-criteria">Data Set Criteria</h4>
+<p>The data need to be downloadable (i.e., the data may not exist only in an <svg aria-hidden="true" role="img" viewbox="0 0 581 512" style="height:1em;width:1.13em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:steelblue;overflow:visible;position:relative;"><path d="M581 226.6C581 119.1 450.9 32 290.5 32S0 119.1 0 226.6C0 322.4 103.3 402 239.4 418.1V480h99.1v-61.5c24.3-2.7 47.6-7.4 69.4-13.9L448 480h112l-67.4-113.7c54.5-35.4 88.4-84.9 88.4-139.7zm-466.8 14.5c0-73.5 98.9-133 220.8-133s211.9 40.7 211.9 133c0 50.1-26.5 85-70.3 106.4-2.4-1.6-4.7-2.9-6.4-3.7-10.2-5.2-27.8-10.5-27.8-10.5s86.6-6.4 86.6-92.7-90.6-87.9-90.6-87.9h-199V361c-74.1-21.5-125.2-67.1-125.2-119.9zm225.1 38.3v-55.6c57.8 0 87.8-6.8 87.8 27.3 0 36.5-38.2 28.3-87.8 28.3zm-.9 72.5H365c10.8 0 18.9 11.7 24 19.2-16.1 1.9-33 2.8-50.6 2.9v-22.1z"></path></svg> package such as <code>openintro</code> or <code>moderndive</code>), and cannot be data used in SDS 100 or your companion class.</p>
+<p>The data must also fit the following characteristics:</p>
+<ul>
+<li>There must be at least 4 variables total (not including any ID variables)
+<ul>
+<li>There must be least 2 categorical variables, with at least 2 groups in each categorical variable
+<ul>
+<li>There should not be severe imbalance in the number of observations in each group. For example, you should not have one group of data with 49 observations, and a 1 observation for the second group.</li>
+</ul></li>
+<li>There must be least 2 numeric variables</li>
+</ul></li>
+<li>Each variable must have least 50 valid observations (i.e., there must be at least 50 observations after excluding <code>NA</code> values), and no more than 10,000 observations.</li>
+</ul>
+<p>You can use the <a href="https://posit2.smith.edu:3939/sds100-data-checker/">SDS 100 Data Checker</a> to help check whether your data meet the necessary criteria. Because data comes in so many different forms, an automated tool like this won’t catch <em>all</em> possible problems, and some of the things it warns you about might not be an issue, but it’s a good starting point.</p>
+<p>Think about the data selection phase as an opportunity reorient the curriculum towards your interests or the interests of Smithies in general. There are a variety of metrics that you could use to explore and select data. Below are a few possible approaches (though there are many more ways to think about this!):</p>
+<ul>
+<li>You might select a data set that has a variable with a “nice” distribution or a “not nice” distribution</li>
+<li>You might choose a large data set that illuminates data wrangling techniques like filtering and selecting</li>
+<li>You might select a data set from a discipline that you didn’t see represented in the class already</li>
+<li>You might look for a data set with problematic ethical considerations or with poor documentation</li>
+</ul>
+<p>You are welcome to use data from any source that meets the above requirements. Here are a few resources to get you started:</p>
+<ul>
+<li><a href="https://github.com/fivethirtyeight/data">FiveThirtyEight</a> makes the data they use in their articles publicly available.</li>
+<li>The <a href="https://archive.ics.uci.edu/datasets">UCI Machine Learning Repository</a> has a collection of data sets used in machine learning.</li>
+<li><a href="https://www.kaggle.com/datasets">Kaggle</a> has a large collection of user-uploaded data sets, often used in competitions hosted on the website.</li>
+</ul>
+</section>
+<section id="finishing-phase-1" class="level3">
+<h3 class="anchored" data-anchor-id="finishing-phase-1">Finishing Phase 1</h3>
+<p>When you have formed a group of three, you should fill out the “Final project group form” on the Moodle page. You should form a group and fill out the form <strong>before</strong> the start of Week 6.</p>
+<p>When you believe you have found a suitable data set for the project, you should seek approval to use these for these data by filling the “Final Project Data” form on Moodle.</p>
+<p>You expected to submit a data set for approval during Week 4. If your data set is approved, you are done with this phase of the project. If your data set is not suitable, you have a second opportunity to submit a data set for approval during Week 6. If your second data set is also not suitable, then you will be assigned a data set to use.</p>
+</section>
+</section>
+<section id="phase2" class="level2">
+<h2 class="anchored" data-anchor-id="phase2">Phase 2: Data Description (Weeks 7-9)</h2>
+<p>During this phase of the project, you will write an introduction to your data that acquaints a reader with its topic, basic features, and its context. Your description should be written in a Quarto document, and should focus on addressing the main question: <strong>What is the data about?</strong></p>
+<p>As you address this main question, there are some specific things you should do:</p>
+<ul>
+<li><p>You should describe the source of the data, and how data were generated. For example, are the data from a survey? a laboratory experiment? a government report?</p>
+<ul>
+<li>Be sure to include a hyperlink to the location where the data were retrieved from.</li>
+</ul></li>
+<li><p>You should explain what was the main research question or motivation was for collecting and assembling these data</p></li>
+<li><p>You should identify the unit of observation. In other words, explain what a row represents in your data.</p>
+<p>A good way to help your reader understand this is to pick a single row in your data set, and interpret it. For example, the first row in your data might represent a 21-year-old female college student living in Northampton, Massachusetts with 15 years of education and who prefers dogs over cats.</p></li>
+<li><p>Use <code>dplyr::select()</code> to choose between four and 10 variables that you think are the most essential and/or most interesting variables in the data to analyze.</p>
+<ul>
+<li>If your data already has between 4 and 10 variables, and you <em>don’t</em> want to discard any, skip this step.</li>
+</ul></li>
+<li><p>Use <code>dplyr::filter()</code> (or other functions) to discard rows in your data sets that you don’t want to include in your analysis</p>
+<ul>
+<li>For example, missing values, or a group of data with only 1 or 2 observations</li>
+</ul></li>
+<li><p>Use the <code>dplyr::glimpse()</code> function to give the reader an overview of your data set’s content.</p></li>
+<li><p>Write a bulleted list naming and describing each variable.</p></li>
+</ul>
+<section id="finishing-phase-2" class="level3">
+<h3 class="anchored" data-anchor-id="finishing-phase-2">Finishing Phase 2</h3>
+<p>To complete Phase 2, you should first make sure your Quarto document renders into an HTML document. Then, you should submit your rendered HTML document, your Quarto document and any necessary data files to the Final Project Phase 2 assignment on Moodle <strong>before</strong> the start of Week 10.</p>
+<p>Finally, you should send your Quarto document and any necessary data files to the next group member in your rotation schedule <strong>before</strong> the start of Week 10. Be sure to consult the project rotation schedule on Moodle to double check you are sending your document to the right person, and to double check who you should expect to receive a document from.</p>
+</section>
+</section>
+<section id="phase3" class="level2">
+<h2 class="anchored" data-anchor-id="phase3">Phase 3: Summarization (Weeks 10-11)</h2>
+<p>To start Phase 3, you’ll receive a Quarto document from one of your group members. This document should already contain a general description of the data, so be sure to read it, and note any questions that you have.</p>
+<p>In this phase, your task will be creating tables of summary statistics. You should create at least three summary tables, and at least one of these tables should be multivariate (i.e., the summary should incorporate at least two variables).</p>
+<p>For each table your create, write at least one sentence explaining what you can learn about about the data based on these statistics. Be sure that all the tables you create are cross-referenced in your writing, just like you learned how to do in <a href="lab_10_figures.qmd">Lab 10</a>.</p>
+<section id="finishing-phase-3" class="level3">
+<h3 class="anchored" data-anchor-id="finishing-phase-3">Finishing Phase 3</h3>
+<p>To complete Phase 3, you should first make sure the Quarto document renders into an HTML document. Then, you should submit the rendered HTML document, the Quarto document and any necessary data files to the Final Project Phase 3 assignment on Moodle <strong>before</strong> the start of Week 12.</p>
+<p>Finally, you should send this Quarto document and any necessary data files to the next group member in your rotation schedule before the start of Lab 11. Be sure to consult the project rotation schedule on Moodle to double check you are sending your document to the right person, and to double check who you should expect to receive a document from.</p>
+</section>
+</section>
+<section id="phase4" class="level2">
+<h2 class="anchored" data-anchor-id="phase4">Phase 4: Visualization (Weeks 12)</h2>
+<p>To start Phase 4, you’ll receive a Quarto document from one of your group members. This document should already contain a general description of the data, and several tables of summary statistics. Be sure to review these sections, and note any questions that you have.</p>
+<p>In this phase, your task will be creating data visualizations. You should create at least four visualizations. Among your visualizations, you should have at least two univariate visualization (one utilizing a categorical variable, the other utilizing a numeric variable), at least one bivariate visualization, and at least one trivariate visualization.</p>
+<p>For each of your plots write 2–3 sentences describing the plots. Your descriptions should discuss the variables used, and what can be learned about the data from the plot. Be sure that all of your figures are cross-referenced in your writing, just like you learned how to do in <a href="lab_10_figures.qmd">Lab 10</a>.</p>
+<section id="finishing-phase-4" class="level3">
+<h3 class="anchored" data-anchor-id="finishing-phase-4">Finishing Phase 4</h3>
+<p>To complete Phase 4, you should first make sure the Quarto document renders into an HTML document. Then, you should submit the rendered HTML document, the Quarto document and any necessary data files to the Final Project Phase 4 assignment on Moodle <strong>before</strong> the start of Week 13.</p>
+<p>Finally, you should send this Quarto document and any necessary data files to the next group member in your rotation schedule <strong>before</strong> the start of Week 14. Be sure to consult the project rotation schedule on Moodle to double check you are sending your document to the right person, and to double check who you should expect to receive a document from.</p>
+</section>
+</section>
+<section id="phase5" class="level2">
+<h2 class="anchored" data-anchor-id="phase5">Phase 5: Ethics and Citations (Week 13)</h2>
+<p>To start Phase 5, you’ll receive a Quarto document from one of your group members. This document should already contain a general description of the data, several tables of summary statistics, and several data visualizations. Be sure to review these sections, and note any questions that you have.</p>
+<p>First, add at least one bibliographic citation to your document. Note that to do this you will need to:</p>
+<ul>
+<li>Create a BibTeX database with at least one piece of scholarship</li>
+<li>Create at least one reference in the text</li>
+</ul>
+<p>Next, write a brief statement concerning ethical issues surrounding your data .</p>
+<ul>
+<li>First, write a few sentences about the data’s provenance. Where did this data come from? Who created/sourced it and for what purpose?</li>
+<li>Second, list a few potential uses for this data (either realized in existing work or not-yet-realized)</li>
+<li>Lastly, write about any potential harmful impacts that you can imagine could come from using this data</li>
+</ul>
+<p>Finally, take a few minutes to consider how this data set fits into the curricular goals of SDS 100. Then, in 2-3 sentences, explain where you see this data set fitting into SDS 100 curriculum. Be specific in your recommendation, listing the particular topic(s) and lab number(s) that you feel this data set would most effectively synergize with.</p>
+<section id="completing-phase-5" class="level3">
+<h3 class="anchored" data-anchor-id="completing-phase-5">Completing Phase 5</h3>
+<p>To complete Phase 5, check all of the formatting from the previous weeks, including:</p>
+<ul>
+<li>Lists</li>
+<li>Use of <strong>bold</strong> and <em>italics</em></li>
+<li>Tables</li>
+<li>Figures</li>
+<li>Variable names</li>
+<li>Cross-references</li>
+<li>Spelling, grammar, and paragraph breaks</li>
+</ul>
+<p>Next, make sure the Quarto document renders into an HTML document. Then, you should submit the rendered HTML document, the Quarto document and any necessary data files to the Final Project Phase 5 assignment on Moodle <strong>before</strong> the start of Week 14.</p>
+<p>Since the rotation phase of the project has ended, you do not need to rotate the Quarto document to another group member.</p>
+</section>
+</section>
+<section id="phase6" class="level2">
+<h2 class="anchored" data-anchor-id="phase6">Phase 6: Final Report (Finals Period)</h2>
+<p>During the final lab meeting of the semester, your group will meet and choose one of the three data sets your have reported on to write about for your final report. Once your group has chosen a data set, your group will collaborate on a final report that documents and describes the data, and makes an argument for using these data for a future SDS 100 lab activity. This report should be a polished, narrative document that weaves together prose, code, and output (like figure and tables) to build it’s argument.</p>
+<p>Your final report should include at least the following features</p>
+<ul>
+<li>A rich written introduction to the data’s purpose, source, and context.</li>
+<li>At least one embedded image (not counting data graphics)</li>
+<li>An overview of the data set’s content, including a glimpse of the data and detailed descriptions of the variables</li>
+<li>At least two summary tables of the data that are interpreted and cross-referenced in writing</li>
+<li>At least two visualizations of the data, one of which must be at least bivariate. All visualizations should be interpreted and cross-referenced in writing</li>
+<li>A discussion of the data’s impact and what specific contributions this data set would make to a specific SDS 100 lab</li>
+<li>A discussion of any meaningful limitations and ethical considerations of the data</li>
+<li>At least one BibTex formatted in-text citation, and a bibliography section for your references created using BibTex</li>
+</ul>
+<p>Ideally, these components will be easy to create, because you have been addressing these same topics throughout phases 2, 3, 4 and 5! Be sure to look at the <a href="#gallery">gallery</a> of past reports for inspiration!</p>
+<p>Your report should be well formatted, legible, and coherent. For example, writing should be formatted paragraphs (not as section headers), and unrecorded lists should be formatted into bullet points using markdown, and URLs should be included as hyperlinked text.</p>
+<p>A few notes of technical advice:</p>
+<ul>
+<li><p>When importing data from local files, use <em>relative</em> file paths in your code. This will make the code more portable between your group member’s computers.</p></li>
+<li><p>Make sure that the name of everyone in your group appears in the <code>author:</code> field in the YAML header! When a report has multiple authors, you can list them using the following formatting in your YAML header:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">author</span><span class="kw">:</span><span class="at">   </span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> Reg I. Gigas</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> Drag A. Pult</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="kw">-</span><span class="at"> Art I. Cuno</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+<li><p>Be sure to render your document as a <em>self-contained</em> HTML file. To accomplish this, change the default <code>format: html</code> in your document’s YAML header to</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="at">    </span><span class="fu">embed-resources</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div></li>
+</ul>
+<section id="completing-phase-6" class="level3">
+<h3 class="anchored" data-anchor-id="completing-phase-6">Completing Phase 6</h3>
+<p>Your group’s final report should be submitted on Moodle <strong>before 3pm ET on Friday, May 9th</strong>. When submitting your project on Moodle, be sure to submit:</p>
+<ul>
+<li>Your rendered HTML file</li>
+<li>Your Quarto document</li>
+<li>Your bibtex references file</li>
+<li>Your data file (if necessary to render the Quarto document)
+<ul>
+<li>If you are importing data from a Google Sheet, make sure it is accessible by your instructor.</li>
+</ul></li>
+</ul>
+<p>Only one person needs to submit these documents for your whole group.</p>
+<section id="reflection-on-the-project" class="level4">
+<h4 class="anchored" data-anchor-id="reflection-on-the-project">Reflection on the Project</h4>
+<p>After the final report is submitted, you should also complete the Peer and Self Reflection assignment on Moodle. This assignment should be completed <strong>before 11:59pm ET on Thursday, May 8th</strong>.</p>
+<p>This assignment will ask you to reflect on how your team worked together over the course of the final project. Your responses on this assignment will be one of several factors in helping me that determine whether you earn project participation token.</p>
+</section>
+</section>
+</section>
+<section id="the-project-rotation-schedule" class="level2">
+<h2 class="anchored" data-anchor-id="the-project-rotation-schedule">The Project Rotation Schedule</h2>
+<p>At the end of Phase 2, Phase 3, and Phase 4, you will “rotate” your work between group members. This means that at the start of Phase 3, Phase 4, and Phase 5, your work will pick up where another group member’s has left off in the previous phase, and another group member’s work will start where you left off in the previous phase.</p>
+<p>The pattern of rotating documents between group members is easiest to explain using an example. Imagine that you have the following group of 3 students</p>
+<ol type="1">
+<li>Reg I. Gigas, who chose a data set about archaeological excavations of ancient ruins</li>
+<li>Drag A. Pult, who chose a data set about paranormal encounters</li>
+<li>Art I. Cuno, who chose a data set about climate change</li>
+</ol>
+<p>The table below tracks which data set each student will work on during Phases 2, 3, 4, and 5 of the project</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 42%">
+<col style="width: 20%">
+<col style="width: 18%">
+<col style="width: 18%">
+</colgroup>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: center;">Reg’s Data</th>
+<th style="text-align: center;">Drag’s Data</th>
+<th style="text-align: center;">Art’s Data</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Phase 2 (Describing)</strong></td>
+<td style="text-align: center;">Reg I. Gigas</td>
+<td style="text-align: center;">Drag A. Pult</td>
+<td style="text-align: center;">Art I. Cuno</td>
+</tr>
+<tr class="even">
+<td><strong>Phase 3 (Summarizing)</strong></td>
+<td style="text-align: center;">Art I. Cuno</td>
+<td style="text-align: center;">Reg I. Gigas</td>
+<td style="text-align: center;">Drag A. Pult</td>
+</tr>
+<tr class="odd">
+<td><strong>Phase 4 (Visualizing)</strong></td>
+<td style="text-align: center;">Drag A. Pult</td>
+<td style="text-align: center;">Art I. Cuno</td>
+<td style="text-align: center;">Reg I. Gigas</td>
+</tr>
+<tr class="even">
+<td><strong>Phase 5 (Ethics and Impact)</strong></td>
+<td style="text-align: center;">Reg I. Gigas</td>
+<td style="text-align: center;">Drag A. Pult</td>
+<td style="text-align: center;">Art I. Cuno</td>
+</tr>
+</tbody>
+</table>
+<p>Consider Reg. I Gigas as an example. During Phase 2, Reg works on describing their own data. At the end of Phase 2, the first rotation occurs. Reg passes all their materials (e.g., their data, their Quarto document, and their image) to the person below them in the “Drag’s Data” column (Art I. Cuno) and receives materials from Drag A. Pult. This means that during Phase 3, Art will work on summarizing the data they receive from Reg, picking up where Reg left off. And, Reg will work on summarizing the data they receive from Drag, picking up where Drag left off.</p>
+<p>At the end of Phase 3, this process repeats again: Reg passes their work to to the person below them (Art), Drag passes their work to the person below them (Reg) and Art passes their work to the person below them (Reg). This means that during Phase 4, Reg picks up where Art left off (who was summarizing Drag’s data), and works on visualizing Drag’s data.</p>
+<p>At the end of Phase 4, the documents rotate one last time; Reg passes their work to Art, Drag passes their work to Art, and Art passes their work to Reg. This means that during Phase 5, Reg once again works on their own data. After Phase 5, there are no more rotations.</p>
+</section>
+<section id="gallery" class="level2">
+<h2 class="anchored" data-anchor-id="gallery">Gallery</h2>
+<p>The following projects were submitted in previous semesters and received full credit. You may find them helpful as guides, but please do not interpret them as <a href="https://en.wikipedia.org/wiki/Theory_of_forms#Ideal_state">Platonic ideals</a> of an SDS 100 project! Each of these projects could easily be improved upon.</p>
+<ul>
+<li><a href="project_f22-8-c.qmd">Food Composition</a></li>
+<li><a href="project_f22-3-b.qmd">The Lasting Legacy of Redlining</a></li>
+</ul>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const onCopySuccess = function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  }
+  const getTextToCopy = function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+    text: getTextToCopy
+  });
+  clipboard.on('success', onCopySuccess);
+  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+    // For code content inside modals, clipBoardJS needs to be initialized with a container option
+    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
+    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+      text: getTextToCopy,
+      container: window.document.getElementById('quarto-embedded-source-code-modal')
+    });
+    clipboardModal.on('success', onCopySuccess);
+  }
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
