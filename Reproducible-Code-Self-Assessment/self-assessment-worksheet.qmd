@@ -1,0 +1,56 @@
+---
+title: "Reproducible Code Self-Assessment"
+format:
+  pdf:
+    include-in-header:
+      text: |
+        \addtokomafont{disposition}{\rmfamily}
+    documentclass: scrartcl
+    papersize: letter
+geometry: left=2cm,right=2cm,top=0.5cm,bottom=2.5cm
+header-includes:
+   - \usepackage{geometry}
+   - \usepackage{array}
+---
+
+```{=latex}
+\vspace{-2cm}
+```
+
+Your Name: ________________________	\vspace{18pt}
+
+| 1. Describe and reflect on your project's current status with regard to documentation 
+|     and code comments: \vspace{128pt}
+
+| 2. Describe and reflect on your project's current status with regard to performance and speed: \vspace{128pt}
+
+| 3. Describe your project's current status with regard to dependencies (operating system, 
+|     software versions, libraries and library versions, files and data sets, file paths). 
+|     If someone else tried to run your code, what might fail and why? \newpage
+
+```{=latex}
+\newgeometry{left=2cm,right=2cm,top=2.5cm,bottom=2.5cm}
+```
+| 4. Assessment of "Code Smells". Do any of these statements describe your code? \vspace{6pt}
+
+____ Contains no user-written functions
+
+____ Contains overpacked functions
+
+____ Contains functions that only call other functions 
+
+____ Contains functions with an excessive number of parameters 
+
+____ Contains duplicate code (or repeat code with very slight differences) 
+
+____ Contains long blocks of if/then statements, or many "levels" of conditional logic
+
+____ Contains memory-intensive task(s) that must be repeated at run time (vs. loading from file)
+
+____ Uses inconsistent or poor variable names (e.g. overly complicated names or non-semantic)
+
+____ Everything is in one monstrous Jupyter Notebook or RMD file \vspace{18pt}
+
+5.  Comments on the above code smells that you identified, as well as which would be your top priorities for revision. \vspace{148pt}
+
+6. Additional reflections on the state of your repository:
