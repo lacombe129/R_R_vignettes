@@ -1,0 +1,186 @@
+---
+title: "Food Composition" 
+format: 
+  html:
+    code-fold: true
+editor: source
+author: "REDACTED"
+bibliography: refs.bib
+self-contained: true
+---
+
+# Rotation 1: Selection of Data
+
+## Agricultural-based food dataset
+
+![Image of Tractor Work in Agricultural Field](https://imageio.forbes.com/specials-images/imageserve/60be2a2abf86585e72b7aeee/0x0.jpg?format=jpg&width=1200)
+
+[This dataset](https://corgis-edu.github.io/corgis/csv/food/) is derived from the US Department of Agriculture's Food Composition's Database. It displays a myriad of foods common in the US, ranging from vegetables to meats. It specifically hones in on the amount of minerals and vitamins found in each. Our analysis focuses on nutrition, specifically comparing proteins, carbohydrates, fibers, and sugars.
+
+# Rotation 2: Basic Graphics
+
+```{r}
+#| eval: true
+#| message: false
+#| warning: false
+library(tidyverse)
+food_dataset_raw <- read.csv("https://corgis-edu.github.io/corgis/datasets/csv/food/food.csv")
+library(janitor)
+food_dataset_clean <- clean_names(food_dataset_raw)
+glimpse(food_dataset_clean)
+```
+
+```{r}
+#| eval: true
+#| message: false
+#| warning: false
+#| label: fig-1
+#| fig-cap: "Protein vs. Sugar in Food Items"
+ggplot(food_dataset_clean, aes(x = data_protein, y = data_sugar_total)) +
+  geom_jitter(size = 1) +
+  theme(legend.position = "right") +
+  labs(y = "Grams of Sugar in a Food Item", x = "Total Grams of Protein in a Food Item")
+```
+
+### Figure 1: 2 Numerical Variables
+
+In the first scatterplot, @fig-1, the amount of protein a food item had in the data was placed on the x-axis while the amount of total sugar a food item had was placed on the y-axis. While most of the points are clustered towards the right of the graph, it appears that there might be a negative slope in the data. Specifically, it appears as though there may be a negative association between the amount of sugar a food has and the amount of protein it has. So, a food with lots of sugar might not have a lot of protein, and a food with lots of protein may not have a lot of sugar.
+
+### Figure 2: 2 Categorical Variables
+
+*The only other categorical variable in this dataset is the description of the food items, so I will do another plot with numerical variables*
+
+```{r}
+#| eval: true
+#| message: false
+#| warning: false
+#| label: fig-2
+#| fig-cap: "Iron vs.Calcium in a Food & Water Percentage"
+ggplot(food_dataset_clean, aes(x = data_major_minerals_iron, y = data_major_minerals_calcium)) +
+  geom_col(aes(fill = data_protein)) +
+  scale_fill_viridis_c(name = "Amount of Water(mL)") +
+  scale_x_continuous(name = "Grams of Iron", limits = c(0, 0.25)) +
+  scale_y_continuous(name = "Grams of Calcium", limits = c(0, 150))
+```
+
+In @fig-2, I limited the foods I examined to those who had less than or equal to 0.25 grams of iron Because most of the observations for grams of iron appeared to be below 1, I decided to limit my scale to make the graph more readable. On the x-axis, there is grams of iron and on the y-axis, there is grams of calcium. The color fill of the bars shows the amount of water(g) in each food corresponding to a particular color. Looking at the graph, the foods that had less than 0.25g of iron seems to also all have a lot of calcium (many reaching almost 150g of calcium). Therefore, there might be a positive association between calcium and iron levels, However, since this data is limited to foods with iron levels below 0.25g, it would be difficult to make that association for the entirety of the data. Most of the food items also appear to have low amounts of water (shown by purple fill color).
+
+### Figure 3: 1 Categorical, 1 Numerical Variable
+
+```{r}
+milkorcheese <- food_dataset_clean |>
+  filter(category == "Milk" | category == "Cheese" | category == "Beef" | category == "Fish")
+```
+
+```{r}
+#| eval: true
+#| message: false
+#| warning: false
+#| label: fig-3
+#| fig-cap: "Amount of Total Fiber (g) in Different Food Groups"
+ggplot(milkorcheese, aes(X = data_fiber, y = category)) +
+  geom_bar(fill = "steelblue") +
+  labs(y = "Category of Food", x = "Total Grams of Fiber in a Food Group")
+```
+
+In the bar graph above, @fig-3, I decided to limit the categories of food I was interested in to Fish, Cheese, Beef, and Milk. On the y axis, I plotted the category of food. On the x axis, I plotted the total grams of fiber found in each food group. By looking at the graph, I can see that the data which belongs to the food category "beef" has the most amount of total fiber while the category "fish" has the least. From this graph, we may be able to hypothesize that beef, on average, has more fiber than fish, cheese, or milk. However, we would need to see how many n values are in each category to see if there were simply more observations of the beef category that resulted in a higher fiber total.
+
+# Rotation 3: Tables
+
+```{r}
+library(knitr)
+food_dataset_clean |>
+  names() |>
+  kable()
+```
+
+From these variable names, I expect to mostly see numeric data, and a few categorical variables for "category" and "description."
+
+After checking, the data basically matches my expectations of what I expected to see, although I didn't expect the data bank id number to be numeric. I don't know why it would be useful for that variable to be numeric. The only categorical variables are the category of food and the description.
+
+```{r}
+#| eval: true
+#| message: false
+#| warning: false
+#| label: tbl-category
+#| tbl-cap: "Table 1 shows the 12 categories with the highest number of individual foods recorded in this dataset, which will be used for further summary."
+food_dataset_clean |>
+  group_by(category) |>
+  summarize(numb_category = n()) |>
+  arrange(desc(numb_category)) |>
+  head(12) |>
+  kable()
+```
+
+```{r}
+#| eval: true
+#| message: false
+#| warning: false
+#| label: tbl-carb
+#| tbl-cap: "Table 2 shows the mean, median, and maximum number of carbohydrants in the 12 largest categories of foods, arranged by descending mean."
+food_dataset_clean |>
+  filter(category == c("Infant formula", "Rice", "Bread", "Potato", "Cookie", "Frankfurter or hot dog sandwich", "Coffee", "Egg omlet or scrambled egg", "Pie", "Beef", "Cheese", "Pasta")) |>
+  group_by(category) |>
+  summarize(mean_carb = mean(data_carbohydrate), median_carb = median(data_carbohydrate), max_carb = max(data_carbohydrate)) |>
+  arrange(desc(mean_carb)) |>
+  kable()
+```
+
+```{r}
+#| eval: true
+#| message: false
+#| warning: false
+#| label: tbl-cholesterol
+#| tbl-cap: "Table 3 shows the mean, median, and maximum amount of cholesterol in the 12 largest categories of foods, arranged by descending mean."
+food_dataset_clean |>
+  filter(category == c("Infant formula", "Rice", "Bread", "Potato", "Cookie", "Frankfurter or hot dog sandwich", "Coffee", "Egg omlet or scrambled egg", "Pie", "Beef", "Cheese", "Pasta")) |>
+  group_by(category) |>
+  summarize(mean_chol = mean(data_cholesterol), median_chol = median(data_cholesterol), max_chol = max(data_cholesterol)) |>
+  arrange(desc(mean_chol)) |>
+  kable()
+```
+
+```{r}
+#| eval: true
+#| message: false
+#| warning: false
+#| label: tbl-fiber
+#| tbl-cap: "Table 4 shows the mean, median, and maximum amount of fiber in the 12 largest categories of foods, arranged by descending mean."
+food_dataset_clean |>
+  filter(category == c("Infant formula", "Rice", "Bread", "Potato", "Cookie", "Frankfurter or hot dog sandwich", "Coffee", "Egg omlet or scrambled egg", "Pie", "Beef", "Cheese", "Pasta")) |>
+  group_by(category) |>
+  summarize(mean_fiber = mean(data_fiber), median_fiber = median(data_fiber), max_fiber = max(data_fiber)) |>
+  arrange(desc(mean_fiber)) |>
+  kable()
+```
+
+From these tables, we can note the categories with the highest amount of carbohydrates, cookies, the highest amount of cholesterol, cheese, and the highest amount of fiber, bread. The tables generally reinforce what I know about foods, such as that the highest categories in @tbl-carb are breads and sweets, and the highest categories in @tbl-cholesterol are meats and cheeses. @tbl-fiber presented more surprises in showing that sweets and breads actually have a good amount of fiber (comparably), and infant formula has none.
+
+# Rotation 4: Detailed Description of Dataset
+
+3 Variables that are most critical to the Dataset: Category of food, Amount of Carbohydrates in grams, and Amount of Protein in Grams
+
+```{r}
+subset_food_clean <- food_dataset_clean |>
+  select(category, data_carbohydrate, data_protein) |>
+  filter(category == "Milk" | category == "Cheese" | category == "Beef" | category == "Fish" | category == "Infant formula" | category == "Rice" | category == "Bread" | category == "Potato" | category == "Cookie" | category == "Frankfurter or hot dog sandwich" | category == "Coffee" | category == "Egg omlet or scrambled egg" | category == "Pie" | category == "Pasta")
+glimpse(subset_food_clean)
+```
+
+Our data includes information from the United States Department of Agriculture's Food Composition Database. This data includes categories of foods, and the nutrients in them like amount of vitamins, minerals, and other nutrients each food has. The variables that we think are the most important are the category of food to give the information about, then we chose the amount of carbohydrates and amount of protein in the categories of food we chose. For our category of food, we chose foods we thought were main parts of the average American's diet. This consisted of various types of dairy, protein, carbohydrates, and important drinks. We think it would be interesting to look into which of these common foods had the most carbohydrates and proteins, two nutrients consumers often look into. Carbohydrates do not store as much energy as protein does and are often blamed for weight gain, so there may be something in learning what foods have many unexpected carbohydrates. Because protein stores more energy, we were interested in comparing the amount of proteins between common foods and different kinds of animal products.
+
+-   Category: a categorical variable that describes the kind of food category that the observation falls under For our project, we focused on the following food categories: milk, cheese, beef, infant formula, fish, Rice, Bread, Potato, Cookie, Frankfurter or hot dog sandwich, Coffee, Egg omlet or scrambled egg, Pie, Pasta (the most common food categories)
+
+-   Carbohydrates: a numerical variable which measures the amount of carbohydrates within a certain food (in grams).
+
+-   Protein: a numerical variable which measures the amount of protein within a certain food (in grams).
+
+# Rotation 5: Ethics
+
+## Statement of Ethical considerations
+
+This data is from the United States Department of Agriculture's Food Composition Database. This data set contains a large amount of data concerning the nutrition value for lots of foods, serving the purpose of quick and easy access for people with dietary restrictions. This data can have many uses. Like mentioned previously, people with dietary restrictions can quickly access information on foods and food companies. This data, joined with other data sets, can help researchers find the types of nutrition food deserts fail to provide to the people living in them [@reynolds2018food] Lastly, this database can be used by grocery store owners to sort and evenly buy produce to stock the shelves in their store. Some harm that it can cause is to the food companies themselves. Consumers may not know of certain nutritional aspects in their food, and use the newfound information from the data to sue big food companies.
+
+# Tie the data to the Final Project's goal
+
+This data can potentially be used for future SDS 100 classes. In lab 9, when learning how to create tables, we ordered fruits. I think it would be interesting to see how many kinds of tables and plots you can create from the data. The exercise can be to add some nutritional data about the fruits and/or other produce to the table.

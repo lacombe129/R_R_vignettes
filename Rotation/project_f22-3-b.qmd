@@ -1,0 +1,255 @@
+---
+title: "The Lasting Legacy of Redlining"
+author: "REDACTED"
+format: 
+  html:
+    code-fold: true
+    self-contained: true
+bibliography: refs.bib
+---
+
+# Rotation 1: Selection of Data
+
+```{r}
+#| message: false
+#| warning: false
+library(tidyverse)
+redlining_data <- read_csv("https://raw.githubusercontent.com/fivethirtyeight/data/master/redlining/metro-grades.csv")
+```
+
+## Introduction to the Data
+The `data` that will be used here is one of FiveThirtyEight's [data sources](https://github.com/fivethirtyeight/data/tree/master/redlining) for their "The Lasting Legacy of Redlining" article.^[https://projects.fivethirtyeight.com/redlining/] This data set has the 2020 total population estimates by race/ethnicity (based on the 2020 census) for combined zones of each redlining grade (which can range from A ("Best") to D ("Hazardous")[^2]) from the Home Owners' Loan Corporation's (HOLC) maps drawn in 1935-40. The maps were provided from the Mapping Inequality project.    
+
+![](https://projects.fivethirtyeight.com/redlining/images/00-REDLINING-topper.png?v=4718a892)
+
+The data set also includes population estimates in the surrounding area of each metropolitan area's HOLC map and location quotients (LQs, which are compared to their proximity to 1, which indicates an accurate representation of a population)[^3] for each racial/ethnic group and HOLC grade. You can find more information on the data set, variables, and calculations in the Github link listed above. 
+
+
+[^2]: You can read more about the redlining zone classifications [here](https://www.arcgis.com/home/item.html?id=ef0f926eb1b146d082c38cc35b53c947). 
+[^3]: More information on [location quotients](https://belonging.berkeley.edu/technical-appendix#footnote34_cnxakh3).
+
+
+One unit of observation corresponds to 
+a metropolitan area's combined total population estimates, surrounding area population estimates, percentages of both, and LQs for all of the zones in that area that correspond to the same HOLC grade. 
+
+For example, the **first** observation describes the aforementioned data points for all locations within Akron, OH that have an "A" HOLC grade. Reading the columns from left to right, the first row tells us that:
+
+* The metropolitan area is Akron, Ohio.
+* The grade of the combined HOLC zones within Akron, OH is A.
+* The non-Hispanic white population is 24702.
+* The non-Hispanic Black population is 8624.
+* The Hispanic/Latino population is 956.
+* The Asian population is 688.
+* The population of those in any other race/ethnicity group is 1993.
+* The total population in these HOLC zones is 36963.
+* The estimated percentage of non-Hispanic white residents in HOLC zones with an A grade in Akron, OH out of the total population is 66.83%.
+* The estimated percentage of non-Hispanic Black residents in HOLC zones with an A grade in Akron, OH out of the total population is 23.33%.
+* The estimated percentage of Hispanic/Latino residents in HOLC zones with an A grade in Akron, OH out of the total population is 2.59%.
+* The estimated percentage of Asian residents in HOLC zones with an A grade in Akron, OH out of the total population is 1.86%.
+* The estimated percentage of residents with another race/ethnicity in HOLC zones with an A grade in Akron, OH out of the total population is 5.39%.
+* The non-Hispanic white location quotient (LQ) is 0.94.
+* The non-Hispanic Black location quotient (LQ) is 1.41.
+* The Hispanic/Latino location quotient (LQ) is 1.
+* The Asian location quotient (LQ) is 0.46.
+* The other race/ethnicity location quotient (LQ) is 0.97.
+* The estimated non-Hispanic white population within surrounding area of the HOLC zones is 304399. 
+* The estimated non-Hispanic Black population within surrounding area of the HOLC zones is 70692. 
+* The estimated Hispanic/Latino population within surrounding area of the HOLC zones is 11037. 
+* The estimated Asian population within surrounding area of the HOLC zones is 17295. 
+* The estimated other race/ethnicity population within surrounding area of the HOLC zones is 23839. 
+* The estimated percentage of non-Hispanic white residents in the surrounding area around the HOLC zones out of the total surrounding area population is 71.24%.
+* The estimated percentage of non-Hispanic Black residents in the surrounding area around the HOLC zones out of the total surrounding area population is 16.55%.
+* The estimated percentage of Hispanic/Latino residents in the surrounding area around the HOLC zones out of the total surrounding area population is 2.58%.
+* The estimated percentage of Asian residents in the surrounding area around the HOLC zones out of the total surrounding area population is 4.05%.
+* The estimated percentage of other race/ethnicity residents in the surrounding area around the HOLC zones out of the total surrounding area population is 5.58%.
+
+*It is important to note that the population estimates are rounded to the next integer and the percentages are rounded to the nearest 2 decimal places.*
+
+
+# Rotation 2: Summary Statistics & Figures
+Our goal is try to understand the correlation between grade assigned by the Home Owners' Loan Corporation (HOLC grade) and population, particularly the white population, which is the most populous and dominant population in the history of the United States. Because of the long history of racial discrimination in the United States, we want to explore whether the idea of white privilege has an effect on HOLC grades. We will explore this correlation through four graphs using variables such as white population, percentage of white population, and their corresponding HOLC grades.
+
+@fig-bargraph1 is a bar graph that takes in one categorical explanatory variable (HOLC grade) and outputs a numeric variable (White population). 
+
+```{r}
+#| message: false
+#| warning: false
+
+population_by_holc_grade <- redlining_data |>
+  group_by(holc_grade) |>
+  summarize(
+    White = sum(white_pop),
+    Black = sum(black_pop),
+    Hispanic = sum(hisp_pop),
+    Asian = sum(asian_pop),
+    Other = sum(other_pop)
+  )
+```
+
+```{r}
+#| message: false
+#| warning: false
+#| label: fig-bargraph1
+#| fig-cap: "Number of white population in different HOLC class areas."
+ggplot(data = population_by_holc_grade, aes(x = holc_grade, y = White)) +
+  geom_col() +
+  labs(
+    x = "HOLC grade",
+    y = "White population",
+    title = "The total number of white population in areas with different HOLC grades"
+  ) +
+  scale_y_continuous(labels = scales::label_comma())
+```
+
+In addition to @fig-bargraph1, this graph takes in one more categorical explanatory variable (HOLC grade and Race). Instead of outputting the White population, this bar graph outputs the population of all race in areas with different HOLC grades. We can clearly see from @fig-bargraph2 that there are more white people living in areas with a higher HOLC grades (A and Bs).
+
+```{r}
+#| message: false
+#| warning: false
+population_by_holc_grade_clean <- population_by_holc_grade |>
+  pivot_longer(
+    cols = c(White:Other),
+    names_to = "race",
+    values_to = "count"
+  )
+```
+
+```{r}
+#| message: false
+#| warning: false
+#| label: fig-bargraph2
+#| fig-cap: "Number of White, Black, Hispanic, Asian, and other races in different HOLC grades areas."
+ggplot(data = population_by_holc_grade_clean, aes(x = holc_grade, y = count, fill = race)) +
+  geom_col(position = "dodge") +
+  labs(
+    x = "Grade assigned by the Home Owners' Loan Corporation (HOLC grade)",
+    y = "Total population",
+    fill = "Race",
+    title = "The total population of all race in areas with different HOLC grades"
+  ) +
+  scale_y_continuous(labels = scales::label_comma())
+```
+
+However, we cannot make conclusions based solely on the size of the white population, which is the largest population in the U.S. We also need to consider the percentage of the white population in each HOLC zone. @fig-histogram1 is a histogram that takes in one numeric explanatory variable (Percentage of white population) and outputs the number of HOLC zones. It counts the number of HOLC zones with different percentages of white population.
+
+```{r}
+#| message: false
+#| warning: false
+#| label: fig-histogram1
+#| fig-cap: "Number of HOLC zones with different white population percentage."
+ggplot(data = redlining_data, aes(x = pct_white)) +
+  geom_histogram(binwidth = 12.5, boundary = 50, color = "white") +
+  labs(
+    y = "Number of HOLC zones",
+    x = "Percentage of white population"
+  )
+```
+
+Finally, we finalize @fig-histogram1 by taking in the categorical explanatory variable (HOLC grade). @fig-histogram2 counts the number of HOLC zones of the percentage of white population with a given HOLC grade (A-D). 
+
+```{r}
+#| message: false
+#| warning: false
+#| label: fig-histogram2
+#| fig-cap: "Number of HOLC zones of the percentage of white population with a given HOLC grade"
+ggplot(data = redlining_data, aes(x = pct_white, fill = holc_grade)) +
+  geom_histogram(binwidth = 12.5, boundary = 50, color = "white") +
+  labs(
+    y = "Number of HOLC zones",
+    x = "Percentage of white population",
+    fill = "HOLC grade"
+  )
+```
+
+We can see from @fig-histogram2 that HOLC zones with a higher percentage of white population will receive a higher HOLC grades. In other words, we can conclude that there is a correlation between the percentage of white population and HOLC grades.
+
+
+
+# Rotation 3: Basic Graphics
+```{r}
+#| message: false
+#| warning: false
+library(knitr)
+```
+
+@tbl-table1 is a table of all the variable names in the data set. The names are divided by the kinds of data we expect to see from them: categorical, nominal, or ordinal. Based on the glimpse of the data, we can identify that this data contains both categorical and nominal variables- and no ordinal variables. However, the amount of numeric variables significantly exceeds the amount of categorical variables.
+
+```{r}
+#| message: false
+#| warning: false
+#| label: tbl-table1
+#| tbl-cap: "A table of variable names and kinds of data expected."
+
+table_variables <- tibble(
+  variables = c("metro_area", "holc_grade", "white_pop", "black_pop", "hisp_pop", "asian_pop", "other_pop", "total_pop", "pct_white", "pct_black", "pct_hisp", "pct_asian", "pct_other", "lq_white", "lq_black", "lq_asian", "lq_other", "surr_area_white_pop", "surr_area_black_pop", "surr_area_hisp_pop", "surr_area_asian_pop", "surr_area_other_pop", "surr_area_pct_white", "surr_area_pct_black", "surr_area_pct_hisp", "surr_area_pct_asian", "surr_area_pct_other"),
+  type = c("categorical", "categorical", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric")
+)
+
+kable(table_variables)
+```
+
+
+After having a general sense of this data, we created @tbl-table2, which is a table of summary statistics of four variables: "holc_grade", "white_pop", "total_pop", and "pct_white". The categorical variable "holc_grade" was used to group the numeric variables of "white_pop", "total_pop", and "pct_white". Based on these statistics, we can state that areas with a higher percentage of white people are given a higher HOLC grade. In general, the number of white indiviuals also has the highest population out of the total population in areas with higher HOLC grades, espeically areas with HOLC grades A and B.
+
+```{r}
+#| message: false
+#| warning: false
+#| label: tbl-table2
+#| tbl-cap: "A table of summary statistics of dataset. The four variables included are: the categorical variable holc_grade, and the numeric variables white_pop, pct_white, and total_pop."
+redlining_data |>
+  group_by(holc_grade) |>
+  skimr::skim("white_pop", "total_pop", "pct_white") |>
+  rename(`Missing Obs.` = n_missing)
+```
+
+
+
+# Rotation 4: Detailed Description of Dataset
+In this section of the project, the data has been manipulated in order to show the specific variables we are working with in our data set. Later, each of these variables will be described further along with what we have used these variables for.
+
+```{r}
+#| message: false
+#| warning: false
+redlining_data |> select(metro_area, holc_grade, white_pop, pct_white, pct_black, pct_hisp, pct_asian, pct_other)
+```
+
+Final list and description of Data:
+metro_area (categorical variable): is the zones where the data was collected from
+
+holc_grade (categorical ordinal variable) : is the grade given to the area
+
+white_pop (numeric variable): is the white population in that area
+
+pct_white (numeric variable): is the percentage of white people living in that area
+
+pct_black (numeric variable): is the percentage of black people living in that area
+
+pct_hisp (numeric variable): is the percentage of hispanic people living in that area
+
+pct_asian (numeric variable): is the percentage of asian people living in that area
+
+pct_other (numeric variable): is the percentage of people who do not have a specified race living in that area
+
+This data set is considering the way redlining works to divide up different people into different areas.
+
+Description:
+
+This data has, throughout the project helped us to understand the way that redlining works. In particular we have examined this issue broken down into race in each zone and how that relates to several variables given in the data set. One critical factor we looked into was the grade given to each set area. This grade was an essential part of our project that informed much of our visualizations and gives critical insight into how redlining works.
+
+
+# Rotation 5: Ethics
+This data is about redlining. Redlining is refusing (a loan or insurance) to someone because they live in an area deemed to be a poor financial risk. It is racial discrimination and is a big problem in America. To fix problems like this, it is important to have the data to know the numbers behind the problem. Looking at data about issues of racial discrimination, it is important that it does not skew the data to make it look like there is no racial discrimination at play [@lloyd2016fighting]. As a group, we thought it was important to look into redlining because 
+of the long history of racial discrimination in the United States and wanted to explore whether the idea of white privilege has an effect on HOLC grades. 
+
+
+#### Potential Questions
+Does this data offer a fair and just statistical picture of redlining? 
+
+Are there any gaps in the data that we think are important to make note of?
+
+Are there biases that we are going in with that could change the way that we interact with the data? 
+
+Where might further research take us? Are there certain racial groups that we could focus in on instead of looking at a more general data picture?
+
+#### Tie the data to the Final Project’s goal
+Our original goal is try to understand the correlation between grade assigned by the Home Owners' Loan Corporation (HOLC grade) and population, particularly the white population, which is the most populous and dominant population in the history of the United States. We sought to explore this correlation through four graphs using variables such as white population, percentage of white population, and their corresponding HOLC grades. This does meet the final goal. I think this best fits in with Lab #10, when we talked about Data science ethics as well as Lab #11, which built upon Lab #10, when we walked about codes for Data science ethics. It is important that data analysis is correct, but if the analysis is discriminatory, it should be disregarded. Ethics when it comes to data science is extremely important. Not only is it important to try to weigh ethics and topics that we discussed in lab 10 and 11, but it is also important to shed light on data that illuminates issues of discrimination which we found that the redlining data did. 
