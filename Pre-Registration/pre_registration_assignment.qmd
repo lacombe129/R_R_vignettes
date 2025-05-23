@@ -1,0 +1,13 @@
+---
+title: "Pre-Registration Assignment"
+format: pdf
+editor: visual
+---
+
+## Overview
+
+A critical component of conducting replicable research is to develop a clear testable theory *before* analyzing the data. By clearly laying out hypotheses before working with the data, researchers can be confident they are not Hypothesizing After the Results are Known (HARKing). If we wait to hypothesize  until after we have seen what are data or models look like, we run the risk of creating post-hoc explanations for results. The data generating process is often noisy, random, and messy. By definition, random samples will frequently produce results that are different than the popular parameter. The hope is that with enough samples and tests, scientists can eventually coalesce around a shared conclusion. However, this process quickly breaks down if theory and expectations are changed to aligned with data, rather than using data to test existing theories. 
+
+In response to this, researches have increasingly proposed using pre-registration as a tool to combat HARKing. Scholars will post not only their expectations, but also their research design and potentially their data generating process before conducting research. Essentially, they are publicly posting their plan of analysis so that once they do begin working with the data others can be confident they are testing their hypotheses, rather than changing or generating them to confirm the results they already found. This approach can help build trust in a researcher's approach and also provide a blueprint for other researchers to use the same approach on new datasets. 
+
+For this class, you will be pre-registering your final paper. This means that before you download the data you will be using for your final analysis, you must submit your literature review, hypotheses, and research design for review. In addition to being a best practice for replicable research, it also provides us both with an opportunity to check in on the state of your project mid way through the semester .
