@@ -7,7 +7,7 @@
 3. [Rotation-Based Classroom Project](Rotation)
 4. Pre-Registration/Plan of Analysis
 5. [Appraising and Assessing Dubious Research Practices](Assessing-Dubious-Research)
-6. [Self-Assessment and Peer-Assessment](Reproducible-Code-Self-Assessment)
+6. [Reflective Assessment](Reproducible-Code-Self-Assessment)
 
 
 See:
