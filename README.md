@@ -9,5 +9,7 @@
 5. [Appraising and Assessing Dubious Research Practices](Assessing-Dubious-Research)
 6. [Reflective Assessment](Reproducible-Code-Self-Assessment)
 
+The draft manuscript can be found here: XX
+
 
 Last updated 2025-05-23.
