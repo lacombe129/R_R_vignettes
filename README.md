@@ -1,4 +1,4 @@
-# Principles and Best Practices for Teaching Replicability to Undergraduate Students
+# Teaching Reproducibility and Replicability: Principles and Examples
 
 ## Sample classroom activities described in the paper
 
