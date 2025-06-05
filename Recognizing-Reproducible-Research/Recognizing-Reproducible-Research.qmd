@@ -1,0 +1,96 @@
+---
+title: "Recognizing Reproducible Research"
+author: "Joseph Holler"
+format: pdf
+editor: visual
+---
+
+## Recognizing Reproducible Research
+
+Your practical goal for this assignment is to assess the reproducibility of prior published research.
+
+There are two main practical motivations for this type of work. First, some journals, conferences, and even funding agencies are asking reproducibility "editors" or "reviewers" to audit researchers' work to make sure that they are fulfilling their publishing or funding requirements to produce reproducible work. Second, you may be interested in replicating or extending a study yourself, which starts with reproducing the study as it is. This is the preliminary work to assemble all of the study's components and assess how feasible it will be to reproduce.
+
+Your learning goal for this assignment is to apply the concepts of reproducibility to a real research project, experiencing the nuts and bolts of reproducibility through active learning. You will likely encounter uncertainties and unknowns in this assignment, each of which ultimately points to a barrier to reproducibility.
+
+## Instructions
+
+The following instructions will walk you through a reproducibility assessment for a prior study. The goal is to assess whether the study is already reproducible: if you find yourself doing the authors' work to improve its reproducibility, then you are doing too much.
+
+### Choose an Article
+
+First, choose an article to assess. The article should contain **empirical research**, i.e. there is data-based evidence and it is analyzed in order to answer a research question or test a reseach hypothesis. **Important:** You should find the journal website where the article was originally published, and download the article and its information from that primary source. Do not rely on preprint servers or secondary research websites like ResearchGate. Download the article and copy it's DOI (Digitial Object Identifier) and a full citation for the article here:
+
+DOI:
+
+Citation:
+
+### Access its materials
+
+As it turns out, most research articles contain only a fraction of the information that is needed to reproduce them in the article body itself. Remaining information, or *supplementary materials* may be found elsewhere. Try to find all of these materials before starting your audit. Where should you look?
+
+Try the following:
+
+-   Look for a link to "supplementary materials" on the journal website where the article was published. There may be more than one document or file.
+-   Look for a "data availability" statement or similar section in the article. This may describe where to find data and other materials associated with the work.
+-   Search for web links in the article text, especially to digital repositories or archives where additional data, methods, and information may be stored. Examples include GitHub, GitLab, Zenodo, Harvard Dataverse, Figshare, OSF, and more.
+-   Check the article's references and endnotes for references to data sources, code, and/or software used in the research.
+
+**Save** all of the supplementary files taht you find into one folder for your project. Start a **document** in your project folder where you can **copy** clues and links from the manuscript.
+
+### Computational environment
+
+Based on the information available to you, what computing environment did the authors use for their research?
+
+-   Operating system:
+-   Main software and version(s):
+-   Additional software package(s) or plugin(s) and version(s):
+
+The operating system is likely Linux, MacOS or Windows. Include the version, if known.\
+The main software for open data science is likely Python or R, whereas proprietary software could include platforms like SAS, SPSS, ArcGIS, etc.
+
+### Data sources
+
+First, list all of the data sources described in the research paper, including data that the authors created themselves. Second, investigate the actual *data availability* of each source, the availability of *documentation* for each data source, **lineage** information about data acquisition or creation, and permissiveness of *reuse*.
+
+Complete a table with your findings, using the following example structure:
+
+| Data source | data availability | documentation |  lineage  |   reuse   |
+|:-----------:|:-----------------:|:-------------:|:---------:|:---------:|
+|   Source1   | provided in full  |   standard    | automated |   open    |
+|     ...     |        ...        |      ...      |    ...    |    ...    |
+|   SourceN   |   inaccessible    |  nonstandard  | described | copyright |
+
+Categorize **data availability** as one of the following, ordered from best-case scenario to worst-case scenario:
+
+-   *Provided in full* with the paper as supplemental materials or with a DOI link to a digital archive
+-   *Provided with limitations* to protect intellectual property or privacy, requiring credentials and clearance or modifying the data with some process of anonymization or simulation.
+-   *Linked* to a source for download, but not in a formal archive or with a DOI.
+-   *Public* data that may be acquired separately through your own efforts.
+-   *Inaccessible* data that cannot be acquired.
+
+Categorize **documentation** as one of the following, ordered from best-case scenario to worst-case scenario:
+
+-   **Standard** metadata appropriate to the data source type is provided by the authors. For example, geospatial data should be documented with FGDC or ISO-191\* metadata standards and survey data can be documented with DDI (Data Documentation Initiative) standards.
+-   **Nonstandard** documentation of the data source that does not conform to a metadata standard, but is clear about the data characteristics, variables, variable definitions, etc. for another researcher to understand everything they need to know about the data source in order to use it.
+-   **Inadequate** documentation lacks key information about which data files contain which information, which variables are important and how their values are defined, how missing data is recorded, or other essential information for using the data appropriately.
+
+Categorize **lineage** as one of the following, ordered from best-case scenario to worst-case scenario:
+
+-   **Automated** lineage includes code or very explicit workflows to essentially automate the acquisition or creation of the data source, e.g. through use of application programming interface (API) code or files required to conduct an online survey.
+-   **Described** lineage includes enough description about how to acquire or create the data that someone could reasonably re-create teh data.
+-   **Inadequate** lineage lacks enough information for someone to confidently re-acquire or re-create the data.
+
+Categorize **reuse** as one of the following, ordered from best-case scenario to worst-case scenario. Note that just because a research article is open-access does not necessarily mean that the data is also open-access.
+
+-   **Open** license includes an open source or open-access intellectual property license explicitly permitting the reuse and redistribution of the data.
+-   **Restricted** license includes an intellectual property license explicitly permitting your use of the data, but limiting is applications or redistribution.
+-   **Copyright** means that the data is explicitly restricted by copyright or implicitly restricted by copyright because the authors have not included any intellectual license for the data.
+
+### Methods
+
+in progress...
+
+### Results
+
+in progress...
