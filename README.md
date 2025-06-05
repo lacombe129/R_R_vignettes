@@ -9,8 +9,7 @@
 5. [Appraising and Assessing Dubious Research Practices](Assessing-Dubious-Research)
 6. [Reflective Assessment](Reproducible-Code-Self-Assessment)
 
-The draft manuscript can be found here: XX (update after publication)
-To cite the work contained in this repository, please cite its corresponding OSF project: XX (update after publication)
+To cite the work contained in this repository, please cite its corresponding [OSF project](https://doi.org/10.17605/OSF.IO/JQNHG), which also contains a draft manuscript.
 
 
-Last updated 2025-05-24.
+Last updated 2025-06-04.
