@@ -1,0 +1,147 @@
+---
+title: "Nearest Landmark Code Refactored"
+author: "Matt Lavin"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+
+knitr::opts_chunk$set(echo = TRUE)
+
+```
+
+## Introduction
+
+This example is taken from an  "Introduction to Data Analytics" lab written before I started at Denison. It was iterated on several times by various instructors, but the original lab asked students to load two CSV files: one with Airbnb rental data, and one with Columbus landmarks, with the idea of seeing if a rental's distance to its nearest landmark could work as a predictor of price. 
+
+As with `activity.R` and `working_code.R`, I've pulled out and simplified the code needed to load the data, merge the separate CSVs, and calculate the distance of each Airbnb from each landmark. In this version of the code, however, I've refactored the code to make it more usable, and I've used the `rMarkdown` file format to improve readability.
+
+## Load Libraries 
+
+The original lab had more of these, but I've simplified.
+
+```{r libraries}
+
+library(here)
+library(tidyverse)
+library(geosphere)
+source(here("utils", "dv.R"))
+
+```
+
+## Load Data
+
+Here, relative paths are used to load the two CSV files. Code is stored at the roor folder location and datasets are stored in a sub-folder because it's generally easier to access external files by going up a folder than it is to go down a folder or across to a parallel folder.  
+
+```{r load_data}
+
+landmarks <- read_csv(here("data", "cbus_landmarks.csv"))
+cbus_airbnb <- read_csv(here("data", "columbus_listings.csv"))
+cbus_airbnb <- cbus_airbnb %>% 
+  mutate(price_float = as.numeric(str_replace_all(price, "[$,]", "")))
+
+```
+
+In the above code block, you might have also noticed a `mutate` function that converts the `price` column to a float point numerical value by removing any dollar signs or commas in the price. This operation gets more attention in the lab and, in some versions, learning to convert text values to numeric values is a stated learning outcome. 
+
+## Merge Data 
+
+The code chunk to follow accomplishes an important task. We want to work backwards from the task of competing a distance for each pair of (1) an airbnb listing and (2) a landmark, and then we want to find the nearest landmark for each airbnb listing. If we store the distances rowwise, finding the nearest landmarks is really straightforward, so idea is to end up with each row looking like this:
+
+| id | latitude_listing | longitude_listing | landmark | latitude_landmark | longitude_landmark |
+|:---|:---|:---|:---|:---|:---|
+|xxx|xxx|xxx|xxx|xxx|xxx|
+
+ 
+```{r merge}
+
+airbnb_lat_lng <- cbus_airbnb %>% 
+  select("id", "latitude", "longitude")
+
+suffs <- c("_listing", "_landmark")
+loc_pairs <- cross_join(airbnb_lat_lng, landmarks, suffix = suffs)
+loc_pairs
+
+```
+
+There are various ways to perform this operation, such as merging or using a  `zipper` column with a many-to-many join to simulate the idea of a cross join operation. (This is what I did in `working_code.R`.) However, `dplyr` has a built-in function called `cross_join`, and it does just what we want. It also helps introduce the idea of joins and previews content that my students will learn in CS181/DA210. 
+
+## Calculate Distances
+
+Here I'm using my own modification of a `geosphere` function to calculate Vincenty Ellipsoid distance. The function `distVincentyEllipsoid` function calculates the 'great-circle-distance' between the two points assuming an ellipsoidal model of the Earth. 
+
+The original used the `Imap` package for this function, but that package was sunsetted several years ago. A later iteration of the lab had students calculate Haversine distance, which models the Earth as a sphere, but here I wanted to demonstrate how one might reproduce someone else's code more precisely once a package has been deprecated.
+
+The only problem is that the `geosphere` function `distVincentyEllipsoid` won't work out of the box with `dplyr`. It takes two lat-long pairs as inputs, and `mutate` only works if each argument is a single column, so it can do the same operation to every row. (This is called vectorization.) We could also rewrite our mutate as a loop, but the split-apply-combine strategy argues that vectorized functions are better than loops for various reasons that I agree with (see Wickham, https://vita.had.co.nz/papers/plyr.html)
+
+My function `dv` takes four values as its inputs (lat1, lon1, lat2, lon2), passes them to `distVincentyEllipsoid`, and uses a `dplyr` function to ensure that the operation will be performed discretely on each row of a Data Frame. 
+
+```{r distances}
+
+distances <- loc_pairs %>% 
+  mutate(distance_miles = dv(latitude_listing, longitude_listing, latitude_landmark, longitude_landmark))
+distances
+
+```
+
+## Reduce Data Frame to Nearest Landmark
+
+As I mentioned earlier, storing all listing-landmark distances in one column (across multiple rows) makes it easy to find the nearest landmark for each listing because we can group by the listing id, sub-sort by the distance to each landmark, and take the first row of each group, which is implicitly the nearest landmark and its distance to each listing. 
+
+```{r nearest}
+
+nearest <- distances %>% 
+  group_by(id) %>% 
+  arrange(distance_miles) %>% 
+  summarise(nearest_landmark=first(landmark), distance_miles=first(distance_miles))
+nearest 
+
+```
+
+## Merge Distance Info with Price Info
+
+The Data Frame `nearest` now has an _id_, a _landmark name_, and a _distance_ in each row, but we need to merge the data with our original Data Frame if we want to show how a listing's price interacts with the distance to its nearest landmark. 
+
+```{r price_merge}
+
+rejoined <- cbus_airbnb %>% 
+  left_join(nearest, join_by(id == id)) %>% 
+  select(nearest_landmark, distance_miles, price_float)
+rejoined 
+
+```
+
+We could have also kept the price column in the Data Frame throughout each prior step, but I think it's good for my students to do lot of merges in order to get more comfortable with them over time.  
+
+## Visualize Relationship between Price and Distance 
+
+In the original lab, students were asked to train and test a simple regression model on the relationship between a listing's price and the distance to its nearest landmark. That seemed outside the scope of this workshop, but I didn't want to leave you hanging, so here's a visual preview of what a student might find! An especially ambitious student could even model each landmark as a fixed effect and determine which landmark proximity best predicts a higher price. 
+
+```{r visualize}
+
+ggplot(rejoined, aes(x = distance_miles, y = price_float, color = nearest_landmark)) + 
+  geom_point() + 
+  geom_smooth(method = "loess", color = "black") + 
+  labs(x = "Distance", y = "Price", title = "Distance and Price Comparison", color="Nearest Landmark")
+
+```
+
+__Note:__ In this version of the visualization, `loess` smoothing is used for the regression like instead of `lm`. This decision is important, because the result in `working_code.R` predicted that some Airbnb listings would be so far from a landmark that they would pay people to stay there! 
+
+## Concluding Remarks
+
+I hope you have found this use of `rMarkdown` informative. If you want to examine any of this code in greater detail, you're welcome to take more time and pull it apart line by line. It's not meant to be perfect (or even perfectly readable), but I do think it's appropriate to its primary audience and useful as a basic example of literate programming. The key takeaway of this version of the code (I hope) is that a practitioner can do _a lot_ to make their code easier to understand, rerun, and build on. In particular, I've tried to model the following practices:  
+
+1. Include all `library()` calls but no `install.packages()` statements
+2. Use the `source()` function to load custom (locally written) functions  
+3. Use relative file paths 
+4. Use newlines with indentation after `+` (geom chaining) and `%>%` (dplyr pipe) statements
+5. Make variable names relatively short and semantic (descriptive of what they are) 
+6. Use underscores to separate variable names (and camelCasing for object-oriented programming)
+7. Add visual polish to plots by customizing axis labels, legend labels, and plot title
+8. Follow a style book for things like preferring double-quotes to single-quotes and putting a space after any comma, or at least maintain internal consistency 
+9. Follow literate programming practices in comments and/or markdown blocks (https://annakrystalli.me/rrresearchACCE20/literate-programming-in-rmarkdown.html), documenting things like how code works, why a certain coding approach was chosen, any known drawbacks to a decision, etc. 
+10. Use markdown tags to make knitted HTML or PDF display in a more readable way
+11. Manipulate `Rmd` code chunk settings to display output previews after data transformations
+12. Use `.rproj` files and packages like `here` and `renv` to support reproducibility
