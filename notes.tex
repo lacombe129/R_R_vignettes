@@ -1,0 +1,245 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{hyperref} 
+
+\begin{document}
+
+\section*{Notes}
+
+Taken from introduction
+
+\begin{itemize}
+\item In the last ten to fifteen years, the credibility and reliability of quantitative research in both the natural and social sciences has been challenged on several grounds.  Give a brief sketch of the crisis, cite other works that describe it, outline the main dimensions of the crisis.
+These problems in quantitative research are mirrored in the public sphere, where constructive discourse is challenged by political polarization and misinformation–a higher order benefit of teaching reproducible quantitative research methods is that students might internalize concepts that make them better/more discerning judges of information they are presented with and more effectively communicate their own arguments/claims/findings (PLAN: move this to the discussion).
+
+\item What can we do as instructors?  We can point out that some progress has been made in the sphere of professional research–like journal data/code policies, pre-registration, results-free refereeing.  There have been some parallel developments in teaching–like Project TIER, Joe and Peter’s work, Nick’s work with Ben Baumer, Mine C-R et al.--but in quantitative methods instruction these issues are still often relegated to the status of special topics and omitted from the core curriculum.  This paper shows some things instructors can do to integrate R&R principles and methods into courses of all types.
+
+\item Fortunately, there are concrete things instructors can do to enhance their classes in ways that address these shortcomings-some are on the mechanical/technical side, some address broader principles/purposes/concepts.  So this paper is meant to help instructors understand those approaches so that they can adopt them in their own classes; our vision is that concepts and principles of reproducibility should become totally standard components of the research methods curriculum across quantitative fields.
+\end{itemize}
+
+Notes from 2024-11-25:
+
+- It would be great if some or all of these citations were the kinds of things we would assign to our students. (Accessible, engaging) 
+- NASEM, 2019 is a good one
+- 1,500 scientists lift the lid on reproducibility
+
+Ioannidis (2001) https://www.nature.com/articles/ng749z
+
+https://journals.sagepub.com/toc/ppsa/7/6
+
+
+Behavioral Priming: It's All in the Mind, but Whose Mind?
+Stéphane Doyen , Olivier Klein, Cora-Lise Pichon, Axel Cleeremans
+(2012) https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0029081
+
+Joe's suggestions for background that can be used on syllabi:
+- Baker https://doi.org/10.1038/533452a 1,500 scientists lift the lid is nice for its infographics
+- The Turing way book: https://book.the-turing-way.org/ 
+
+This one? https://www.nature.com/articles/nature.2015.18248
+Maybe this? Schooler, J. Metascience could rescue the ‘replication crisis’. Nature 515, 9 (2014). https://doi.org/10.1038/515009a
+
+https://retractionwatch.com/2016/09/26/yes-power-pose-study-is-flawed-but-shouldnt-be-retracted-says-one-author/
+
+https://retractionwatch.com/the-retraction-watch-leaderboard/top-10-most-highly-cited-retracted-papers/
+
+Notes from 2024-11-14:
+
+\begin{enumerate}
+\item we probably want to focus on replicability (and less on reproducibility): but it's important to define, distinguish, put on a continuum
+\item introduce replicability and reproducibility in section 1, define in more detail in section 2, define what's intended (replicability vs. reproducibility) in the learning outcomes for each of the sections in 3.1-3.6.
+\end{enumerate}
+
+XX example citation \citep{tier}
+
+XX here's another \cite{Sandve:2013} (the latter inline)
+XX Joe will draft 3.1 (reproducibility check) 
+XX Richard has offered to work on 3.2 research organization
+
+XX Nick will try to iterate on 3.1.
+
+XX Nick and Matt are on the hook for section 3.4
+XX Richard will put priority on writing text for the article about the reproducibility classroom activity--worry about completing the exercise after that.
+
+\section{Notes and Outline}
+
+\begin{itemize}
+    \item General structure
+    \begin{itemize}
+        \item Specific examples for a variety of courses
+        \item link to github repository
+    \end{itemize}
+\end{itemize}
+
+\textbf{For Each Vignette}
+
+\begin{enumerate}
+\item
+    Learning goals and outcomes
+\item 
+    Scaffolding/skills (emphasize what it paves the way for)
+\item 
+    Description of teaching 
+\item 
+    Assessment 
+\item 
+    Further resources 
+\end{enumerate}
+
+\textbf{Five Vignettes}
+
+1. Scott
+
+2. Scott / Joe
+
+3. Nick
+
+4. Matt 
+
+5. Joe / Matt
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  Rotation style final project
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}}
+  \item
+    Emphasis on final project in SDS 100\\
+  \item
+    Macalester had a similar course\\
+  \item
+    This one-credit-hour course uses a module-based approach to
+    introduce programming language and principles of reproducibility
+    independently from specific course such as introduction to stats,
+    etc. This would provide an opportunity for students across an
+    institution to learn some fundamental principles without needing to
+    commit to a full course. Additionally, this course is competency
+    based, meaning students must individually demonstrate competence\\
+  \end{enumerate}
+\item
+  Pre-registration/Plan of Analysis: incorporate in classes.
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}}
+  \item
+    Useful
+    \href{https://www.bitss.org/education/mooc-parent-page/week-2-publication-bias/detecting-and-reducing-publication-bias/p-curve-a-tool-for-detecting-publication-bias/}{video}
+    on the implication of p-hacking through p-curve identification\\
+  \end{enumerate}
+\item
+  Teaching Replication Crisis/P-Hacking
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}}
+  \item
+    Example of using generated data as well as real data to let students
+    try for themselves\\
+  \end{enumerate}
+\item
+  Peer Assessment/Self Assessment (sustainable assessment)
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}}
+  \item
+    Learning goals for peer assessment\\
+  \item
+    Learning goals for self-assessment\\
+  \end{enumerate}
+\item
+  
+
+
+  \begin{enumerate}
+  \def\labelenumii{\alph{enumii}}
+  \item
+    Activity where students evaluate papers for reproducibility\\
+  \item
+    Not necessarily running the replication, but evaluating whether
+    there is documentation (code book), data/code available, meta data,
+    look at the research design and see if it is specific\\
+  \item
+    Sources of information: PLOS One, Harvard Data Verse,
+  \end{enumerate}
+\end{enumerate}
+
+
+\textbf{Structure of the Paper}
+
+\begin{itemize}
+\item
+  Introduction
+
+  \begin{itemize}
+  \item
+    Framing not just for a data analysis course\\
+  \end{itemize}
+\item
+  Principles/Guidelines
+
+  \begin{itemize}
+  \item
+    Designed for any course, no coding needed, but coding can augment
+    these\\
+  \item
+    Highlight uncertainty in process
+
+    \begin{itemize}
+    \item
+      There is no right answer\\
+    \end{itemize}
+  \item
+    Active learning\\
+  \item
+    Scaffolding\\
+  \item
+    Reflection, ethics, communication\\
+  \end{itemize}
+\item
+  Vignettes
+
+  \begin{itemize}
+  \item
+    Frameworks
+
+    \begin{itemize}
+    \item
+      Specific examples for a variety of courses\\
+    \item
+    \end{itemize}
+  \end{itemize}
+\item
+  Conclusion
+
+  \begin{itemize}
+  \item
+    Forward-looking\\
+  \item
+    Returning/synthesis of principles by explicitly tying vignette
+    details to principles
+
+    \begin{itemize}
+    \item
+      Emphasize that this isn't a recipe for specific courses, but
+      rather a guide\\
+    \end{itemize}
+  \item
+    Link to Github repository/other place for supplemental course
+    materials\\
+  \item
+    Limitations
+
+    \begin{itemize}
+    \item
+      Measuring outcomes/success
+    \end{itemize}
+  \end{itemize}
+\end{itemize}
+
+textbf{Other thoughts}
+
+Emily Marshall as reader? (https://sites.google.com/site/emilycorinnemarshall/home/cv?authuser=0) 
+Follow up with Javier (Scott) and Richard (Nick)
+
+\end{document}
