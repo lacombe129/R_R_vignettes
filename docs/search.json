@@ -1,0 +1,65 @@
+[
+  {
+    "objectID": "module-template.html",
+    "href": "module-template.html",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "",
+    "text": "Teaching Materials » Modules » LESSON TITLE HERE (Template)"
+  },
+  {
+    "objectID": "module-template.html#motivation-and-learning-goals",
+    "href": "module-template.html#motivation-and-learning-goals",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Motivation and Learning Goals",
+    "text": "Motivation and Learning Goals\n\nGoal 1: …\nGoal 2: …\nGoal 3: …"
+  },
+  {
+    "objectID": "module-template.html#skill-scaffolding",
+    "href": "module-template.html#skill-scaffolding",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Skill Scaffolding",
+    "text": "Skill Scaffolding\nWhat do students need to know before starting the lesson, 2-5 sentences."
+  },
+  {
+    "objectID": "module-template.html#implementation",
+    "href": "module-template.html#implementation",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Implementation",
+    "text": "Implementation\n\nGuide to Included Materials\n\n\n\n\n\n\n\n\nType\nFile/Link\nDescription\n\n\n\n\nInstructor Handout\nfiles/instructor-handout.pdf\nNotes for pacing and assessment\n\n\nStudent Worksheet\nfiles/student-worksheet.qmd\nSteps and prompts for students\n\n\nSlides (optional)\nfiles/slides.pdf\nOverview figures and key questions\n\n\nDataset A\ndata/dataset-a.csv\nRaw measurements\n\n\nDataset B\ndata/dataset-b.csv\nCleaned subset\n\n\n\n\n\nPractical Tips\nParagraphs with detailed instructor notes. - Common misconceptions, pacing notes, facilitation prompts, equity & inclusion notes, accessibility."
+  },
+  {
+    "objectID": "module-template.html#assessment",
+    "href": "module-template.html#assessment",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Assessment",
+    "text": "Assessment\n\nFormative: clicker questions, think-pair-share prompts, checkpoint plots.\nSummative: rubric for final figure + 300-word memo (include criteria for accuracy, clarity, uncertainty, and decisions).\nAnswer keys / exemplars: where housed and access notes.\n\nParagraph(s) describing assessment suggestions."
+  },
+  {
+    "objectID": "module-template.html#variations",
+    "href": "module-template.html#variations",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Variations and Extensions",
+    "text": "Variations and Extensions\n\nLevel Variations\nParagraphs and notes on how the lesson could be modified to be more foundational or more advanced.\n###Follow-ups and links to other work Paragraphs and notes on how the learning outcomes from this lesson can be reinforced, repeated, or built-upon later in the course."
+  },
+  {
+    "objectID": "module-template.html#references",
+    "href": "module-template.html#references",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "References & Further Reading",
+    "text": "References & Further Reading\n\nCite datasets, software docs, and any scholarship you reference in this module."
+  },
+  {
+    "objectID": "module-template.html#acknowledgments",
+    "href": "module-template.html#acknowledgments",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\nAALAC Grant #####, R&R collaborators, etc."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Home",
+    "section": "",
+    "text": "Welcome! This is a test of the site theme.\n\n\n\n\n\n\nNote\n\n\n\nIf this callout has a rounded left border and headings look serifed, your theme is active."
+  }
+]

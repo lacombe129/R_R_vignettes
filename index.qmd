@@ -1,0 +1,11 @@
+---
+title: "Home"
+---
+
+Welcome! This is a test of the site theme.
+
+::: callout-note
+If this callout has a rounded left border and headings look serifed, your 
+theme is active.
+:::
+

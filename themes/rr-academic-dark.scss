@@ -1,0 +1,142 @@
+/*=========================================================
+  RR Academic — Dark Theme (Quarto layered SCSS)
+  Place at: themes/rr-academic-dark.scss
+  Uses layer boundaries required by Quarto.
+=========================================================*/
+
+/*-- scss:defaults --*/
+/* Bootstrap / Quarto tokens overridden BEFORE Bootstrap compiles */
+
+$font-sans: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, 
+Arial, "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol", sans-serif 
+!default;
+$font-serif: "Crimson Text", Georgia, "Times New Roman", Times, serif 
+!default;
+
+/* Dark palette tuned to the same family as the light theme */
+$brand-ink:   #e5ecf4 !default;  /* primary text on dark */
+$brand-navy:  #7bb0ff !default;  /* primary accent */
+$brand-royal: #9cc4ff !default;  /* links/hover */
+$brand-gold:  #e6b85c !default;  /* highlight/accent */
+$gray-1:      #0e1420 !default;  /* page bg */
+$gray-2:      #1b2433 !default;  /* separators / cards */
+$gray-3:      #9aa7bf !default;  /* muted text */
+
+/* Bootstrap base */
+$body-bg: $gray-1 !default;
+$body-color: $brand-ink !default;
+
+$font-family-sans-serif: $font-sans !default;
+$headings-font-family:   $font-serif !default;
+
+$primary:   $brand-navy !default;
+$secondary: $brand-royal !default;
+$info:      #93c5fd !default;
+$success:   #7fd787 !default;
+$warning:   #ffbb55 !default;
+$danger:    #ff8a7a !default;
+
+$link-color: $secondary !default;
+$link-hover-color: $primary !default;
+
+$border-radius: .6rem !default;
+$border-radius-lg: .8rem !default;
+$border-radius-sm: .4rem !default;
+
+/* Tables / code */
+$table-striped-bg: #101726 !default;
+$code-color: #b3d4ff !default;
+$pre-color:  $brand-ink !default;
+
+
+/*-- scss:rules --*/
+/* Regular CSS rules applied AFTER Bootstrap/Quarto */
+
+/* Title block */
+.quarto-title-block .title { font-weight: 700; margin-bottom: .25rem; }
+.quarto-title-block .subtitle { color: $secondary; font-weight: 600; }
+
+/* Headings + section rules */
+h1, h2, h3, h4 { letter-spacing: .1px; }
+h2 { border-bottom: 2px solid $gray-2; padding-bottom: .2rem; margin-top: 
+2rem; }
+
+/* Comfort width on huge screens */
+@media (min-width: 1400px) {
+  main.content { max-width: 1000px; }
+}
+
+/* Breadcrumbs */
+.quarto-title-breadcrumbs, .breadcrumbs {
+  font-size: .95rem; margin: .25rem 0 1rem; color: $gray-3;
+}
+.breadcrumbs a { color: $secondary; text-decoration: none; }
+.breadcrumbs a:hover { text-decoration: underline; }
+
+/* Left TOC rail */
+#TOC, .toc-actions {
+  border-right: 1px solid $gray-2; padding-right: 1rem;
+}
+nav[role="doc-toc"] .toc-active > a { color: $primary; font-weight: 600; }
+
+/* Callouts */
+.callout {
+  border-left-width: 5px;
+  border-radius: 10px;
+  background: #0f1725;
+  box-shadow: 0 1px 2px rgba(0,0,0,.4);
+}
+.callout>.callout-header {
+  background: linear-gradient(90deg, rgba(123,176,255,.12), transparent);
+  font-weight: 600;
+}
+.callout-note    { border-left-color: $secondary; }
+.callout-success { border-left-color: $success; }
+.callout-warning { border-left-color: $warning; }
+
+/* “Quick Facts” card */
+.quick-facts {
+  background: linear-gradient(180deg, #0f1725, #0b1220);
+  border: 1px solid $gray-2;
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,.4);
+  margin: 1rem 0 2rem;
+}
+.quick-facts h3 { margin-top: 0; border: 0; }
+.quick-facts dl { margin: 0; display: grid; grid-template-columns: 180px 1fr; 
+gap: .25rem .75rem; }
+.quick-facts dt { color: $gray-3; font-weight: 600; }
+.quick-facts dd { margin: 0; }
+
+/* Tables */
+table { border: 1px solid $gray-2; border-radius: 10px; overflow: hidden; }
+thead { background: #11192a; }
+th, td { padding: .6rem .8rem; }
+tbody tr:nth-child(even) { background: $table-striped-bg; }
+
+/* Lists + details */
+ul>li { margin-bottom: .35rem; }
+details>summary { cursor: pointer; font-weight: 600; color: $secondary; }
+
+/* Code blocks */
+pre, code { border-radius: 8px; }
+
+/* Accents */
+hr { border: 0; border-top: 2px solid $gray-2; margin: 2rem 0; }
+blockquote {
+  border-left: 4px solid $brand-gold;
+  background: #241c07;
+  padding: .75rem 1rem;
+}
+
+/* Buttons */
+.button-like a, .btn, a.btn {
+  display: inline-block; padding: .5rem .85rem;
+  border-radius: 999px; border: 1px solid $primary;
+  color: $primary; text-decoration: none;
+}
+.button-like a:hover, .btn:hover, a.btn:hover {
+  background: $primary; color: #0b1420 !important;
+}
+

@@ -1,0 +1,31 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Reproducibility and Replication Teaching Modules"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - text: Modules
+        menu:
+          - href: module-template.qmd
+            text: Module Template
+  page-footer:
+    left: "© 2025 Your Name"
+    right: "Built with Quarto"
+
+format:
+  html:
+    page-layout: full
+    toc: true
+    toc-location: left
+    number-sections: false
+    theme:
+      light: themes/rr-academic.scss
+      dark: themes/rr-academic-dark.scss
+
+include-in-header:
+  - fonts.html
+
