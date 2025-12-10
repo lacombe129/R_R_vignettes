@@ -9,6 +9,8 @@
 5. [Appraising and Assessing Dubious Research Practices](Assessing-Dubious-Research)
 6. [Reflective Assessment](Reproducible-Code-Self-Assessment)
 
+Sample classroom activities will be detailed using GitHub Pages (under development). Pages are stored in the /docs folder and the style for the pages in the /themes folder.
+
 To cite the work contained in this repository, please cite its corresponding [OSF project](https://doi.org/10.17605/OSF.IO/JQNHG), which also contains a draft manuscript.
 
 
