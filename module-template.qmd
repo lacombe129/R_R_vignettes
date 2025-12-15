@@ -62,7 +62,7 @@ Course level, where this fits in the term, class size, modality (in-person/onlin
 </div>
 
 
-## Skill Scaffolding
+## Prerequisites
 What do students need to know before starting the lesson, 2-5 sentences. 
 
 
