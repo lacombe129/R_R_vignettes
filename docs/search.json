@@ -61,5 +61,138 @@
     "title": "Home",
     "section": "",
     "text": "Welcome! This is a test of the site theme.\n\n\n\n\n\n\nNote\n\n\n\nIf this callout has a rounded left border and headings look serifed, your theme is active."
+  },
+  {
+    "objectID": "Rotation/module_rotation.html",
+    "href": "Rotation/module_rotation.html",
+    "title": "Rotation Based Classroom Activity",
+    "section": "",
+    "text": "Teaching Materials » Modules » LESSON TITLE HERE (Template)"
+  },
+  {
+    "objectID": "Rotation/module_rotation.html#motivation-and-learning-goals",
+    "href": "Rotation/module_rotation.html#motivation-and-learning-goals",
+    "title": "Rotation Based Classroom Activity",
+    "section": "Motivation and Learning Goals",
+    "text": "Motivation and Learning Goals\n\nGoal 1: …\nGoal 2: …\nGoal 3: …"
+  },
+  {
+    "objectID": "Rotation/module_rotation.html#prerequisites",
+    "href": "Rotation/module_rotation.html#prerequisites",
+    "title": "Rotation Based Classroom Activity",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nWhat do students need to know before starting the lesson, 2-5 sentences."
+  },
+  {
+    "objectID": "Rotation/module_rotation.html#implementation",
+    "href": "Rotation/module_rotation.html#implementation",
+    "title": "Rotation Based Classroom Activity",
+    "section": "Implementation",
+    "text": "Implementation\n\nGuide to Included Materials\n\n\n\n\n\n\n\n\nType\nFile/Link\nDescription\n\n\n\n\nInstructor Handout\nfiles/instructor-handout.pdf\nNotes for pacing and assessment\n\n\nStudent Worksheet\nfiles/student-worksheet.qmd\nSteps and prompts for students\n\n\nSlides (optional)\nfiles/slides.pdf\nOverview figures and key questions\n\n\nDataset A\ndata/dataset-a.csv\nRaw measurements\n\n\nDataset B\ndata/dataset-b.csv\nCleaned subset\n\n\n\n\n\nPractical Tips\nParagraphs with detailed instructor notes. - Common misconceptions, pacing notes, facilitation prompts, equity & inclusion notes, accessibility."
+  },
+  {
+    "objectID": "Rotation/module_rotation.html#assessment",
+    "href": "Rotation/module_rotation.html#assessment",
+    "title": "Rotation Based Classroom Activity",
+    "section": "Assessment",
+    "text": "Assessment\n\nFormative: clicker questions, think-pair-share prompts, checkpoint plots.\nSummative: rubric for final figure + 300-word memo (include criteria for accuracy, clarity, uncertainty, and decisions).\nAnswer keys / exemplars: where housed and access notes.\n\nParagraph(s) describing assessment suggestions."
+  },
+  {
+    "objectID": "Rotation/module_rotation.html#variations",
+    "href": "Rotation/module_rotation.html#variations",
+    "title": "Rotation Based Classroom Activity",
+    "section": "Variations and Extensions",
+    "text": "Variations and Extensions\n\nLevel Variations\nParagraphs and notes on how the lesson could be modified to be more foundational or more advanced.\n###Follow-ups and links to other work Paragraphs and notes on how the learning outcomes from this lesson can be reinforced, repeated, or built-upon later in the course."
+  },
+  {
+    "objectID": "Rotation/module_rotation.html#references",
+    "href": "Rotation/module_rotation.html#references",
+    "title": "Rotation Based Classroom Activity",
+    "section": "References & Further Reading",
+    "text": "References & Further Reading\n\nCite datasets, software docs, and any scholarship you reference in this module."
+  },
+  {
+    "objectID": "Rotation/module_rotation.html#acknowledgments",
+    "href": "Rotation/module_rotation.html#acknowledgments",
+    "title": "Rotation Based Classroom Activity",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\nAALAC Grant #####, R&R collaborators, etc."
+  },
+  {
+    "objectID": "Rotation/final_project.html",
+    "href": "Rotation/final_project.html",
+    "title": "Project",
+    "section": "",
+    "text": "As a “capstone” project for the course, you will work in small groups to produce a report documenting a data set of your group’s choosing. This report will draw on your data wrangling, visualization, summarization and ethics knowledge built throughout the course. Importantly, this report must be reproducible, meaning that another person must be able to easily recreate your report based on the raw materials you provide without modifying those materials.\nThe report that your group produces will be the result of a structured, asynchronous brainstorming activity that takes place in six phases. The labor for the first five phases technically takes place individually; however, team work is still crucial to your group’s success, because your individual work in each phase of the project builds directly on your group mate’s work from a previous phase. This means that groups where each person engages consistently over time will be the most successful.\nThe timeline, requirements, and logistics for each phase of the project are described below.\n\nPhase 1: Preparation (Weeks 4-6)\nPhase 2: Description (Weeks 7-9)\nPhase 3: Summarization (Weeks 10-11)\nPhase 4: Visualization (Week 12-13)\nPhase 5: Ethics and Citations (Week 14)\nPhase 6: Final Report (Weeks 15)"
+  },
+  {
+    "objectID": "Rotation/final_project.html#overview",
+    "href": "Rotation/final_project.html#overview",
+    "title": "Project",
+    "section": "",
+    "text": "As a “capstone” project for the course, you will work in small groups to produce a report documenting a data set of your group’s choosing. This report will draw on your data wrangling, visualization, summarization and ethics knowledge built throughout the course. Importantly, this report must be reproducible, meaning that another person must be able to easily recreate your report based on the raw materials you provide without modifying those materials.\nThe report that your group produces will be the result of a structured, asynchronous brainstorming activity that takes place in six phases. The labor for the first five phases technically takes place individually; however, team work is still crucial to your group’s success, because your individual work in each phase of the project builds directly on your group mate’s work from a previous phase. This means that groups where each person engages consistently over time will be the most successful.\nThe timeline, requirements, and logistics for each phase of the project are described below.\n\nPhase 1: Preparation (Weeks 4-6)\nPhase 2: Description (Weeks 7-9)\nPhase 3: Summarization (Weeks 10-11)\nPhase 4: Visualization (Week 12-13)\nPhase 5: Ethics and Citations (Week 14)\nPhase 6: Final Report (Weeks 15)"
+  },
+  {
+    "objectID": "Rotation/final_project.html#phase1",
+    "href": "Rotation/final_project.html#phase1",
+    "title": "Project",
+    "section": "Phase 1: Preparation (Weeks 4-6)",
+    "text": "Phase 1: Preparation (Weeks 4-6)\nDuring this preparatory phase, you will have two tasks:\n\nFinding a group\n\nYou should find two other classmates from your section of SDS 100 to form a group with, in order to make groups of three\nIf the number of students enrolled in your section of SDS 100 is not divisible by three, you may be able to form a group of two, group of four, or work with a student enrolled in another section. If you are unable to form a group of three from the pool of students enrolled in your section of SDS 100, please consult your instructor.\nWhen you have formed your group, please fill out the Final Project Group Form, which is linked on the Moodle page.\n\nFinding a data set\n\nEach member of the group will find and contribute a data set suitable for use during the remaining phases\nThe criteria for suitable data sets is explained in the Data Set Criteria section below.\nWhen you have chosen a suitable data set, please fill out the Submit your Project Data quiz, which is linked on the Moodle page.\n\n\n\nData Set Criteria\nThe data need to be downloadable (i.e., the data may not exist only in an  package such as openintro or moderndive), and cannot be data used in SDS 100 or your companion class.\nThe data must also fit the following characteristics:\n\nThere must be at least 4 variables total (not including any ID variables)\n\nThere must be least 2 categorical variables, with at least 2 groups in each categorical variable\n\nThere should not be severe imbalance in the number of observations in each group. For example, you should not have one group of data with 49 observations, and a 1 observation for the second group.\n\nThere must be least 2 numeric variables\n\nEach variable must have least 50 valid observations (i.e., there must be at least 50 observations after excluding NA values), and no more than 10,000 observations.\n\nYou can use the SDS 100 Data Checker to help check whether your data meet the necessary criteria. Because data comes in so many different forms, an automated tool like this won’t catch all possible problems, and some of the things it warns you about might not be an issue, but it’s a good starting point.\nThink about the data selection phase as an opportunity reorient the curriculum towards your interests or the interests of Smithies in general. There are a variety of metrics that you could use to explore and select data. Below are a few possible approaches (though there are many more ways to think about this!):\n\nYou might select a data set that has a variable with a “nice” distribution or a “not nice” distribution\nYou might choose a large data set that illuminates data wrangling techniques like filtering and selecting\nYou might select a data set from a discipline that you didn’t see represented in the class already\nYou might look for a data set with problematic ethical considerations or with poor documentation\n\nYou are welcome to use data from any source that meets the above requirements. Here are a few resources to get you started:\n\nFiveThirtyEight makes the data they use in their articles publicly available.\nThe UCI Machine Learning Repository has a collection of data sets used in machine learning.\nKaggle has a large collection of user-uploaded data sets, often used in competitions hosted on the website.\n\n\n\nFinishing Phase 1\nWhen you have formed a group of three, you should fill out the “Final project group form” on the Moodle page. You should form a group and fill out the form before the start of Week 6.\nWhen you believe you have found a suitable data set for the project, you should seek approval to use these for these data by filling the “Final Project Data” form on Moodle.\nYou expected to submit a data set for approval during Week 4. If your data set is approved, you are done with this phase of the project. If your data set is not suitable, you have a second opportunity to submit a data set for approval during Week 6. If your second data set is also not suitable, then you will be assigned a data set to use."
+  },
+  {
+    "objectID": "Rotation/final_project.html#phase2",
+    "href": "Rotation/final_project.html#phase2",
+    "title": "Project",
+    "section": "Phase 2: Data Description (Weeks 7-9)",
+    "text": "Phase 2: Data Description (Weeks 7-9)\nDuring this phase of the project, you will write an introduction to your data that acquaints a reader with its topic, basic features, and its context. Your description should be written in a Quarto document, and should focus on addressing the main question: What is the data about?\nAs you address this main question, there are some specific things you should do:\n\nYou should describe the source of the data, and how data were generated. For example, are the data from a survey? a laboratory experiment? a government report?\n\nBe sure to include a hyperlink to the location where the data were retrieved from.\n\nYou should explain what was the main research question or motivation was for collecting and assembling these data\nYou should identify the unit of observation. In other words, explain what a row represents in your data.\nA good way to help your reader understand this is to pick a single row in your data set, and interpret it. For example, the first row in your data might represent a 21-year-old female college student living in Northampton, Massachusetts with 15 years of education and who prefers dogs over cats.\nUse dplyr::select() to choose between four and 10 variables that you think are the most essential and/or most interesting variables in the data to analyze.\n\nIf your data already has between 4 and 10 variables, and you don’t want to discard any, skip this step.\n\nUse dplyr::filter() (or other functions) to discard rows in your data sets that you don’t want to include in your analysis\n\nFor example, missing values, or a group of data with only 1 or 2 observations\n\nUse the dplyr::glimpse() function to give the reader an overview of your data set’s content.\nWrite a bulleted list naming and describing each variable.\n\n\nFinishing Phase 2\nTo complete Phase 2, you should first make sure your Quarto document renders into an HTML document. Then, you should submit your rendered HTML document, your Quarto document and any necessary data files to the Final Project Phase 2 assignment on Moodle before the start of Week 10.\nFinally, you should send your Quarto document and any necessary data files to the next group member in your rotation schedule before the start of Week 10. Be sure to consult the project rotation schedule on Moodle to double check you are sending your document to the right person, and to double check who you should expect to receive a document from."
+  },
+  {
+    "objectID": "Rotation/final_project.html#phase3",
+    "href": "Rotation/final_project.html#phase3",
+    "title": "Project",
+    "section": "Phase 3: Summarization (Weeks 10-11)",
+    "text": "Phase 3: Summarization (Weeks 10-11)\nTo start Phase 3, you’ll receive a Quarto document from one of your group members. This document should already contain a general description of the data, so be sure to read it, and note any questions that you have.\nIn this phase, your task will be creating tables of summary statistics. You should create at least three summary tables, and at least one of these tables should be multivariate (i.e., the summary should incorporate at least two variables).\nFor each table your create, write at least one sentence explaining what you can learn about about the data based on these statistics. Be sure that all the tables you create are cross-referenced in your writing, just like you learned how to do in Lab 10.\n\nFinishing Phase 3\nTo complete Phase 3, you should first make sure the Quarto document renders into an HTML document. Then, you should submit the rendered HTML document, the Quarto document and any necessary data files to the Final Project Phase 3 assignment on Moodle before the start of Week 12.\nFinally, you should send this Quarto document and any necessary data files to the next group member in your rotation schedule before the start of Lab 11. Be sure to consult the project rotation schedule on Moodle to double check you are sending your document to the right person, and to double check who you should expect to receive a document from."
+  },
+  {
+    "objectID": "Rotation/final_project.html#phase4",
+    "href": "Rotation/final_project.html#phase4",
+    "title": "Project",
+    "section": "Phase 4: Visualization (Weeks 12)",
+    "text": "Phase 4: Visualization (Weeks 12)\nTo start Phase 4, you’ll receive a Quarto document from one of your group members. This document should already contain a general description of the data, and several tables of summary statistics. Be sure to review these sections, and note any questions that you have.\nIn this phase, your task will be creating data visualizations. You should create at least four visualizations. Among your visualizations, you should have at least two univariate visualization (one utilizing a categorical variable, the other utilizing a numeric variable), at least one bivariate visualization, and at least one trivariate visualization.\nFor each of your plots write 2–3 sentences describing the plots. Your descriptions should discuss the variables used, and what can be learned about the data from the plot. Be sure that all of your figures are cross-referenced in your writing, just like you learned how to do in Lab 10.\n\nFinishing Phase 4\nTo complete Phase 4, you should first make sure the Quarto document renders into an HTML document. Then, you should submit the rendered HTML document, the Quarto document and any necessary data files to the Final Project Phase 4 assignment on Moodle before the start of Week 13.\nFinally, you should send this Quarto document and any necessary data files to the next group member in your rotation schedule before the start of Week 14. Be sure to consult the project rotation schedule on Moodle to double check you are sending your document to the right person, and to double check who you should expect to receive a document from."
+  },
+  {
+    "objectID": "Rotation/final_project.html#phase5",
+    "href": "Rotation/final_project.html#phase5",
+    "title": "Project",
+    "section": "Phase 5: Ethics and Citations (Week 13)",
+    "text": "Phase 5: Ethics and Citations (Week 13)\nTo start Phase 5, you’ll receive a Quarto document from one of your group members. This document should already contain a general description of the data, several tables of summary statistics, and several data visualizations. Be sure to review these sections, and note any questions that you have.\nFirst, add at least one bibliographic citation to your document. Note that to do this you will need to:\n\nCreate a BibTeX database with at least one piece of scholarship\nCreate at least one reference in the text\n\nNext, write a brief statement concerning ethical issues surrounding your data .\n\nFirst, write a few sentences about the data’s provenance. Where did this data come from? Who created/sourced it and for what purpose?\nSecond, list a few potential uses for this data (either realized in existing work or not-yet-realized)\nLastly, write about any potential harmful impacts that you can imagine could come from using this data\n\nFinally, take a few minutes to consider how this data set fits into the curricular goals of SDS 100. Then, in 2-3 sentences, explain where you see this data set fitting into SDS 100 curriculum. Be specific in your recommendation, listing the particular topic(s) and lab number(s) that you feel this data set would most effectively synergize with.\n\nCompleting Phase 5\nTo complete Phase 5, check all of the formatting from the previous weeks, including:\n\nLists\nUse of bold and italics\nTables\nFigures\nVariable names\nCross-references\nSpelling, grammar, and paragraph breaks\n\nNext, make sure the Quarto document renders into an HTML document. Then, you should submit the rendered HTML document, the Quarto document and any necessary data files to the Final Project Phase 5 assignment on Moodle before the start of Week 14.\nSince the rotation phase of the project has ended, you do not need to rotate the Quarto document to another group member."
+  },
+  {
+    "objectID": "Rotation/final_project.html#phase6",
+    "href": "Rotation/final_project.html#phase6",
+    "title": "Project",
+    "section": "Phase 6: Final Report (Finals Period)",
+    "text": "Phase 6: Final Report (Finals Period)\nDuring the final lab meeting of the semester, your group will meet and choose one of the three data sets your have reported on to write about for your final report. Once your group has chosen a data set, your group will collaborate on a final report that documents and describes the data, and makes an argument for using these data for a future SDS 100 lab activity. This report should be a polished, narrative document that weaves together prose, code, and output (like figure and tables) to build it’s argument.\nYour final report should include at least the following features\n\nA rich written introduction to the data’s purpose, source, and context.\nAt least one embedded image (not counting data graphics)\nAn overview of the data set’s content, including a glimpse of the data and detailed descriptions of the variables\nAt least two summary tables of the data that are interpreted and cross-referenced in writing\nAt least two visualizations of the data, one of which must be at least bivariate. All visualizations should be interpreted and cross-referenced in writing\nA discussion of the data’s impact and what specific contributions this data set would make to a specific SDS 100 lab\nA discussion of any meaningful limitations and ethical considerations of the data\nAt least one BibTex formatted in-text citation, and a bibliography section for your references created using BibTex\n\nIdeally, these components will be easy to create, because you have been addressing these same topics throughout phases 2, 3, 4 and 5! Be sure to look at the gallery of past reports for inspiration!\nYour report should be well formatted, legible, and coherent. For example, writing should be formatted paragraphs (not as section headers), and unrecorded lists should be formatted into bullet points using markdown, and URLs should be included as hyperlinked text.\nA few notes of technical advice:\n\nWhen importing data from local files, use relative file paths in your code. This will make the code more portable between your group member’s computers.\nMake sure that the name of everyone in your group appears in the author: field in the YAML header! When a report has multiple authors, you can list them using the following formatting in your YAML header:\nauthor:   \n  - Reg I. Gigas\n  - Drag A. Pult\n  - Art I. Cuno\nBe sure to render your document as a self-contained HTML file. To accomplish this, change the default format: html in your document’s YAML header to\nformat:\n  html:\n    embed-resources: true\n\n\nCompleting Phase 6\nYour group’s final report should be submitted on Moodle before 3pm ET on Friday, May 9th. When submitting your project on Moodle, be sure to submit:\n\nYour rendered HTML file\nYour Quarto document\nYour bibtex references file\nYour data file (if necessary to render the Quarto document)\n\nIf you are importing data from a Google Sheet, make sure it is accessible by your instructor.\n\n\nOnly one person needs to submit these documents for your whole group.\n\nReflection on the Project\nAfter the final report is submitted, you should also complete the Peer and Self Reflection assignment on Moodle. This assignment should be completed before 11:59pm ET on Thursday, May 8th.\nThis assignment will ask you to reflect on how your team worked together over the course of the final project. Your responses on this assignment will be one of several factors in helping me that determine whether you earn project participation token."
+  },
+  {
+    "objectID": "Rotation/final_project.html#the-project-rotation-schedule",
+    "href": "Rotation/final_project.html#the-project-rotation-schedule",
+    "title": "Project",
+    "section": "The Project Rotation Schedule",
+    "text": "The Project Rotation Schedule\nAt the end of Phase 2, Phase 3, and Phase 4, you will “rotate” your work between group members. This means that at the start of Phase 3, Phase 4, and Phase 5, your work will pick up where another group member’s has left off in the previous phase, and another group member’s work will start where you left off in the previous phase.\nThe pattern of rotating documents between group members is easiest to explain using an example. Imagine that you have the following group of 3 students\n\nReg I. Gigas, who chose a data set about archaeological excavations of ancient ruins\nDrag A. Pult, who chose a data set about paranormal encounters\nArt I. Cuno, who chose a data set about climate change\n\nThe table below tracks which data set each student will work on during Phases 2, 3, 4, and 5 of the project\n\n\n\n\n\n\n\n\n\n\nReg’s Data\nDrag’s Data\nArt’s Data\n\n\n\n\nPhase 2 (Describing)\nReg I. Gigas\nDrag A. Pult\nArt I. Cuno\n\n\nPhase 3 (Summarizing)\nArt I. Cuno\nReg I. Gigas\nDrag A. Pult\n\n\nPhase 4 (Visualizing)\nDrag A. Pult\nArt I. Cuno\nReg I. Gigas\n\n\nPhase 5 (Ethics and Impact)\nReg I. Gigas\nDrag A. Pult\nArt I. Cuno\n\n\n\nConsider Reg. I Gigas as an example. During Phase 2, Reg works on describing their own data. At the end of Phase 2, the first rotation occurs. Reg passes all their materials (e.g., their data, their Quarto document, and their image) to the person below them in the “Drag’s Data” column (Art I. Cuno) and receives materials from Drag A. Pult. This means that during Phase 3, Art will work on summarizing the data they receive from Reg, picking up where Reg left off. And, Reg will work on summarizing the data they receive from Drag, picking up where Drag left off.\nAt the end of Phase 3, this process repeats again: Reg passes their work to to the person below them (Art), Drag passes their work to the person below them (Reg) and Art passes their work to the person below them (Reg). This means that during Phase 4, Reg picks up where Art left off (who was summarizing Drag’s data), and works on visualizing Drag’s data.\nAt the end of Phase 4, the documents rotate one last time; Reg passes their work to Art, Drag passes their work to Art, and Art passes their work to Reg. This means that during Phase 5, Reg once again works on their own data. After Phase 5, there are no more rotations."
+  },
+  {
+    "objectID": "Rotation/final_project.html#gallery",
+    "href": "Rotation/final_project.html#gallery",
+    "title": "Project",
+    "section": "Gallery",
+    "text": "Gallery\nThe following projects were submitted in previous semesters and received full credit. You may find them helpful as guides, but please do not interpret them as Platonic ideals of an SDS 100 project! Each of these projects could easily be improved upon.\n\nFood Composition\nThe Lasting Legacy of Redlining"
+  },
+  {
+    "objectID": "module-template.html#prerequisites",
+    "href": "module-template.html#prerequisites",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nWhat do students need to know before starting the lesson, 2-5 sentences."
   }
 ]

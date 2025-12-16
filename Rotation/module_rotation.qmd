@@ -1,0 +1,133 @@
+---
+title: "Rotation Based Classroom Activity"
+subtitle: "{{< Rotation Project >}}"
+authors:
+  - name: "{{< Scott J LaCombe >}}"
+date: "{{< 16 December >}}"
+year: "2025"
+
+# ---- Custom metadata you reference with {{< meta ... >}} ----
+module_title: "Rotation Based Classroom Activity"
+short_tagline: "Guide to Rotation Based Classroom Project"
+author_1: "Scott J LaCombe"
+version: "v1.0"
+estimated_time: "Instruction over 4-6 weeks, 1-2 lab sessions"
+level: "Introductory, Undergraduate Class"
+keywords: "reproducibility, data visualization, file paths, working directories, collaboration"
+prerequisites: "None- reccomended for introductory courses"
+software: "R (tidyverse)"
+data_sources: "Students Choose"
+license_note: "CC BY 4.0 (adjust as needed)"
+acknowledgments: "AALAC Grant #####, R&R collaborators, etc."
+contact: "slacombe@missouri.edu"
+---
+
+::: breadcrumbs
+<a href="./index.html">Teaching Materials</a> » <a href="#">Modules</a> » {{< meta module_title >}}
+:::
+
+::: callout-note
+## Overview
+
+As a "capstone" project for the course, students will work in small groups to produce a report documenting a data set of their group's choosing. Their job is to identify a dataset and then summarize and visualize key elements of the data in a written report. Each group member selects a separate dataset, but each stage of the project involves sending their data and code to another group member, who completes the next task. The report is gradually completed over several weeks, with students completing one task at each phase and then sending the work to another student. After 5 weeks, all group members will have seen and shared everyone's reports. By sending the report to other students and requiring that all code runs on someone else's computer, students can actively learn about file paths and working directories, as well as software dependencies.
+:::
+
+::: callout-success
+## Motivation and Learning Goals
+
+-   Goal 1: Learn how to write code and organize data in a way that is reproducible.
+-   Goal 2: Understand how to collaborate with others on a project involving data analysis.
+-   Goal 3: Learn how to critically evaluate and explore sources of data.
+:::
+
+::: callout-warning
+## Context for Use
+
+This project is designed for introductory courses that use a programming language. While it is written for R users, it could easily be adapted to other software as well. It is mostly asynchronous, and could be used for in-person or online learning. Group sizes can vary from three to five. It is designed to take place over 6 weeks, with work completed at home with the exception of week 6, which would require a lab day for group discussion: {{< meta estimated_time >}}.
+:::
+
+::: quick-facts
+<h3>Quick Facts</h3>
+
+<dl>
+
+<dt>Version</dt>
+
+{{< meta version >}}
+
+<dt>Level</dt>
+
+{{< meta level >}}
+
+<dt>Time</dt>
+
+{{< meta estimated_time >}}
+
+<dt>Keywords</dt>
+
+{{< meta keywords >}}
+
+<dt>Prerequisites</dt>
+
+{{< meta prerequisites >}}
+
+<dt>Data Sources</dt>
+
+{{< meta data_sources >}}
+
+<dt>Software</dt>
+
+{{< meta software >}}
+
+<dt>Contact</dt>
+
+{{< meta contact >}}
+
+<dt>License</dt>
+
+{{< meta license_note >}}
+
+</dl>
+:::
+
+## Prerequisites
+
+No prerequisites are required, this project is designed for introductory classes. However, it is suggested that students first learn the basics of R (or whatever software they are using) before starting the project. It is designed to take place in the second half of the semester after students have learned the principles of loading data, cleaning it, and visualizing it.
+
+## Implementation
+
+### Guide to Included Materials {#materials}
+
+| Type | File/Link | Description |
+|-------------------|-------------------------|----------------------------|
+| Instructor Handout | `files/final_project.pdf` | Overview of the timeline and project specifics |
+
+### Practical Tips {#tips}
+
+-   The most challenging part of this assignment is keeping group members on schedule. Completion of the next phase of the project depends on another student's completion of the first phase. 
+
+-   Students can choose any dataset they would like to analyze, but we advise keeping sample sizes of at least 50 and below 1,000 observations to make visualization easier. 
+
+
+## Assessment {#assessment}
+
+Grades are assigned into two categories; project engagement and final report. To earn the project engagement satisfactory grade, each phase of the project must be able to be executed without serious problems on at least 3 of the first 5 project phases. The examples of serious problems include no submission; the content of the submission doesn’t match the expectations; and peers indicate that you didn’t contribute equally.
+
+To earn the final report satisfactory grade, groups as a whole will submit a data analysis report. You can earn your final report token by making sure your group’s data analysis report meets all content and formatting expectations, and is able to be fully reproduced by the instructors without editing any of its contents.
+
+
+## Variations and Extensions {#variations}
+
+### Level Variations
+
+For more advanced courses, students could be required to collobrate on a research project rather than summarizing existing data. The reports could grow (or shrink) to include more or less phases depending on the time constraints and student level. 
+
+###Follow-ups and links to other work Paragraphs and notes on how the learning outcomes from this lesson can be reinforced, repeated, or built-upon later in the course.
+
+## References & Further Reading {#references}
+
+
+
+## Acknowledgments {#acknowledgments}
+
+{{< Thank you to the Statistical and Data Sciences Program at Smith College for collaboration on the developing this project.>}}
