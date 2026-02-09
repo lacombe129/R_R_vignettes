@@ -18,83 +18,72 @@ contact: "you@example.edu"
 ---
 
 ::: breadcrumbs
-<a href="./index.html">Teaching Materials</a> » <a href="#">Modules</a> » {{< meta module_title >}}
+<a href="./index.html">Teaching Materials</a> » <a href="#">Modules</a> » Rotation-Based Classroom Project
 :::
 
 ::: callout-note
 ## Overview
 
-Brief overview of the module's narrative. Explain what students will explore and produce. Keep this \~4–6 sentences.
+This module introduces students to a rotation-based research workflow designed to highlight reproducibility, uncertainty, and analytical decision-making. Students work with shared data, rotate roles within research teams, and reflect on how analytic choices affect results. The project emphasizes transparent documentation and iterative improvement. By the end of the module, students will have produced a reproducible analysis and reflected on research practices.
 :::
 
 ::: callout-success
 ## Motivation and Learning Goals
 
--   Goal 1: …
--   Goal 2: …
--   Goal 3: …
+- Understand how analytic decisions shape research findings  
+- Practice reproducible data analysis and documentation  
+- Develop skills in collaborative and rotating research roles  
 :::
 
 ::: callout-warning
 ## Context for Use
 
-Course level, where this fits in the term, class size, modality (in-person/online/hybrid), estimated time: {{< meta estimated_time >}}.
+This module is designed for upper-division undergraduate courses and works well in methods, data analysis, or research design classes. It can be implemented in in-person, hybrid, or online formats. Estimated time commitment is **5–6 class periods**.
 :::
 
 ::: quick-facts
 <h3>Quick Facts</h3>
 
 <dl>
+  <dt>Version</dt>
+  <dd>v1.0</dd>
 
-<dt>Version</dt>
+  <dt>Level</dt>
+  <dd>Upper-division undergraduates</dd>
 
-{{< meta version >}}
+  <dt>Time</dt>
+  <dd>5–6 class periods</dd>
 
-<dt>Level</dt>
+  <dt>Keywords</dt>
+  <dd>reproducibility, uncertainty, data visualization</dd>
 
-{{< meta level >}}
+  <dt>Prerequisites</dt>
+  <dd>Intro to R or Python; basic statistics</dd>
 
-<dt>Time</dt>
+  <dt>Data Sources</dt>
+  <dd>Your dataset 1; Your dataset 2</dd>
 
-{{< meta estimated_time >}}
+  <dt>Software</dt>
+  <dd>R (tidyverse) or Python (pandas, matplotlib/plotnine)</dd>
 
-<dt>Keywords</dt>
+  <dt>Contact</dt>
+  <dd>you@example.edu</dd>
 
-{{< meta keywords >}}
-
-<dt>Prerequisites</dt>
-
-{{< meta prerequisites >}}
-
-<dt>Data Sources</dt>
-
-{{< meta data_sources >}}
-
-<dt>Software</dt>
-
-{{< meta software >}}
-
-<dt>Contact</dt>
-
-{{< meta contact >}}
-
-<dt>License</dt>
-
-{{< meta license_note >}}
-
+  <dt>License</dt>
+  <dd>CC BY 4.0</dd>
 </dl>
 :::
 
 ## Prerequisites
 
-What do students need to know before starting the lesson, 2-5 sentences.
+Students should have prior exposure to basic data analysis concepts and familiarity with either R or Python. They should also be comfortable interpreting summary statistics and simple visualizations.
 
 ## Implementation
 
 ### Guide to Included Materials {#materials}
 
 | Type | File/Link | Description |
-|-------------------|-------------------------|-----------------------------|
+|-------------------|-----------------------------|-----------------------------|
 | Instructor Handout | `files/instructor-handout.pdf` | Notes for pacing and assessment |
 | Student Worksheet | `files/student-worksheet.qmd` | Steps and prompts for students |
 | Slides (optional) | `files/slides.pdf` | Overview figures and key questions |
@@ -103,28 +92,28 @@ What do students need to know before starting the lesson, 2-5 sentences.
 
 ### Practical Tips {#tips}
 
-Paragraphs with detailed instructor notes. - Common misconceptions, pacing notes, facilitation prompts, equity & inclusion notes, accessibility.
+Provide clear expectations for role rotation and documentation early in the project. Anticipate common misconceptions about uncertainty and replication. Consider accessibility needs and provide alternative formats where appropriate.
 
 ## Assessment {#assessment}
 
--   **Formative:** clicker questions, think-pair-share prompts, checkpoint plots.
--   **Summative:** rubric for final figure + 300-word memo (include criteria for accuracy, clarity, uncertainty, and decisions).
--   **Answer keys / exemplars:** where housed and access notes.
-
-Paragraph(s) describing assessment suggestions.
+- **Formative:** clicker questions, think-pair-share prompts, checkpoint plots  
+- **Summative:** rubric for final figure plus a 300-word memo assessing analytic decisions  
+- **Answer keys / exemplars:** stored with instructor materials
 
 ## Variations and Extensions {#variations}
 
 ### Level Variations
 
-Paragraphs and notes on how the lesson could be modified to be more foundational or more advanced.
+This module can be simplified by reducing the number of analytic choices or expanded by incorporating additional datasets or modeling techniques.
 
-###Follow-ups and links to other work Paragraphs and notes on how the learning outcomes from this lesson can be reinforced, repeated, or built-upon later in the course.
+### Follow-ups and Links to Other Work
+
+Learning outcomes can be reinforced through later assignments focused on replication, robustness checks, or peer review of analyses.
 
 ## References & Further Reading {#references}
 
--   Cite datasets, software docs, and any scholarship you reference in this module.
+Cite datasets, software documentation, and any relevant scholarship referenced in the module.
 
 ## Acknowledgments {#acknowledgments}
 
-{{< meta acknowledgments >}}
+This module was supported by AALAC Grant ##### and contributions from R&R collaborators.
