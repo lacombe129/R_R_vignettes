@@ -10,17 +10,17 @@ website:
         text: Home
       - text: Modules
         menu:
-          - href: Recognizing-Reproducible-Research/recognizing_website.qmd
+          - href: Recognizing-Reproducible-Research\recognizing_website.qmd
             text: Recognizing Reproducible and Replicable Research
           - href: Constructing-Reproduction-Documentation/organization_website.qmd
             text: Research Organization
           - href: Rotation/rotation_website.qmd
             text: Rotation Based Classroom Project
-          - href: Pre-Registration/preregistration_website.qmd
+          - href: Pre-Registration\preregisration_website.qmd
             text: Pre-Regisration 
-          - href: Recognizing-Reproducible-Research/recognizing_website.qmd
+          - href: Recognizing-Reproducible-Research\recognizing_website.qmd
             text: Appraising and Assessing Dubious Research Practices
-          - href: Pre-Registration/reflection_website.qmd
+          - href: Reproducible-Code-Self-Assessment\reflection_website.qmd
             text: Reflective Assessment 
 
   page-footer:
