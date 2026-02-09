@@ -1,13 +1,12 @@
 ---
-title: "LESSON TITLE HERE (Template)"
+title: "Rotation-Based Classroom Project"
 subtitle: "A hands-on, data-driven teaching module"
 authors:
-  - name: "First Author"
-  - name: "Second Author"
-date: "2025-01-01"
-year: "2025"
+  - name: "Scott LaCombe"
+date: "2026-02-08"
+year: "2026"
 version: "v1.0"
-estimated_time: "2–3 class periods"
+estimated_time: "5-6 class periods"
 level: "Upper-division undergraduates"
 keywords: "reproducibility, uncertainty, data visualization"
 prerequisites: "Intro to R or Python, Basic stats"
