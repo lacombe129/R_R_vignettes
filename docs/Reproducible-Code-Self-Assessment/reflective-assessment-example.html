@@ -6,10 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="XX YOUR NAMES HERE">
-<meta name="dcterms.date" content="2025-05-23">
+<meta name="author" content="Matthew J. Lavin">
 
-<title>Activity to explore p-hacking – Reproducibility and Replication Teaching Modules</title>
+<title>Reflective Assessment Example Lesson Plan – Reproducibility and Replication Teaching Modules</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -44,9 +43,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3211f37fc239cbadcfbf3f057b3348be.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-06d8d8881a9aa81beb7e787d52dbf4ef.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-3211f37fc239cbadcfbf3f057b3348be.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-09b1dc3ecc49752f60f585cbcafda0bc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-dark-0cf6ccfd5b017ddf3110c4bfa05bc063.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../site_libs/bootstrap/bootstrap-09b1dc3ecc49752f60f585cbcafda0bc.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -84,11 +83,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-
-
-</head>
-
-<body class="floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+</head><body class="floating nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
     const toggleBodyColorMode = (bsSheetEl) => {
       const mode = bsSheetEl.getAttribute("data-mode");
       const bodyEl = window.document.querySelector("body");
@@ -250,7 +245,14 @@ ul.task-list li input[type="checkbox"] {
     } else {
       toggleColorMode(false);
     }
-  </script>
+  </script>\usepackage{geometry}
+\usepackage{array}
+\usepackage[table]{xcolor}
+
+
+
+
+
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -279,20 +281,8 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-modules">    
         <li>
-    <a class="dropdown-item" href="../Recognizing-Reproducible-Research/recognizing_website.html">
- <span class="dropdown-text">Recognizing Reproducible and Replicable Research</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../Constructing-Reproduction-Documentation/organization_website.html">
- <span class="dropdown-text">Research Organization</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../Rotation/rotation_website.html">
- <span class="dropdown-text">Rotation Based Classroom Project</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../Pre-Registration/preregistration_website.qmd">
- <span class="dropdown-text">Pre-Regisration</span></a>
+    <a class="dropdown-item" href="../module-template.html">
+ <span class="dropdown-text">Module Template</span></a>
   </li>  
     </ul>
   </li>
@@ -312,18 +302,25 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#hack-your-way-to-scientific-glory" id="toc-hack-your-way-to-scientific-glory" class="nav-link active" data-scroll-target="#hack-your-way-to-scientific-glory">Hack your way to scientific glory</a>
+  <li><a href="#assignment-summary" id="toc-assignment-summary" class="nav-link active" data-scroll-target="#assignment-summary">Assignment Summary</a></li>
+  <li><a href="#included-files" id="toc-included-files" class="nav-link" data-scroll-target="#included-files">Included Files</a></li>
+  <li><a href="#detailed-instructions" id="toc-detailed-instructions" class="nav-link" data-scroll-target="#detailed-instructions">Detailed Instructions</a>
   <ul class="collapse">
-  <li><a href="#step-0-appoint-a-leader-and-a-scribe" id="toc-step-0-appoint-a-leader-and-a-scribe" class="nav-link" data-scroll-target="#step-0-appoint-a-leader-and-a-scribe">Step 0: appoint a leader and a scribe</a></li>
-  <li><a href="#step-1-determine-which-party-you-will-be-exploring" id="toc-step-1-determine-which-party-you-will-be-exploring" class="nav-link" data-scroll-target="#step-1-determine-which-party-you-will-be-exploring">Step 1: Determine which party you will be exploring</a></li>
-  <li><a href="#step-2-define-terms" id="toc-step-2-define-terms" class="nav-link" data-scroll-target="#step-2-define-terms">Step 2: Define terms</a></li>
-  <li><a href="#step-3-is-there-a-relationship" id="toc-step-3-is-there-a-relationship" class="nav-link" data-scroll-target="#step-3-is-there-a-relationship">Step 3: Is there a relationship?</a></li>
-  <li><a href="#step-4-is-your-result-significant" id="toc-step-4-is-your-result-significant" class="nav-link" data-scroll-target="#step-4-is-your-result-significant">Step 4: Is your result significant?</a></li>
-  <li><a href="#step-5-write-up-your-results" id="toc-step-5-write-up-your-results" class="nav-link" data-scroll-target="#step-5-write-up-your-results">Step 5: Write up your results</a></li>
-  <li><a href="#step-6-submit-your-report" id="toc-step-6-submit-your-report" class="nav-link" data-scroll-target="#step-6-submit-your-report">Step 6: Submit your report</a></li>
+  <li><a href="#part-i-setup" id="toc-part-i-setup" class="nav-link" data-scroll-target="#part-i-setup">Part I: Setup</a></li>
+  <li><a href="#part-ii-discuss-with-your-team" id="toc-part-ii-discuss-with-your-team" class="nav-link" data-scroll-target="#part-ii-discuss-with-your-team">Part II: Discuss with Your Team</a></li>
+  <li><a href="#part-iii-compare-and-contrast" id="toc-part-iii-compare-and-contrast" class="nav-link" data-scroll-target="#part-iii-compare-and-contrast">Part III: Compare and Contrast</a></li>
+  <li><a href="#part-iv-literate-programming" id="toc-part-iv-literate-programming" class="nav-link" data-scroll-target="#part-iv-literate-programming">Part IV: Literate Programming</a></li>
+  </ul></li>
+  <li><a href="#instructor-notes" id="toc-instructor-notes" class="nav-link" data-scroll-target="#instructor-notes">Instructor Notes</a>
+  <ul class="collapse">
+  <li><a href="#i.-setup" id="toc-i.-setup" class="nav-link" data-scroll-target="#i.-setup">I. Setup</a></li>
+  <li><a href="#ii.-results" id="toc-ii.-results" class="nav-link" data-scroll-target="#ii.-results">II. Results</a></li>
+  <li><a href="#iii.-dependencies-prior-knowledge" id="toc-iii.-dependencies-prior-knowledge" class="nav-link" data-scroll-target="#iii.-dependencies-prior-knowledge">III. Dependencies, Prior Knowledge</a></li>
+  <li><a href="#iv.-sequencing" id="toc-iv.-sequencing" class="nav-link" data-scroll-target="#iv.-sequencing">IV. Sequencing</a></li>
+  <li><a href="#v.-modifying-this-assignment-for-your-class" id="toc-v.-modifying-this-assignment-for-your-class" class="nav-link" data-scroll-target="#v.-modifying-this-assignment-for-your-class">V. Modifying This Assignment for Your Class</a></li>
   </ul></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="p-hacking.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="reflective-assessment-example.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
@@ -335,7 +332,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Activity to explore p-hacking</h1>
+<h1 class="title">Reflective Assessment Example Lesson Plan</h1>
 </div>
 
 
@@ -345,16 +342,10 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>XX YOUR NAMES HERE </p>
+             <p>Matthew J. Lavin </p>
           </div>
   </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2025-05-23</p>
-    </div>
-  </div>
   
     
   </div>
@@ -364,66 +355,101 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="hack-your-way-to-scientific-glory" class="level2">
-<h2 class="anchored" data-anchor-id="hack-your-way-to-scientific-glory">Hack your way to scientific glory</h2>
-<p>During the course, we have learned about some of the perils of <em>dubious practices</em> such as overfitting models, making errors in extrapolation, and ignoring or misinterpreting null results. While there is not a single way to conduct an analysis, researchers need to be transparent in their decision-making process and acknowledge the limitations behind their research.</p>
-<p>Before today’s class, you were asked to read the Five Thirty Eight Article “Science Isn’t Broken It’s just a hell of a lot harder than we give it credit for” (https://fivethirtyeight.com/features/science-isnt-broken).</p>
-<p>Today you will be working in pairs to explore the potential problems that arise when a non-ethical process is used to determine what to publish.</p>
-<p>You will be working through the interactive visualization “Hack Your Way to Scientific Glory” provided by Five Thirty Eight (https://projects.fivethirtyeight.com/p-hacking), playing the role of a social scientist “with a hunch” about the association between who is in office (Republicans vs.&nbsp;Democrats) and the state of the economy.</p>
-<p>An alternative location for the page can be found at https://web.archive.org/web/20250117051842/http://projects.fivethirtyeight.com/p-hacking.</p>
-<p>Your mission is to come up with a set of analytic choices that lead to a “statistically significant” result (e.g, p &lt; 0.05).</p>
-<section id="step-0-appoint-a-leader-and-a-scribe" class="level3">
-<h3 class="anchored" data-anchor-id="step-0-appoint-a-leader-and-a-scribe">Step 0: appoint a leader and a scribe</h3>
-<ul>
-<li>The leader will be the person whose birthday is coming up next. The leader is responsible for organizing work on the activity.</li>
-<li>The scribe will be the other person. The scribe is responsible for writing up the first draft of the submission and working with the leader to submit your report.</li>
-</ul>
-<div class="cell">
-<div class="cell-output-display">
-<div id="fig-01" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="p-hacking.png" class="img-fluid figure-img" style="width:98.0%">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Five Thirty Eight p-hacking explorer
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
+<section id="assignment-summary" class="level2">
+<h2 class="anchored" data-anchor-id="assignment-summary">Assignment Summary</h2>
+<p>This reflective assignment is designed to help you develop your understanding of reproducibility by identifying whether specific reproducibility or replicability practices are present in a block of R code. In class, you will work with one or more students to download the code and data for the assignment, run various code files using RStudio, and reflect on what happens. After each step of the assignment, you and your teammates will report to the rest of the class and discuss how your results compare with other groups’.</p>
 </section>
-<section id="step-1-determine-which-party-you-will-be-exploring" class="level3">
-<h3 class="anchored" data-anchor-id="step-1-determine-which-party-you-will-be-exploring">Step 1: Determine which party you will be exploring</h3>
-<ul>
-<li>If the leader’s birthday is an ODD number, you will be fitting models for REPUBLICANS</li>
-<li>If the leader’s birthday is an EVEN number, you will be fitting models for DEMOCRATS</li>
-</ul>
+<section id="included-files" class="level2">
+<h2 class="anchored" data-anchor-id="included-files">Included Files</h2>
+
 </section>
-<section id="step-2-define-terms" class="level3">
-<h3 class="anchored" data-anchor-id="step-2-define-terms">Step 2: Define terms</h3>
-<p>Once you access the website, you’ll need to make some decisions.</p>
-<ul>
-<li>Which politicians do you want to include?</li>
-<li>How do you want to measure economic performance?</li>
-<li>Other options</li>
-</ul>
+<section id="detailed-instructions" class="level2">
+<h2 class="anchored" data-anchor-id="detailed-instructions">Detailed Instructions</h2>
+<section id="part-i-setup" class="level3">
+<h3 class="anchored" data-anchor-id="part-i-setup">Part I: Setup</h3>
+<ol type="1">
+<li>Open RStudio</li>
+<li>Click “File &gt; New Project”</li>
+<li>Click “Version Control”</li>
+<li>Click “git”</li>
+<li>Under “Repository URL,” enter the Github URL for the code repository</li>
+<li>Click “Create Project”</li>
+</ol>
 </section>
-<section id="step-3-is-there-a-relationship" class="level3">
-<h3 class="anchored" data-anchor-id="step-3-is-there-a-relationship">Step 3: Is there a relationship?</h3>
-<ul>
-<li>What do you conclude about the outcome when more REPUBLICANS/DEMOCRATS are in office?</li>
-</ul>
+<section id="part-ii-discuss-with-your-team" class="level3">
+<h3 class="anchored" data-anchor-id="part-ii-discuss-with-your-team">Part II: Discuss with Your Team</h3>
+<ol type="1">
+<li>Open <code>activity.R</code> and try to run each code cell. If you get an error, try to resolve it, or comment out the line of code that errors and keep going until you can’t get any further.<br>
+</li>
+<li>Take turns with your partner saying what you think each line of code does (rubber ducking). Try to be as precise as you can.</li>
+<li>Once you have finished resolving or commenting out each code chunk, turn to your teammates and discuss what happened.</li>
+<li>Decide on 1-2 questions or takeaways you want to share with the class (where you got stuck, error fixes, debugging strategies you tried, etc.). Make a plan for reporting to the class.</li>
+<li>Share your experiences with your classmates and listen to their results. Take notes on any key questions or takeaways that seem to come up more than once.</li>
+</ol>
 </section>
-<section id="step-4-is-your-result-significant" class="level3">
-<h3 class="anchored" data-anchor-id="step-4-is-your-result-significant">Step 4: Is your result significant?</h3>
+<section id="part-iii-compare-and-contrast" class="level3">
+<h3 class="anchored" data-anchor-id="part-iii-compare-and-contrast">Part III: Compare and Contrast</h3>
+<ol type="1">
+<li>Open the file <code>working_code.R</code> and see if you can run it without errors. (Any errors you encounter here should be solvable.)</li>
+<li>Discuss the differences you see between <code>activity.R</code>, and <code>working_code.R</code>.</li>
+<li>Decide on 1-2 questions or takeaways you want to share with the class (key differences, areas for additional improvement, etc.). Make a plan for reporting to the class.</li>
+<li>Share your experiences with your classmates and listen to their results. Take notes on any key questions or takeaways that seem to come up more than once.</li>
+</ol>
 </section>
-<section id="step-5-write-up-your-results" class="level3">
-<h3 class="anchored" data-anchor-id="step-5-write-up-your-results">Step 5: Write up your results</h3>
-<p>In a brief report (no more than one page, single spaced plus a figure) aimed at an audience of your classmates, summarize your model and your results. Include a screenshot of the scatterplot and the result. What do you conclude? Be sure to discuss the potential issues of p-hacking and the “Garden of Forking Paths”</p>
+<section id="part-iv-literate-programming" class="level3">
+<h3 class="anchored" data-anchor-id="part-iv-literate-programming">Part IV: Literate Programming</h3>
+<ol type="1">
+<li>Open the file <code>refactored.Rmd</code> in RStudio and try knitting it to HTML.</li>
+<li>Discuss with your teammates how the code is now organized. Discuss formatting, organization, etc.<br>
+</li>
+<li>Decide on 1-2 questions or takeaways you want to share with the class (key ideas, areas for additional improvement, etc.). Make a plan for reporting to the class.</li>
+<li>Share your experiences with your classmates and listen to their results. Take notes on any key questions or takeaways that seem to come up more than once.</li>
+</ol>
 </section>
-<section id="step-6-submit-your-report" class="level3">
-<h3 class="anchored" data-anchor-id="step-6-submit-your-report">Step 6: Submit your report</h3>
+</section>
+<section id="instructor-notes" class="level2">
+<h2 class="anchored" data-anchor-id="instructor-notes">Instructor Notes</h2>
+<section id="i.-setup" class="level3">
+<h3 class="anchored" data-anchor-id="i.-setup">I. Setup</h3>
+<p>This directions above are written assuming that the instructor will create a public Github repository for the code and data files for the assignment. Part I, no. 5 can be revised to include a link to the repository, or directions can be rewritten to direct students to Blackboard, Canvas, Google Drive, OSF, etc.</p>
+</section>
+<section id="ii.-results" class="level3">
+<h3 class="anchored" data-anchor-id="ii.-results">II. Results</h3>
+<p>Before using this assignment, an instructor should download the code and data files and try to run <code>activity.R</code>, <code>working_code.R</code>, and <code>refactored.Rmd</code>. As the assignment directions suggest, <code>activity.R</code> will error in several ways.</p>
+<ol type="1">
+<li>Any package dependencies must be installed</li>
+<li>Two absolute paths are coded into the script<br>
+</li>
+<li>Installing the Imap package fails, as it is no longer supported by R</li>
+<li>If you remove or comment out <code>library(Imap)</code> from the code, line 34 beginning <code>distances &lt;- ...</code> will error</li>
+<li>The alt code on line 37 can be made to work if you change it to reference the correct column names, but it calculates Haversine distance, not Vincenty ellipsoid distance</li>
+</ol>
+</section>
+<section id="iii.-dependencies-prior-knowledge" class="level3">
+<h3 class="anchored" data-anchor-id="iii.-dependencies-prior-knowledge">III. Dependencies, Prior Knowledge</h3>
+<ol type="1">
+<li>The <code>ggplot</code> and <code>dplyr</code> packages are required, but installing the <code>tidyverse</code> to match the <code>library()</code> call is recommended</li>
+<li>Transforming RMD to HTML requires <code>knitr</code> (alternatively, you can use an R script or convert to Quarto doc)</li>
+<li><code>working_code.R</code> requires the <code>geosphere</code> package, and</li>
+<li>Prior knowledge of the <code>tidyverse</code> is probably not required, but the lesson as written assumes prior coding/R knowledge</li>
+</ol>
+</section>
+<section id="iv.-sequencing" class="level3">
+<h3 class="anchored" data-anchor-id="iv.-sequencing">IV. Sequencing</h3>
+<p>The lesson can build on or introduce concepts like:</p>
+<ol type="1">
+<li>searching for documentation and other published material about code (re:Imap package error)</li>
+<li>debugging to better understand code design, paths, and file/folder organization</li>
+<li>using rubber ducking to increase understanding of code</li>
+<li>comparing buggy code, first draft working code, and refactored code</li>
+<li>using literate programming methods to bolster reproducibility</li>
+<li>highlighting level of reproducibility such as errors, dependency issues, and approximate substitutions like Vincenty vs.&nbsp;Haversine</li>
+<li>framing reproducibility as ongoing practice</li>
+</ol>
+</section>
+<section id="v.-modifying-this-assignment-for-your-class" class="level3">
+<h3 class="anchored" data-anchor-id="v.-modifying-this-assignment-for-your-class">V. Modifying This Assignment for Your Class</h3>
+<p>This assignment should be adaptable to various alternate contexts (levels of instruction, programming languages, etc.). The Haversine vs.&nbsp;Vincenty aspect of the assignment, in particular, could be substituted for for any pair of measures or aggregations where there’s a similarity but not an equivalence, and if the differences are related to subject of the source, so much the better. Additional time could be spent on concepts including but limited to the working directory, relative paths, folder organization, hidden files, the .rproj file’s role, and how tools like the ‘here’ and ‘renv’ packages are used.</p>
 
 
 </section>

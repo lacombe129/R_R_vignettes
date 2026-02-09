@@ -1,0 +1,11 @@
+---
+title: "{{< meta module_title >}}"
+subtitle: "{{< meta short_tagline >}}"
+authors:
+  - name: "{{< meta author_1 >}}"
+  - name: "{{< meta author_2 >}}"
+date: "{{< meta publish_date >}}"
+year: "2025"
+
+# ---- Custom metadata you reference with {{< meta ... >}} ----
+---

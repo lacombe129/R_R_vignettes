@@ -1,0 +1,15 @@
+---
+title: "Hello Quarto"
+format: html
+---
+
+## Welcome to my site
+
+This is a simple test page for Quarto rendering.
+
+### R code example
+
+```{r}
+# Simple R computation
+x <- 1:10
+```
