@@ -1,0 +1,131 @@
+---
+title: "LESSON TITLE HERE (Template)"
+subtitle: "A hands-on, data-driven teaching module"
+authors:
+  - name: "First Author"
+  - name: "Second Author"
+date: "2025-01-01"
+year: "2025"
+version: "v1.0"
+estimated_time: "2–3 class periods"
+level: "Upper-division undergraduates"
+keywords: "reproducibility, uncertainty, data visualization"
+prerequisites: "Intro to R or Python, Basic stats"
+software: "R (tidyverse) or Python (pandas, matplotlib/plotnine)"
+data_sources: "Your dataset 1, Your dataset 2"
+license_note: "CC BY 4.0"
+acknowledgments: "AALAC Grant #####, R&R collaborators"
+contact: "you@example.edu"
+---
+
+::: breadcrumbs
+<a href="./index.html">Teaching Materials</a> » <a href="#">Modules</a> » {{< meta module_title >}}
+:::
+
+::: callout-note
+## Overview
+
+Brief overview of the module's narrative. Explain what students will explore and produce. Keep this \~4–6 sentences.
+:::
+
+::: callout-success
+## Motivation and Learning Goals
+
+-   Goal 1: …
+-   Goal 2: …
+-   Goal 3: …
+:::
+
+::: callout-warning
+## Context for Use
+
+Course level, where this fits in the term, class size, modality (in-person/online/hybrid), estimated time: {{< meta estimated_time >}}.
+:::
+
+::: quick-facts
+<h3>Quick Facts</h3>
+
+<dl>
+
+<dt>Version</dt>
+
+{{< meta version >}}
+
+<dt>Level</dt>
+
+{{< meta level >}}
+
+<dt>Time</dt>
+
+{{< meta estimated_time >}}
+
+<dt>Keywords</dt>
+
+{{< meta keywords >}}
+
+<dt>Prerequisites</dt>
+
+{{< meta prerequisites >}}
+
+<dt>Data Sources</dt>
+
+{{< meta data_sources >}}
+
+<dt>Software</dt>
+
+{{< meta software >}}
+
+<dt>Contact</dt>
+
+{{< meta contact >}}
+
+<dt>License</dt>
+
+{{< meta license_note >}}
+
+</dl>
+:::
+
+## Prerequisites
+
+What do students need to know before starting the lesson, 2-5 sentences.
+
+## Implementation
+
+### Guide to Included Materials {#materials}
+
+| Type | File/Link | Description |
+|-------------------|-------------------------|-----------------------------|
+| Instructor Handout | `files/instructor-handout.pdf` | Notes for pacing and assessment |
+| Student Worksheet | `files/student-worksheet.qmd` | Steps and prompts for students |
+| Slides (optional) | `files/slides.pdf` | Overview figures and key questions |
+| Dataset A | `data/dataset-a.csv` | Raw measurements |
+| Dataset B | `data/dataset-b.csv` | Cleaned subset |
+
+### Practical Tips {#tips}
+
+Paragraphs with detailed instructor notes. - Common misconceptions, pacing notes, facilitation prompts, equity & inclusion notes, accessibility.
+
+## Assessment {#assessment}
+
+-   **Formative:** clicker questions, think-pair-share prompts, checkpoint plots.
+-   **Summative:** rubric for final figure + 300-word memo (include criteria for accuracy, clarity, uncertainty, and decisions).
+-   **Answer keys / exemplars:** where housed and access notes.
+
+Paragraph(s) describing assessment suggestions.
+
+## Variations and Extensions {#variations}
+
+### Level Variations
+
+Paragraphs and notes on how the lesson could be modified to be more foundational or more advanced.
+
+###Follow-ups and links to other work Paragraphs and notes on how the learning outcomes from this lesson can be reinforced, repeated, or built-upon later in the course.
+
+## References & Further Reading {#references}
+
+-   Cite datasets, software docs, and any scholarship you reference in this module.
+
+## Acknowledgments {#acknowledgments}
+
+{{< meta acknowledgments >}}

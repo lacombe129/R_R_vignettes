@@ -194,5 +194,516 @@
     "title": "LESSON TITLE HERE (Template)",
     "section": "Prerequisites",
     "text": "Prerequisites\nWhat do students need to know before starting the lesson, 2-5 sentences."
+  },
+  {
+    "objectID": "module_template_02.html",
+    "href": "module_template_02.html",
+    "title": "?meta:module_title",
+    "section": "",
+    "text": "What do students need to know before starting the lesson, 2-5 sentences."
+  },
+  {
+    "objectID": "module_template_02.html#prerequisites",
+    "href": "module_template_02.html#prerequisites",
+    "title": "?meta:module_title",
+    "section": "",
+    "text": "What do students need to know before starting the lesson, 2-5 sentences."
+  },
+  {
+    "objectID": "module_template_02.html#implementation",
+    "href": "module_template_02.html#implementation",
+    "title": "?meta:module_title",
+    "section": "Implementation",
+    "text": "Implementation\n\nGuide to Included Materials\n\n\n\n\n\n\n\n\nType\nFile/Link\nDescription\n\n\n\n\nInstructor Handout\nfiles/instructor-handout.pdf\nNotes for pacing and assessment\n\n\nStudent Worksheet\nfiles/student-worksheet.qmd\nSteps and prompts for students\n\n\nSlides (optional)\nfiles/slides.pdf\nOverview figures and key questions\n\n\nDataset A\ndata/dataset-a.csv\nRaw measurements\n\n\nDataset B\ndata/dataset-b.csv\nCleaned subset\n\n\n\n\n\nPractical Tips\nParagraphs with detailed instructor notes. - Common misconceptions, pacing notes, facilitation prompts, equity & inclusion notes, accessibility."
+  },
+  {
+    "objectID": "module_template_02.html#assessment",
+    "href": "module_template_02.html#assessment",
+    "title": "?meta:module_title",
+    "section": "Assessment",
+    "text": "Assessment"
+  },
+  {
+    "objectID": "module_template_02.html#variations",
+    "href": "module_template_02.html#variations",
+    "title": "?meta:module_title",
+    "section": "Variations and Extensions",
+    "text": "Variations and Extensions\n\nLevel Variations\nParagraphs and notes on how the lesson could be modified to be more foundational or more advanced.\n###Follow-ups and links to other work Paragraphs and notes on how the learning outcomes from this lesson can be reinforced, repeated, or built-upon later in the course."
+  },
+  {
+    "objectID": "module_template_02.html#references",
+    "href": "module_template_02.html#references",
+    "title": "?meta:module_title",
+    "section": "References & Further Reading",
+    "text": "References & Further Reading\n\nCite datasets, software docs, and any scholarship you reference in this module."
+  },
+  {
+    "objectID": "module_template_02.html#acknowledgments",
+    "href": "module_template_02.html#acknowledgments",
+    "title": "?meta:module_title",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments"
+  },
+  {
+    "objectID": "template.html",
+    "href": "template.html",
+    "title": "Hello Quarto",
+    "section": "",
+    "text": "This is a simple test page for Quarto rendering.\n\n\n\n# Simple R computation\nx &lt;- 1:10"
+  },
+  {
+    "objectID": "template.html#welcome-to-my-site",
+    "href": "template.html#welcome-to-my-site",
+    "title": "Hello Quarto",
+    "section": "",
+    "text": "This is a simple test page for Quarto rendering.\n\n\n\n# Simple R computation\nx &lt;- 1:10"
+  },
+  {
+    "objectID": "Rotation/project_f22-3-b.html",
+    "href": "Rotation/project_f22-3-b.html",
+    "title": "The Lasting Legacy of Redlining",
+    "section": "",
+    "text": "Code\nlibrary(tidyverse)\nredlining_data &lt;- read_csv(\"https://raw.githubusercontent.com/fivethirtyeight/data/master/redlining/metro-grades.csv\")\n\n\n\n\nThe data that will be used here is one of FiveThirtyEight’s data sources for their “The Lasting Legacy of Redlining” article.1 This data set has the 2020 total population estimates by race/ethnicity (based on the 2020 census) for combined zones of each redlining grade (which can range from A (“Best”) to D (“Hazardous”)2) from the Home Owners’ Loan Corporation’s (HOLC) maps drawn in 1935-40. The maps were provided from the Mapping Inequality project.\n\nThe data set also includes population estimates in the surrounding area of each metropolitan area’s HOLC map and location quotients (LQs, which are compared to their proximity to 1, which indicates an accurate representation of a population)3 for each racial/ethnic group and HOLC grade. You can find more information on the data set, variables, and calculations in the Github link listed above.\nOne unit of observation corresponds to a metropolitan area’s combined total population estimates, surrounding area population estimates, percentages of both, and LQs for all of the zones in that area that correspond to the same HOLC grade.\nFor example, the first observation describes the aforementioned data points for all locations within Akron, OH that have an “A” HOLC grade. Reading the columns from left to right, the first row tells us that:\n\nThe metropolitan area is Akron, Ohio.\nThe grade of the combined HOLC zones within Akron, OH is A.\nThe non-Hispanic white population is 24702.\nThe non-Hispanic Black population is 8624.\nThe Hispanic/Latino population is 956.\nThe Asian population is 688.\nThe population of those in any other race/ethnicity group is 1993.\nThe total population in these HOLC zones is 36963.\nThe estimated percentage of non-Hispanic white residents in HOLC zones with an A grade in Akron, OH out of the total population is 66.83%.\nThe estimated percentage of non-Hispanic Black residents in HOLC zones with an A grade in Akron, OH out of the total population is 23.33%.\nThe estimated percentage of Hispanic/Latino residents in HOLC zones with an A grade in Akron, OH out of the total population is 2.59%.\nThe estimated percentage of Asian residents in HOLC zones with an A grade in Akron, OH out of the total population is 1.86%.\nThe estimated percentage of residents with another race/ethnicity in HOLC zones with an A grade in Akron, OH out of the total population is 5.39%.\nThe non-Hispanic white location quotient (LQ) is 0.94.\nThe non-Hispanic Black location quotient (LQ) is 1.41.\nThe Hispanic/Latino location quotient (LQ) is 1.\nThe Asian location quotient (LQ) is 0.46.\nThe other race/ethnicity location quotient (LQ) is 0.97.\nThe estimated non-Hispanic white population within surrounding area of the HOLC zones is 304399.\nThe estimated non-Hispanic Black population within surrounding area of the HOLC zones is 70692.\nThe estimated Hispanic/Latino population within surrounding area of the HOLC zones is 11037.\nThe estimated Asian population within surrounding area of the HOLC zones is 17295.\nThe estimated other race/ethnicity population within surrounding area of the HOLC zones is 23839.\nThe estimated percentage of non-Hispanic white residents in the surrounding area around the HOLC zones out of the total surrounding area population is 71.24%.\nThe estimated percentage of non-Hispanic Black residents in the surrounding area around the HOLC zones out of the total surrounding area population is 16.55%.\nThe estimated percentage of Hispanic/Latino residents in the surrounding area around the HOLC zones out of the total surrounding area population is 2.58%.\nThe estimated percentage of Asian residents in the surrounding area around the HOLC zones out of the total surrounding area population is 4.05%.\nThe estimated percentage of other race/ethnicity residents in the surrounding area around the HOLC zones out of the total surrounding area population is 5.58%.\n\nIt is important to note that the population estimates are rounded to the next integer and the percentages are rounded to the nearest 2 decimal places."
+  },
+  {
+    "objectID": "Rotation/project_f22-3-b.html#introduction-to-the-data",
+    "href": "Rotation/project_f22-3-b.html#introduction-to-the-data",
+    "title": "The Lasting Legacy of Redlining",
+    "section": "",
+    "text": "The data that will be used here is one of FiveThirtyEight’s data sources for their “The Lasting Legacy of Redlining” article.1 This data set has the 2020 total population estimates by race/ethnicity (based on the 2020 census) for combined zones of each redlining grade (which can range from A (“Best”) to D (“Hazardous”)2) from the Home Owners’ Loan Corporation’s (HOLC) maps drawn in 1935-40. The maps were provided from the Mapping Inequality project.\n\nThe data set also includes population estimates in the surrounding area of each metropolitan area’s HOLC map and location quotients (LQs, which are compared to their proximity to 1, which indicates an accurate representation of a population)3 for each racial/ethnic group and HOLC grade. You can find more information on the data set, variables, and calculations in the Github link listed above.\nOne unit of observation corresponds to a metropolitan area’s combined total population estimates, surrounding area population estimates, percentages of both, and LQs for all of the zones in that area that correspond to the same HOLC grade.\nFor example, the first observation describes the aforementioned data points for all locations within Akron, OH that have an “A” HOLC grade. Reading the columns from left to right, the first row tells us that:\n\nThe metropolitan area is Akron, Ohio.\nThe grade of the combined HOLC zones within Akron, OH is A.\nThe non-Hispanic white population is 24702.\nThe non-Hispanic Black population is 8624.\nThe Hispanic/Latino population is 956.\nThe Asian population is 688.\nThe population of those in any other race/ethnicity group is 1993.\nThe total population in these HOLC zones is 36963.\nThe estimated percentage of non-Hispanic white residents in HOLC zones with an A grade in Akron, OH out of the total population is 66.83%.\nThe estimated percentage of non-Hispanic Black residents in HOLC zones with an A grade in Akron, OH out of the total population is 23.33%.\nThe estimated percentage of Hispanic/Latino residents in HOLC zones with an A grade in Akron, OH out of the total population is 2.59%.\nThe estimated percentage of Asian residents in HOLC zones with an A grade in Akron, OH out of the total population is 1.86%.\nThe estimated percentage of residents with another race/ethnicity in HOLC zones with an A grade in Akron, OH out of the total population is 5.39%.\nThe non-Hispanic white location quotient (LQ) is 0.94.\nThe non-Hispanic Black location quotient (LQ) is 1.41.\nThe Hispanic/Latino location quotient (LQ) is 1.\nThe Asian location quotient (LQ) is 0.46.\nThe other race/ethnicity location quotient (LQ) is 0.97.\nThe estimated non-Hispanic white population within surrounding area of the HOLC zones is 304399.\nThe estimated non-Hispanic Black population within surrounding area of the HOLC zones is 70692.\nThe estimated Hispanic/Latino population within surrounding area of the HOLC zones is 11037.\nThe estimated Asian population within surrounding area of the HOLC zones is 17295.\nThe estimated other race/ethnicity population within surrounding area of the HOLC zones is 23839.\nThe estimated percentage of non-Hispanic white residents in the surrounding area around the HOLC zones out of the total surrounding area population is 71.24%.\nThe estimated percentage of non-Hispanic Black residents in the surrounding area around the HOLC zones out of the total surrounding area population is 16.55%.\nThe estimated percentage of Hispanic/Latino residents in the surrounding area around the HOLC zones out of the total surrounding area population is 2.58%.\nThe estimated percentage of Asian residents in the surrounding area around the HOLC zones out of the total surrounding area population is 4.05%.\nThe estimated percentage of other race/ethnicity residents in the surrounding area around the HOLC zones out of the total surrounding area population is 5.58%.\n\nIt is important to note that the population estimates are rounded to the next integer and the percentages are rounded to the nearest 2 decimal places."
+  },
+  {
+    "objectID": "Rotation/project_f22-3-b.html#footnotes",
+    "href": "Rotation/project_f22-3-b.html#footnotes",
+    "title": "The Lasting Legacy of Redlining",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nhttps://projects.fivethirtyeight.com/redlining/↩︎\nYou can read more about the redlining zone classifications here.↩︎\nMore information on location quotients.↩︎"
+  },
+  {
+    "objectID": "Assessing-Dubious-Research/p-hacking.html",
+    "href": "Assessing-Dubious-Research/p-hacking.html",
+    "title": "Activity to explore p-hacking",
+    "section": "",
+    "text": "During the course, we have learned about some of the perils of dubious practices such as overfitting models, making errors in extrapolation, and ignoring or misinterpreting null results. While there is not a single way to conduct an analysis, researchers need to be transparent in their decision-making process and acknowledge the limitations behind their research.\nBefore today’s class, you were asked to read the Five Thirty Eight Article “Science Isn’t Broken It’s just a hell of a lot harder than we give it credit for” (https://fivethirtyeight.com/features/science-isnt-broken).\nToday you will be working in pairs to explore the potential problems that arise when a non-ethical process is used to determine what to publish.\nYou will be working through the interactive visualization “Hack Your Way to Scientific Glory” provided by Five Thirty Eight (https://projects.fivethirtyeight.com/p-hacking), playing the role of a social scientist “with a hunch” about the association between who is in office (Republicans vs. Democrats) and the state of the economy.\nAn alternative location for the page can be found at https://web.archive.org/web/20250117051842/http://projects.fivethirtyeight.com/p-hacking.\nYour mission is to come up with a set of analytic choices that lead to a “statistically significant” result (e.g, p &lt; 0.05).\n\n\n\nThe leader will be the person whose birthday is coming up next. The leader is responsible for organizing work on the activity.\nThe scribe will be the other person. The scribe is responsible for writing up the first draft of the submission and working with the leader to submit your report.\n\n\n\n\n\n\n\n\n\nFigure 1: Five Thirty Eight p-hacking explorer\n\n\n\n\n\n\n\n\n\nIf the leader’s birthday is an ODD number, you will be fitting models for REPUBLICANS\nIf the leader’s birthday is an EVEN number, you will be fitting models for DEMOCRATS\n\n\n\n\nOnce you access the website, you’ll need to make some decisions.\n\nWhich politicians do you want to include?\nHow do you want to measure economic performance?\nOther options\n\n\n\n\n\nWhat do you conclude about the outcome when more REPUBLICANS/DEMOCRATS are in office?\n\n\n\n\n\n\n\nIn a brief report (no more than one page, single spaced plus a figure) aimed at an audience of your classmates, summarize your model and your results. Include a screenshot of the scatterplot and the result. What do you conclude? Be sure to discuss the potential issues of p-hacking and the “Garden of Forking Paths”"
+  },
+  {
+    "objectID": "Assessing-Dubious-Research/p-hacking.html#hack-your-way-to-scientific-glory",
+    "href": "Assessing-Dubious-Research/p-hacking.html#hack-your-way-to-scientific-glory",
+    "title": "Activity to explore p-hacking",
+    "section": "",
+    "text": "During the course, we have learned about some of the perils of dubious practices such as overfitting models, making errors in extrapolation, and ignoring or misinterpreting null results. While there is not a single way to conduct an analysis, researchers need to be transparent in their decision-making process and acknowledge the limitations behind their research.\nBefore today’s class, you were asked to read the Five Thirty Eight Article “Science Isn’t Broken It’s just a hell of a lot harder than we give it credit for” (https://fivethirtyeight.com/features/science-isnt-broken).\nToday you will be working in pairs to explore the potential problems that arise when a non-ethical process is used to determine what to publish.\nYou will be working through the interactive visualization “Hack Your Way to Scientific Glory” provided by Five Thirty Eight (https://projects.fivethirtyeight.com/p-hacking), playing the role of a social scientist “with a hunch” about the association between who is in office (Republicans vs. Democrats) and the state of the economy.\nAn alternative location for the page can be found at https://web.archive.org/web/20250117051842/http://projects.fivethirtyeight.com/p-hacking.\nYour mission is to come up with a set of analytic choices that lead to a “statistically significant” result (e.g, p &lt; 0.05).\n\n\n\nThe leader will be the person whose birthday is coming up next. The leader is responsible for organizing work on the activity.\nThe scribe will be the other person. The scribe is responsible for writing up the first draft of the submission and working with the leader to submit your report.\n\n\n\n\n\n\n\n\n\nFigure 1: Five Thirty Eight p-hacking explorer\n\n\n\n\n\n\n\n\n\nIf the leader’s birthday is an ODD number, you will be fitting models for REPUBLICANS\nIf the leader’s birthday is an EVEN number, you will be fitting models for DEMOCRATS\n\n\n\n\nOnce you access the website, you’ll need to make some decisions.\n\nWhich politicians do you want to include?\nHow do you want to measure economic performance?\nOther options\n\n\n\n\n\nWhat do you conclude about the outcome when more REPUBLICANS/DEMOCRATS are in office?\n\n\n\n\n\n\n\nIn a brief report (no more than one page, single spaced plus a figure) aimed at an audience of your classmates, summarize your model and your results. Include a screenshot of the scatterplot and the result. What do you conclude? Be sure to discuss the potential issues of p-hacking and the “Garden of Forking Paths”"
+  },
+  {
+    "objectID": "Recognizing-Reproducible-Research/Recognizing-Reproducible-Research.html",
+    "href": "Recognizing-Reproducible-Research/Recognizing-Reproducible-Research.html",
+    "title": "Recognizing Reproducible Research",
+    "section": "",
+    "text": "Your practical goal for this assignment is to assess the reproducibility of prior published research.\nThere are two main practical motivations for this type of work. First, some journals, conferences, and even funding agencies are asking reproducibility “editors” or “reviewers” to audit researchers’ work to make sure that they are fulfilling their publishing or funding requirements to produce reproducible work. Second, you may be interested in replicating or extending a study yourself, which starts with reproducing the study as it is. This is the preliminary work to assemble all of the study’s components and assess how feasible it will be to reproduce.\nYour learning goal for this assignment is to apply the concepts of reproducibility to a real research project, experiencing the nuts and bolts of reproducibility through active learning. You will likely encounter uncertainties and unknowns in this assignment, each of which ultimately points to a barrier to reproducibility."
+  },
+  {
+    "objectID": "Recognizing-Reproducible-Research/Recognizing-Reproducible-Research.html#recognizing-reproducible-research",
+    "href": "Recognizing-Reproducible-Research/Recognizing-Reproducible-Research.html#recognizing-reproducible-research",
+    "title": "Recognizing Reproducible Research",
+    "section": "",
+    "text": "Your practical goal for this assignment is to assess the reproducibility of prior published research.\nThere are two main practical motivations for this type of work. First, some journals, conferences, and even funding agencies are asking reproducibility “editors” or “reviewers” to audit researchers’ work to make sure that they are fulfilling their publishing or funding requirements to produce reproducible work. Second, you may be interested in replicating or extending a study yourself, which starts with reproducing the study as it is. This is the preliminary work to assemble all of the study’s components and assess how feasible it will be to reproduce.\nYour learning goal for this assignment is to apply the concepts of reproducibility to a real research project, experiencing the nuts and bolts of reproducibility through active learning. You will likely encounter uncertainties and unknowns in this assignment, each of which ultimately points to a barrier to reproducibility."
+  },
+  {
+    "objectID": "Recognizing-Reproducible-Research/Recognizing-Reproducible-Research.html#instructions",
+    "href": "Recognizing-Reproducible-Research/Recognizing-Reproducible-Research.html#instructions",
+    "title": "Recognizing Reproducible Research",
+    "section": "Instructions",
+    "text": "Instructions\nThe following instructions will walk you through a reproducibility assessment for a prior study. The goal is to assess whether the study is already reproducible: if you find yourself doing the authors’ work to improve its reproducibility, then you are doing too much.\n\nChoose an Article\nFirst, choose an article to assess. The article should contain empirical research, i.e. there is data-based evidence and it is analyzed in order to answer a research question or test a reseach hypothesis. Important: You should find the journal website where the article was originally published, and download the article and its information from that primary source. Do not rely on preprint servers or secondary research websites like ResearchGate. Download the article and copy it’s DOI (Digitial Object Identifier) and a full citation for the article here:\nDOI:\nCitation:\n\n\nAccess its materials\nAs it turns out, most research articles contain only a fraction of the information that is needed to reproduce them in the article body itself. Remaining information, or supplementary materials may be found elsewhere. Try to find all of these materials before starting your audit. Where should you look?\nTry the following:\n\nLook for a link to “supplementary materials” on the journal website where the article was published. There may be more than one document or file.\nLook for a “data availability” statement or similar section in the article. This may describe where to find data and other materials associated with the work.\nSearch for web links in the article text, especially to digital repositories or archives where additional data, methods, and information may be stored. Examples include GitHub, GitLab, Zenodo, Harvard Dataverse, Figshare, OSF, and more.\nCheck the article’s references and endnotes for references to data sources, code, and/or software used in the research.\n\nSave all of the supplementary files taht you find into one folder for your project. Start a document in your project folder where you can copy clues and links from the manuscript.\n\n\nComputational environment\nBased on the information available to you, what computing environment did the authors use for their research?\n\nOperating system:\nMain software and version(s):\nAdditional software package(s) or plugin(s) and version(s):\n\nThe operating system is likely Linux, MacOS or Windows. Include the version, if known.\nThe main software for open data science is likely Python or R, whereas proprietary software could include platforms like SAS, SPSS, ArcGIS, etc.\n\n\nData sources\nFirst, list all of the data sources described in the research paper, including data that the authors created themselves. Second, investigate the actual data availability of each source, the availability of documentation for each data source, lineage information about data acquisition or creation, and permissiveness of reuse.\nComplete a table with your findings, using the following example structure:\n\n\n\n\n\n\n\n\n\n\nData source\ndata availability\ndocumentation\nlineage\nreuse\n\n\n\n\nSource1\nprovided in full\nstandard\nautomated\nopen\n\n\n…\n…\n…\n…\n…\n\n\nSourceN\ninaccessible\nnonstandard\ndescribed\ncopyright\n\n\n\nCategorize data availability as one of the following, ordered from best-case scenario to worst-case scenario:\n\nProvided in full with the paper as supplemental materials or with a DOI link to a digital archive\nProvided with limitations to protect intellectual property or privacy, requiring credentials and clearance or modifying the data with some process of anonymization or simulation.\nLinked to a source for download, but not in a formal archive or with a DOI.\nPublic data that may be acquired separately through your own efforts.\nInaccessible data that cannot be acquired.\n\nCategorize documentation as one of the following, ordered from best-case scenario to worst-case scenario:\n\nStandard metadata appropriate to the data source type is provided by the authors. For example, geospatial data should be documented with FGDC or ISO-191* metadata standards and survey data can be documented with DDI (Data Documentation Initiative) standards.\nNonstandard documentation of the data source that does not conform to a metadata standard, but is clear about the data characteristics, variables, variable definitions, etc. for another researcher to understand everything they need to know about the data source in order to use it.\nInadequate documentation lacks key information about which data files contain which information, which variables are important and how their values are defined, how missing data is recorded, or other essential information for using the data appropriately.\n\nCategorize lineage as one of the following, ordered from best-case scenario to worst-case scenario:\n\nAutomated lineage includes code or very explicit workflows to essentially automate the acquisition or creation of the data source, e.g. through use of application programming interface (API) code or files required to conduct an online survey.\nDescribed lineage includes enough description about how to acquire or create the data that someone could reasonably re-create teh data.\nInadequate lineage lacks enough information for someone to confidently re-acquire or re-create the data.\n\nCategorize reuse as one of the following, ordered from best-case scenario to worst-case scenario. Note that just because a research article is open-access does not necessarily mean that the data is also open-access.\n\nOpen license includes an open source or open-access intellectual property license explicitly permitting the reuse and redistribution of the data.\nRestricted license includes an intellectual property license explicitly permitting your use of the data, but limiting is applications or redistribution.\nCopyright means that the data is explicitly restricted by copyright or implicitly restricted by copyright because the authors have not included any intellectual license for the data.\n\n\n\nMethods\nin progress…\n\n\nResults\nin progress…"
+  },
+  {
+    "objectID": "Rotation/rotation_activity.html",
+    "href": "Rotation/rotation_activity.html",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "",
+    "text": "Teaching Materials » Modules » ?meta:module_title"
+  },
+  {
+    "objectID": "Rotation/rotation_activity.html#motivation-and-learning-goals",
+    "href": "Rotation/rotation_activity.html#motivation-and-learning-goals",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Motivation and Learning Goals",
+    "text": "Motivation and Learning Goals\n\nGoal 1: …\nGoal 2: …\nGoal 3: …"
+  },
+  {
+    "objectID": "Rotation/rotation_activity.html#prerequisites",
+    "href": "Rotation/rotation_activity.html#prerequisites",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nWhat do students need to know before starting the lesson, 2-5 sentences."
+  },
+  {
+    "objectID": "Rotation/rotation_activity.html#implementation",
+    "href": "Rotation/rotation_activity.html#implementation",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Implementation",
+    "text": "Implementation\n\nGuide to Included Materials\n\n\n\n\n\n\n\n\nType\nFile/Link\nDescription\n\n\n\n\nInstructor Handout\nfiles/instructor-handout.pdf\nNotes for pacing and assessment\n\n\nStudent Worksheet\nfiles/student-worksheet.qmd\nSteps and prompts for students\n\n\nSlides (optional)\nfiles/slides.pdf\nOverview figures and key questions\n\n\nDataset A\ndata/dataset-a.csv\nRaw measurements\n\n\nDataset B\ndata/dataset-b.csv\nCleaned subset\n\n\n\n\n\nPractical Tips\nParagraphs with detailed instructor notes. - Common misconceptions, pacing notes, facilitation prompts, equity & inclusion notes, accessibility."
+  },
+  {
+    "objectID": "Rotation/rotation_activity.html#assessment",
+    "href": "Rotation/rotation_activity.html#assessment",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Assessment",
+    "text": "Assessment\n\nFormative: clicker questions, think-pair-share prompts, checkpoint plots.\nSummative: rubric for final figure + 300-word memo (include criteria for accuracy, clarity, uncertainty, and decisions).\nAnswer keys / exemplars: where housed and access notes.\n\nParagraph(s) describing assessment suggestions."
+  },
+  {
+    "objectID": "Rotation/rotation_activity.html#variations",
+    "href": "Rotation/rotation_activity.html#variations",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Variations and Extensions",
+    "text": "Variations and Extensions\n\nLevel Variations\nParagraphs and notes on how the lesson could be modified to be more foundational or more advanced.\n###Follow-ups and links to other work Paragraphs and notes on how the learning outcomes from this lesson can be reinforced, repeated, or built-upon later in the course."
+  },
+  {
+    "objectID": "Rotation/rotation_activity.html#references",
+    "href": "Rotation/rotation_activity.html#references",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "References & Further Reading",
+    "text": "References & Further Reading\n\nCite datasets, software docs, and any scholarship you reference in this module."
+  },
+  {
+    "objectID": "Rotation/rotation_activity.html#acknowledgments",
+    "href": "Rotation/rotation_activity.html#acknowledgments",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\nAALAC Grant #####, R&R collaborators"
+  },
+  {
+    "objectID": "Reproducible-Code-Self-Assessment/reflection_website.html",
+    "href": "Reproducible-Code-Self-Assessment/reflection_website.html",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "",
+    "text": "Teaching Materials » Modules » ?meta:module_title"
+  },
+  {
+    "objectID": "Reproducible-Code-Self-Assessment/reflection_website.html#motivation-and-learning-goals",
+    "href": "Reproducible-Code-Self-Assessment/reflection_website.html#motivation-and-learning-goals",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Motivation and Learning Goals",
+    "text": "Motivation and Learning Goals\n\nGoal 1: …\nGoal 2: …\nGoal 3: …"
+  },
+  {
+    "objectID": "Reproducible-Code-Self-Assessment/reflection_website.html#prerequisites",
+    "href": "Reproducible-Code-Self-Assessment/reflection_website.html#prerequisites",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nWhat do students need to know before starting the lesson, 2-5 sentences."
+  },
+  {
+    "objectID": "Reproducible-Code-Self-Assessment/reflection_website.html#implementation",
+    "href": "Reproducible-Code-Self-Assessment/reflection_website.html#implementation",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Implementation",
+    "text": "Implementation\n\nGuide to Included Materials\n\n\n\n\n\n\n\n\nType\nFile/Link\nDescription\n\n\n\n\nInstructor Handout\nfiles/instructor-handout.pdf\nNotes for pacing and assessment\n\n\nStudent Worksheet\nfiles/student-worksheet.qmd\nSteps and prompts for students\n\n\nSlides (optional)\nfiles/slides.pdf\nOverview figures and key questions\n\n\nDataset A\ndata/dataset-a.csv\nRaw measurements\n\n\nDataset B\ndata/dataset-b.csv\nCleaned subset\n\n\n\n\n\nPractical Tips\nParagraphs with detailed instructor notes. - Common misconceptions, pacing notes, facilitation prompts, equity & inclusion notes, accessibility."
+  },
+  {
+    "objectID": "Reproducible-Code-Self-Assessment/reflection_website.html#assessment",
+    "href": "Reproducible-Code-Self-Assessment/reflection_website.html#assessment",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Assessment",
+    "text": "Assessment\n\nFormative: clicker questions, think-pair-share prompts, checkpoint plots.\nSummative: rubric for final figure + 300-word memo (include criteria for accuracy, clarity, uncertainty, and decisions).\nAnswer keys / exemplars: where housed and access notes.\n\nParagraph(s) describing assessment suggestions."
+  },
+  {
+    "objectID": "Reproducible-Code-Self-Assessment/reflection_website.html#variations",
+    "href": "Reproducible-Code-Self-Assessment/reflection_website.html#variations",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Variations and Extensions",
+    "text": "Variations and Extensions\n\nLevel Variations\nParagraphs and notes on how the lesson could be modified to be more foundational or more advanced.\n###Follow-ups and links to other work Paragraphs and notes on how the learning outcomes from this lesson can be reinforced, repeated, or built-upon later in the course."
+  },
+  {
+    "objectID": "Reproducible-Code-Self-Assessment/reflection_website.html#references",
+    "href": "Reproducible-Code-Self-Assessment/reflection_website.html#references",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "References & Further Reading",
+    "text": "References & Further Reading\n\nCite datasets, software docs, and any scholarship you reference in this module."
+  },
+  {
+    "objectID": "Reproducible-Code-Self-Assessment/reflection_website.html#acknowledgments",
+    "href": "Reproducible-Code-Self-Assessment/reflection_website.html#acknowledgments",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\nAALAC Grant #####, R&R collaborators"
+  },
+  {
+    "objectID": "Rotation/rotation_website.html",
+    "href": "Rotation/rotation_website.html",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "",
+    "text": "Teaching Materials » Modules » ?meta:module_title"
+  },
+  {
+    "objectID": "Rotation/rotation_website.html#motivation-and-learning-goals",
+    "href": "Rotation/rotation_website.html#motivation-and-learning-goals",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Motivation and Learning Goals",
+    "text": "Motivation and Learning Goals\n\nGoal 1: …\nGoal 2: …\nGoal 3: …"
+  },
+  {
+    "objectID": "Rotation/rotation_website.html#prerequisites",
+    "href": "Rotation/rotation_website.html#prerequisites",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nWhat do students need to know before starting the lesson, 2-5 sentences."
+  },
+  {
+    "objectID": "Rotation/rotation_website.html#implementation",
+    "href": "Rotation/rotation_website.html#implementation",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Implementation",
+    "text": "Implementation\n\nGuide to Included Materials\n\n\n\n\n\n\n\n\nType\nFile/Link\nDescription\n\n\n\n\nInstructor Handout\nfiles/instructor-handout.pdf\nNotes for pacing and assessment\n\n\nStudent Worksheet\nfiles/student-worksheet.qmd\nSteps and prompts for students\n\n\nSlides (optional)\nfiles/slides.pdf\nOverview figures and key questions\n\n\nDataset A\ndata/dataset-a.csv\nRaw measurements\n\n\nDataset B\ndata/dataset-b.csv\nCleaned subset\n\n\n\n\n\nPractical Tips\nParagraphs with detailed instructor notes. - Common misconceptions, pacing notes, facilitation prompts, equity & inclusion notes, accessibility."
+  },
+  {
+    "objectID": "Rotation/rotation_website.html#assessment",
+    "href": "Rotation/rotation_website.html#assessment",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Assessment",
+    "text": "Assessment\n\nFormative: clicker questions, think-pair-share prompts, checkpoint plots.\nSummative: rubric for final figure + 300-word memo (include criteria for accuracy, clarity, uncertainty, and decisions).\nAnswer keys / exemplars: where housed and access notes.\n\nParagraph(s) describing assessment suggestions."
+  },
+  {
+    "objectID": "Rotation/rotation_website.html#variations",
+    "href": "Rotation/rotation_website.html#variations",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Variations and Extensions",
+    "text": "Variations and Extensions\n\nLevel Variations\nParagraphs and notes on how the lesson could be modified to be more foundational or more advanced.\n###Follow-ups and links to other work Paragraphs and notes on how the learning outcomes from this lesson can be reinforced, repeated, or built-upon later in the course."
+  },
+  {
+    "objectID": "Rotation/rotation_website.html#references",
+    "href": "Rotation/rotation_website.html#references",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "References & Further Reading",
+    "text": "References & Further Reading\n\nCite datasets, software docs, and any scholarship you reference in this module."
+  },
+  {
+    "objectID": "Rotation/rotation_website.html#acknowledgments",
+    "href": "Rotation/rotation_website.html#acknowledgments",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\nAALAC Grant #####, R&R collaborators"
+  },
+  {
+    "objectID": "Constructing-Reproduction-Documentation/organization_website.html",
+    "href": "Constructing-Reproduction-Documentation/organization_website.html",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "",
+    "text": "Teaching Materials » Modules » ?meta:module_title"
+  },
+  {
+    "objectID": "Constructing-Reproduction-Documentation/organization_website.html#motivation-and-learning-goals",
+    "href": "Constructing-Reproduction-Documentation/organization_website.html#motivation-and-learning-goals",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Motivation and Learning Goals",
+    "text": "Motivation and Learning Goals\n\nGoal 1: …\nGoal 2: …\nGoal 3: …"
+  },
+  {
+    "objectID": "Constructing-Reproduction-Documentation/organization_website.html#prerequisites",
+    "href": "Constructing-Reproduction-Documentation/organization_website.html#prerequisites",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nWhat do students need to know before starting the lesson, 2-5 sentences."
+  },
+  {
+    "objectID": "Constructing-Reproduction-Documentation/organization_website.html#implementation",
+    "href": "Constructing-Reproduction-Documentation/organization_website.html#implementation",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Implementation",
+    "text": "Implementation\n\nGuide to Included Materials\n\n\n\n\n\n\n\n\nType\nFile/Link\nDescription\n\n\n\n\nInstructor Handout\nfiles/instructor-handout.pdf\nNotes for pacing and assessment\n\n\nStudent Worksheet\nfiles/student-worksheet.qmd\nSteps and prompts for students\n\n\nSlides (optional)\nfiles/slides.pdf\nOverview figures and key questions\n\n\nDataset A\ndata/dataset-a.csv\nRaw measurements\n\n\nDataset B\ndata/dataset-b.csv\nCleaned subset\n\n\n\n\n\nPractical Tips\nParagraphs with detailed instructor notes. - Common misconceptions, pacing notes, facilitation prompts, equity & inclusion notes, accessibility."
+  },
+  {
+    "objectID": "Constructing-Reproduction-Documentation/organization_website.html#assessment",
+    "href": "Constructing-Reproduction-Documentation/organization_website.html#assessment",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Assessment",
+    "text": "Assessment\n\nFormative: clicker questions, think-pair-share prompts, checkpoint plots.\nSummative: rubric for final figure + 300-word memo (include criteria for accuracy, clarity, uncertainty, and decisions).\nAnswer keys / exemplars: where housed and access notes.\n\nParagraph(s) describing assessment suggestions."
+  },
+  {
+    "objectID": "Constructing-Reproduction-Documentation/organization_website.html#variations",
+    "href": "Constructing-Reproduction-Documentation/organization_website.html#variations",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Variations and Extensions",
+    "text": "Variations and Extensions\n\nLevel Variations\nParagraphs and notes on how the lesson could be modified to be more foundational or more advanced.\n###Follow-ups and links to other work Paragraphs and notes on how the learning outcomes from this lesson can be reinforced, repeated, or built-upon later in the course."
+  },
+  {
+    "objectID": "Constructing-Reproduction-Documentation/organization_website.html#references",
+    "href": "Constructing-Reproduction-Documentation/organization_website.html#references",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "References & Further Reading",
+    "text": "References & Further Reading\n\nCite datasets, software docs, and any scholarship you reference in this module."
+  },
+  {
+    "objectID": "Constructing-Reproduction-Documentation/organization_website.html#acknowledgments",
+    "href": "Constructing-Reproduction-Documentation/organization_website.html#acknowledgments",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\nAALAC Grant #####, R&R collaborators"
+  },
+  {
+    "objectID": "Assessing-Dubious-Research/assessing_website.html",
+    "href": "Assessing-Dubious-Research/assessing_website.html",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "",
+    "text": "Teaching Materials » Modules » ?meta:module_title"
+  },
+  {
+    "objectID": "Assessing-Dubious-Research/assessing_website.html#motivation-and-learning-goals",
+    "href": "Assessing-Dubious-Research/assessing_website.html#motivation-and-learning-goals",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Motivation and Learning Goals",
+    "text": "Motivation and Learning Goals\n\nGoal 1: …\nGoal 2: …\nGoal 3: …"
+  },
+  {
+    "objectID": "Assessing-Dubious-Research/assessing_website.html#prerequisites",
+    "href": "Assessing-Dubious-Research/assessing_website.html#prerequisites",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nWhat do students need to know before starting the lesson, 2-5 sentences."
+  },
+  {
+    "objectID": "Assessing-Dubious-Research/assessing_website.html#implementation",
+    "href": "Assessing-Dubious-Research/assessing_website.html#implementation",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Implementation",
+    "text": "Implementation\n\nGuide to Included Materials\n\n\n\n\n\n\n\n\nType\nFile/Link\nDescription\n\n\n\n\nInstructor Handout\nfiles/instructor-handout.pdf\nNotes for pacing and assessment\n\n\nStudent Worksheet\nfiles/student-worksheet.qmd\nSteps and prompts for students\n\n\nSlides (optional)\nfiles/slides.pdf\nOverview figures and key questions\n\n\nDataset A\ndata/dataset-a.csv\nRaw measurements\n\n\nDataset B\ndata/dataset-b.csv\nCleaned subset\n\n\n\n\n\nPractical Tips\nParagraphs with detailed instructor notes. - Common misconceptions, pacing notes, facilitation prompts, equity & inclusion notes, accessibility."
+  },
+  {
+    "objectID": "Assessing-Dubious-Research/assessing_website.html#assessment",
+    "href": "Assessing-Dubious-Research/assessing_website.html#assessment",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Assessment",
+    "text": "Assessment\n\nFormative: clicker questions, think-pair-share prompts, checkpoint plots.\nSummative: rubric for final figure + 300-word memo (include criteria for accuracy, clarity, uncertainty, and decisions).\nAnswer keys / exemplars: where housed and access notes.\n\nParagraph(s) describing assessment suggestions."
+  },
+  {
+    "objectID": "Assessing-Dubious-Research/assessing_website.html#variations",
+    "href": "Assessing-Dubious-Research/assessing_website.html#variations",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Variations and Extensions",
+    "text": "Variations and Extensions\n\nLevel Variations\nParagraphs and notes on how the lesson could be modified to be more foundational or more advanced.\n###Follow-ups and links to other work Paragraphs and notes on how the learning outcomes from this lesson can be reinforced, repeated, or built-upon later in the course."
+  },
+  {
+    "objectID": "Assessing-Dubious-Research/assessing_website.html#references",
+    "href": "Assessing-Dubious-Research/assessing_website.html#references",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "References & Further Reading",
+    "text": "References & Further Reading\n\nCite datasets, software docs, and any scholarship you reference in this module."
+  },
+  {
+    "objectID": "Assessing-Dubious-Research/assessing_website.html#acknowledgments",
+    "href": "Assessing-Dubious-Research/assessing_website.html#acknowledgments",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\nAALAC Grant #####, R&R collaborators"
+  },
+  {
+    "objectID": "Pre-Registration/preregisration_website.html",
+    "href": "Pre-Registration/preregisration_website.html",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "",
+    "text": "Teaching Materials » Modules » ?meta:module_title"
+  },
+  {
+    "objectID": "Pre-Registration/preregisration_website.html#motivation-and-learning-goals",
+    "href": "Pre-Registration/preregisration_website.html#motivation-and-learning-goals",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Motivation and Learning Goals",
+    "text": "Motivation and Learning Goals\n\nGoal 1: …\nGoal 2: …\nGoal 3: …"
+  },
+  {
+    "objectID": "Pre-Registration/preregisration_website.html#prerequisites",
+    "href": "Pre-Registration/preregisration_website.html#prerequisites",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nWhat do students need to know before starting the lesson, 2-5 sentences."
+  },
+  {
+    "objectID": "Pre-Registration/preregisration_website.html#implementation",
+    "href": "Pre-Registration/preregisration_website.html#implementation",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Implementation",
+    "text": "Implementation\n\nGuide to Included Materials\n\n\n\n\n\n\n\n\nType\nFile/Link\nDescription\n\n\n\n\nInstructor Handout\nfiles/instructor-handout.pdf\nNotes for pacing and assessment\n\n\nStudent Worksheet\nfiles/student-worksheet.qmd\nSteps and prompts for students\n\n\nSlides (optional)\nfiles/slides.pdf\nOverview figures and key questions\n\n\nDataset A\ndata/dataset-a.csv\nRaw measurements\n\n\nDataset B\ndata/dataset-b.csv\nCleaned subset\n\n\n\n\n\nPractical Tips\nParagraphs with detailed instructor notes. - Common misconceptions, pacing notes, facilitation prompts, equity & inclusion notes, accessibility."
+  },
+  {
+    "objectID": "Pre-Registration/preregisration_website.html#assessment",
+    "href": "Pre-Registration/preregisration_website.html#assessment",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Assessment",
+    "text": "Assessment\n\nFormative: clicker questions, think-pair-share prompts, checkpoint plots.\nSummative: rubric for final figure + 300-word memo (include criteria for accuracy, clarity, uncertainty, and decisions).\nAnswer keys / exemplars: where housed and access notes.\n\nParagraph(s) describing assessment suggestions."
+  },
+  {
+    "objectID": "Pre-Registration/preregisration_website.html#variations",
+    "href": "Pre-Registration/preregisration_website.html#variations",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Variations and Extensions",
+    "text": "Variations and Extensions\n\nLevel Variations\nParagraphs and notes on how the lesson could be modified to be more foundational or more advanced.\n###Follow-ups and links to other work Paragraphs and notes on how the learning outcomes from this lesson can be reinforced, repeated, or built-upon later in the course."
+  },
+  {
+    "objectID": "Pre-Registration/preregisration_website.html#references",
+    "href": "Pre-Registration/preregisration_website.html#references",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "References & Further Reading",
+    "text": "References & Further Reading\n\nCite datasets, software docs, and any scholarship you reference in this module."
+  },
+  {
+    "objectID": "Pre-Registration/preregisration_website.html#acknowledgments",
+    "href": "Pre-Registration/preregisration_website.html#acknowledgments",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\nAALAC Grant #####, R&R collaborators"
+  },
+  {
+    "objectID": "Recognizing-Reproducible-Research/recognizing_website.html",
+    "href": "Recognizing-Reproducible-Research/recognizing_website.html",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "",
+    "text": "Teaching Materials » Modules » ?meta:module_title"
+  },
+  {
+    "objectID": "Recognizing-Reproducible-Research/recognizing_website.html#motivation-and-learning-goals",
+    "href": "Recognizing-Reproducible-Research/recognizing_website.html#motivation-and-learning-goals",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Motivation and Learning Goals",
+    "text": "Motivation and Learning Goals\n\nGoal 1: …\nGoal 2: …\nGoal 3: …"
+  },
+  {
+    "objectID": "Recognizing-Reproducible-Research/recognizing_website.html#prerequisites",
+    "href": "Recognizing-Reproducible-Research/recognizing_website.html#prerequisites",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nWhat do students need to know before starting the lesson, 2-5 sentences."
+  },
+  {
+    "objectID": "Recognizing-Reproducible-Research/recognizing_website.html#implementation",
+    "href": "Recognizing-Reproducible-Research/recognizing_website.html#implementation",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Implementation",
+    "text": "Implementation\n\nGuide to Included Materials\n\n\n\n\n\n\n\n\nType\nFile/Link\nDescription\n\n\n\n\nInstructor Handout\nfiles/instructor-handout.pdf\nNotes for pacing and assessment\n\n\nStudent Worksheet\nfiles/student-worksheet.qmd\nSteps and prompts for students\n\n\nSlides (optional)\nfiles/slides.pdf\nOverview figures and key questions\n\n\nDataset A\ndata/dataset-a.csv\nRaw measurements\n\n\nDataset B\ndata/dataset-b.csv\nCleaned subset\n\n\n\n\n\nPractical Tips\nParagraphs with detailed instructor notes. - Common misconceptions, pacing notes, facilitation prompts, equity & inclusion notes, accessibility."
+  },
+  {
+    "objectID": "Recognizing-Reproducible-Research/recognizing_website.html#assessment",
+    "href": "Recognizing-Reproducible-Research/recognizing_website.html#assessment",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Assessment",
+    "text": "Assessment\n\nFormative: clicker questions, think-pair-share prompts, checkpoint plots.\nSummative: rubric for final figure + 300-word memo (include criteria for accuracy, clarity, uncertainty, and decisions).\nAnswer keys / exemplars: where housed and access notes.\n\nParagraph(s) describing assessment suggestions."
+  },
+  {
+    "objectID": "Recognizing-Reproducible-Research/recognizing_website.html#variations",
+    "href": "Recognizing-Reproducible-Research/recognizing_website.html#variations",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Variations and Extensions",
+    "text": "Variations and Extensions\n\nLevel Variations\nParagraphs and notes on how the lesson could be modified to be more foundational or more advanced.\n###Follow-ups and links to other work Paragraphs and notes on how the learning outcomes from this lesson can be reinforced, repeated, or built-upon later in the course."
+  },
+  {
+    "objectID": "Recognizing-Reproducible-Research/recognizing_website.html#references",
+    "href": "Recognizing-Reproducible-Research/recognizing_website.html#references",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "References & Further Reading",
+    "text": "References & Further Reading\n\nCite datasets, software docs, and any scholarship you reference in this module."
+  },
+  {
+    "objectID": "Recognizing-Reproducible-Research/recognizing_website.html#acknowledgments",
+    "href": "Recognizing-Reproducible-Research/recognizing_website.html#acknowledgments",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\nAALAC Grant #####, R&R collaborators"
   }
 ]

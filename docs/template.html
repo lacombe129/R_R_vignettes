@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="XX YOUR NAMES HERE">
-<meta name="dcterms.date" content="2025-05-23">
 
-<title>Activity to explore p-hacking – Reproducibility and Replication Teaching Modules</title>
+<title>Hello Quarto – Reproducibility and Replication Teaching Modules</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,31 +20,66 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-3211f37fc239cbadcfbf3f057b3348be.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../site_libs/bootstrap/bootstrap-dark-06d8d8881a9aa81beb7e787d52dbf4ef.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../site_libs/bootstrap/bootstrap-3211f37fc239cbadcfbf3f057b3348be.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-707d8167ce6003fca903bfe2be84ab7f.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-3211f37fc239cbadcfbf3f057b3348be.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-06d8d8881a9aa81beb7e787d52dbf4ef.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-3211f37fc239cbadcfbf3f057b3348be.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -257,9 +290,9 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <a href="./index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="./index.html">
     <span class="navbar-title">Reproducibility and Replication Teaching Modules</span>
     </a>
   </div>
@@ -270,7 +303,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../index.html"> 
+    <a class="nav-link" href="./index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -279,20 +312,8 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu" aria-labelledby="nav-menu-modules">    
         <li>
-    <a class="dropdown-item" href="../Recognizing-Reproducible-Research/recognizing_website.html">
- <span class="dropdown-text">Recognizing Reproducible and Replicable Research</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../Constructing-Reproduction-Documentation/organization_website.html">
- <span class="dropdown-text">Research Organization</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../Rotation/rotation_website.html">
- <span class="dropdown-text">Rotation Based Classroom Project</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../Pre-Registration/preregistration_website.qmd">
- <span class="dropdown-text">Pre-Regisration</span></a>
+    <a class="dropdown-item" href="./module-template.html">
+ <span class="dropdown-text">Module Template</span></a>
   </li>  
     </ul>
   </li>
@@ -312,18 +333,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#hack-your-way-to-scientific-glory" id="toc-hack-your-way-to-scientific-glory" class="nav-link active" data-scroll-target="#hack-your-way-to-scientific-glory">Hack your way to scientific glory</a>
+  <li><a href="#welcome-to-my-site" id="toc-welcome-to-my-site" class="nav-link active" data-scroll-target="#welcome-to-my-site">Welcome to my site</a>
   <ul class="collapse">
-  <li><a href="#step-0-appoint-a-leader-and-a-scribe" id="toc-step-0-appoint-a-leader-and-a-scribe" class="nav-link" data-scroll-target="#step-0-appoint-a-leader-and-a-scribe">Step 0: appoint a leader and a scribe</a></li>
-  <li><a href="#step-1-determine-which-party-you-will-be-exploring" id="toc-step-1-determine-which-party-you-will-be-exploring" class="nav-link" data-scroll-target="#step-1-determine-which-party-you-will-be-exploring">Step 1: Determine which party you will be exploring</a></li>
-  <li><a href="#step-2-define-terms" id="toc-step-2-define-terms" class="nav-link" data-scroll-target="#step-2-define-terms">Step 2: Define terms</a></li>
-  <li><a href="#step-3-is-there-a-relationship" id="toc-step-3-is-there-a-relationship" class="nav-link" data-scroll-target="#step-3-is-there-a-relationship">Step 3: Is there a relationship?</a></li>
-  <li><a href="#step-4-is-your-result-significant" id="toc-step-4-is-your-result-significant" class="nav-link" data-scroll-target="#step-4-is-your-result-significant">Step 4: Is your result significant?</a></li>
-  <li><a href="#step-5-write-up-your-results" id="toc-step-5-write-up-your-results" class="nav-link" data-scroll-target="#step-5-write-up-your-results">Step 5: Write up your results</a></li>
-  <li><a href="#step-6-submit-your-report" id="toc-step-6-submit-your-report" class="nav-link" data-scroll-target="#step-6-submit-your-report">Step 6: Submit your report</a></li>
+  <li><a href="#r-code-example" id="toc-r-code-example" class="nav-link" data-scroll-target="#r-code-example">R code example</a></li>
   </ul></li>
   </ul>
-<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="p-hacking.pdf"><i class="bi bi-file-pdf"></i>PDF</a></li></ul></div></nav>
+</nav>
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
@@ -335,26 +350,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Activity to explore p-hacking</h1>
+<h1 class="title">Hello Quarto</h1>
 </div>
 
 
 
 <div class="quarto-title-meta column-page-right">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>XX YOUR NAMES HERE </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">2025-05-23</p>
-    </div>
-  </div>
   
     
   </div>
@@ -364,66 +367,15 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="hack-your-way-to-scientific-glory" class="level2">
-<h2 class="anchored" data-anchor-id="hack-your-way-to-scientific-glory">Hack your way to scientific glory</h2>
-<p>During the course, we have learned about some of the perils of <em>dubious practices</em> such as overfitting models, making errors in extrapolation, and ignoring or misinterpreting null results. While there is not a single way to conduct an analysis, researchers need to be transparent in their decision-making process and acknowledge the limitations behind their research.</p>
-<p>Before today’s class, you were asked to read the Five Thirty Eight Article “Science Isn’t Broken It’s just a hell of a lot harder than we give it credit for” (https://fivethirtyeight.com/features/science-isnt-broken).</p>
-<p>Today you will be working in pairs to explore the potential problems that arise when a non-ethical process is used to determine what to publish.</p>
-<p>You will be working through the interactive visualization “Hack Your Way to Scientific Glory” provided by Five Thirty Eight (https://projects.fivethirtyeight.com/p-hacking), playing the role of a social scientist “with a hunch” about the association between who is in office (Republicans vs.&nbsp;Democrats) and the state of the economy.</p>
-<p>An alternative location for the page can be found at https://web.archive.org/web/20250117051842/http://projects.fivethirtyeight.com/p-hacking.</p>
-<p>Your mission is to come up with a set of analytic choices that lead to a “statistically significant” result (e.g, p &lt; 0.05).</p>
-<section id="step-0-appoint-a-leader-and-a-scribe" class="level3">
-<h3 class="anchored" data-anchor-id="step-0-appoint-a-leader-and-a-scribe">Step 0: appoint a leader and a scribe</h3>
-<ul>
-<li>The leader will be the person whose birthday is coming up next. The leader is responsible for organizing work on the activity.</li>
-<li>The scribe will be the other person. The scribe is responsible for writing up the first draft of the submission and working with the leader to submit your report.</li>
-</ul>
+<section id="welcome-to-my-site" class="level2">
+<h2 class="anchored" data-anchor-id="welcome-to-my-site">Welcome to my site</h2>
+<p>This is a simple test page for Quarto rendering.</p>
+<section id="r-code-example" class="level3">
+<h3 class="anchored" data-anchor-id="r-code-example">R code example</h3>
 <div class="cell">
-<div class="cell-output-display">
-<div id="fig-01" class="quarto-float quarto-figure quarto-figure-center anchored">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="p-hacking.png" class="img-fluid figure-img" style="width:98.0%">
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Simple R computation</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>x <span class="ot">&lt;-</span> <span class="dv">1</span><span class="sc">:</span><span class="dv">10</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-01-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figure&nbsp;1: Five Thirty Eight p-hacking explorer
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-</section>
-<section id="step-1-determine-which-party-you-will-be-exploring" class="level3">
-<h3 class="anchored" data-anchor-id="step-1-determine-which-party-you-will-be-exploring">Step 1: Determine which party you will be exploring</h3>
-<ul>
-<li>If the leader’s birthday is an ODD number, you will be fitting models for REPUBLICANS</li>
-<li>If the leader’s birthday is an EVEN number, you will be fitting models for DEMOCRATS</li>
-</ul>
-</section>
-<section id="step-2-define-terms" class="level3">
-<h3 class="anchored" data-anchor-id="step-2-define-terms">Step 2: Define terms</h3>
-<p>Once you access the website, you’ll need to make some decisions.</p>
-<ul>
-<li>Which politicians do you want to include?</li>
-<li>How do you want to measure economic performance?</li>
-<li>Other options</li>
-</ul>
-</section>
-<section id="step-3-is-there-a-relationship" class="level3">
-<h3 class="anchored" data-anchor-id="step-3-is-there-a-relationship">Step 3: Is there a relationship?</h3>
-<ul>
-<li>What do you conclude about the outcome when more REPUBLICANS/DEMOCRATS are in office?</li>
-</ul>
-</section>
-<section id="step-4-is-your-result-significant" class="level3">
-<h3 class="anchored" data-anchor-id="step-4-is-your-result-significant">Step 4: Is your result significant?</h3>
-</section>
-<section id="step-5-write-up-your-results" class="level3">
-<h3 class="anchored" data-anchor-id="step-5-write-up-your-results">Step 5: Write up your results</h3>
-<p>In a brief report (no more than one page, single spaced plus a figure) aimed at an audience of your classmates, summarize your model and your results. Include a screenshot of the scatterplot and the result. What do you conclude? Be sure to discuss the potential issues of p-hacking and the “Garden of Forking Paths”</p>
-</section>
-<section id="step-6-submit-your-report" class="level3">
-<h3 class="anchored" data-anchor-id="step-6-submit-your-report">Step 6: Submit your report</h3>
 
 
 </section>
