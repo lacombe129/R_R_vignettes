@@ -1,248 +1,115 @@
 [
   {
-    "objectID": "module-template.html",
-    "href": "module-template.html",
+    "objectID": "Assessing-Dubious-Research/assessing_website.html",
+    "href": "Assessing-Dubious-Research/assessing_website.html",
     "title": "LESSON TITLE HERE (Template)",
     "section": "",
-    "text": "Teaching Materials » Modules » LESSON TITLE HERE (Template)"
+    "text": "Teaching Materials » Modules » Rotation-Based Classroom Project"
   },
   {
-    "objectID": "module-template.html#motivation-and-learning-goals",
-    "href": "module-template.html#motivation-and-learning-goals",
+    "objectID": "Assessing-Dubious-Research/assessing_website.html#motivation-and-learning-goals",
+    "href": "Assessing-Dubious-Research/assessing_website.html#motivation-and-learning-goals",
     "title": "LESSON TITLE HERE (Template)",
     "section": "Motivation and Learning Goals",
-    "text": "Motivation and Learning Goals\n\nGoal 1: …\nGoal 2: …\nGoal 3: …"
+    "text": "Motivation and Learning Goals\n\nUnderstand how analytic decisions shape research findings\n\nPractice reproducible data analysis and documentation\n\nDevelop skills in collaborative and rotating research roles"
   },
   {
-    "objectID": "module-template.html#skill-scaffolding",
-    "href": "module-template.html#skill-scaffolding",
+    "objectID": "Assessing-Dubious-Research/assessing_website.html#prerequisites",
+    "href": "Assessing-Dubious-Research/assessing_website.html#prerequisites",
     "title": "LESSON TITLE HERE (Template)",
-    "section": "Skill Scaffolding",
-    "text": "Skill Scaffolding\nWhat do students need to know before starting the lesson, 2-5 sentences."
+    "section": "Prerequisites",
+    "text": "Prerequisites\nStudents should have prior exposure to basic data analysis concepts and familiarity with either R or Python. They should also be comfortable interpreting summary statistics and simple visualizations."
   },
   {
-    "objectID": "module-template.html#implementation",
-    "href": "module-template.html#implementation",
+    "objectID": "Assessing-Dubious-Research/assessing_website.html#implementation",
+    "href": "Assessing-Dubious-Research/assessing_website.html#implementation",
     "title": "LESSON TITLE HERE (Template)",
     "section": "Implementation",
-    "text": "Implementation\n\nGuide to Included Materials\n\n\n\n\n\n\n\n\nType\nFile/Link\nDescription\n\n\n\n\nInstructor Handout\nfiles/instructor-handout.pdf\nNotes for pacing and assessment\n\n\nStudent Worksheet\nfiles/student-worksheet.qmd\nSteps and prompts for students\n\n\nSlides (optional)\nfiles/slides.pdf\nOverview figures and key questions\n\n\nDataset A\ndata/dataset-a.csv\nRaw measurements\n\n\nDataset B\ndata/dataset-b.csv\nCleaned subset\n\n\n\n\n\nPractical Tips\nParagraphs with detailed instructor notes. - Common misconceptions, pacing notes, facilitation prompts, equity & inclusion notes, accessibility."
+    "text": "Implementation\n\nGuide to Included Materials\n\n\n\n\n\n\n\n\nType\nFile/Link\nDescription\n\n\n\n\nInstructor Handout\nfiles/instructor-handout.pdf\nNotes for pacing and assessment\n\n\nStudent Worksheet\nfiles/student-worksheet.qmd\nSteps and prompts for students\n\n\nSlides (optional)\nfiles/slides.pdf\nOverview figures and key questions\n\n\nDataset A\ndata/dataset-a.csv\nRaw measurements\n\n\nDataset B\ndata/dataset-b.csv\nCleaned subset\n\n\n\n\n\nPractical Tips\nProvide clear expectations for role rotation and documentation early in the project. Anticipate common misconceptions about uncertainty and replication. Consider accessibility needs and provide alternative formats where appropriate."
   },
   {
-    "objectID": "module-template.html#assessment",
-    "href": "module-template.html#assessment",
+    "objectID": "Assessing-Dubious-Research/assessing_website.html#assessment",
+    "href": "Assessing-Dubious-Research/assessing_website.html#assessment",
     "title": "LESSON TITLE HERE (Template)",
     "section": "Assessment",
-    "text": "Assessment\n\nFormative: clicker questions, think-pair-share prompts, checkpoint plots.\nSummative: rubric for final figure + 300-word memo (include criteria for accuracy, clarity, uncertainty, and decisions).\nAnswer keys / exemplars: where housed and access notes.\n\nParagraph(s) describing assessment suggestions."
+    "text": "Assessment\n\nFormative: clicker questions, think-pair-share prompts, checkpoint plots\n\nSummative: rubric for final figure plus a 300-word memo assessing analytic decisions\n\nAnswer keys / exemplars: stored with instructor materials"
   },
   {
-    "objectID": "module-template.html#variations",
-    "href": "module-template.html#variations",
+    "objectID": "Assessing-Dubious-Research/assessing_website.html#variations",
+    "href": "Assessing-Dubious-Research/assessing_website.html#variations",
     "title": "LESSON TITLE HERE (Template)",
     "section": "Variations and Extensions",
-    "text": "Variations and Extensions\n\nLevel Variations\nParagraphs and notes on how the lesson could be modified to be more foundational or more advanced.\n###Follow-ups and links to other work Paragraphs and notes on how the learning outcomes from this lesson can be reinforced, repeated, or built-upon later in the course."
+    "text": "Variations and Extensions\n\nLevel Variations\nThis module can be simplified by reducing the number of analytic choices or expanded by incorporating additional datasets or modeling techniques.\n\n\nFollow-ups and Links to Other Work\nLearning outcomes can be reinforced through later assignments focused on replication, robustness checks, or peer review of analyses."
   },
   {
-    "objectID": "module-template.html#references",
-    "href": "module-template.html#references",
+    "objectID": "Assessing-Dubious-Research/assessing_website.html#references",
+    "href": "Assessing-Dubious-Research/assessing_website.html#references",
     "title": "LESSON TITLE HERE (Template)",
     "section": "References & Further Reading",
-    "text": "References & Further Reading\n\nCite datasets, software docs, and any scholarship you reference in this module."
+    "text": "References & Further Reading\nCite datasets, software documentation, and any relevant scholarship referenced in the module."
   },
   {
-    "objectID": "module-template.html#acknowledgments",
-    "href": "module-template.html#acknowledgments",
+    "objectID": "Assessing-Dubious-Research/assessing_website.html#acknowledgments",
+    "href": "Assessing-Dubious-Research/assessing_website.html#acknowledgments",
     "title": "LESSON TITLE HERE (Template)",
     "section": "Acknowledgments",
-    "text": "Acknowledgments\nAALAC Grant #####, R&R collaborators, etc."
+    "text": "Acknowledgments\nThis module was supported by AALAC Grant ##### and contributions from R&R collaborators."
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Home",
+    "objectID": "Reproducible-Code-Self-Assessment/reflection_website.html",
+    "href": "Reproducible-Code-Self-Assessment/reflection_website.html",
+    "title": "LESSON TITLE HERE (Template)",
     "section": "",
-    "text": "Welcome! This is a test of the site theme.\n\n\n\n\n\n\nNote\n\n\n\nIf this callout has a rounded left border and headings look serifed, your theme is active."
+    "text": "Teaching Materials » Modules » Rotation-Based Classroom Project"
   },
   {
-    "objectID": "Rotation/module_rotation.html",
-    "href": "Rotation/module_rotation.html",
-    "title": "Rotation Based Classroom Activity",
-    "section": "",
-    "text": "Teaching Materials » Modules » LESSON TITLE HERE (Template)"
-  },
-  {
-    "objectID": "Rotation/module_rotation.html#motivation-and-learning-goals",
-    "href": "Rotation/module_rotation.html#motivation-and-learning-goals",
-    "title": "Rotation Based Classroom Activity",
+    "objectID": "Reproducible-Code-Self-Assessment/reflection_website.html#motivation-and-learning-goals",
+    "href": "Reproducible-Code-Self-Assessment/reflection_website.html#motivation-and-learning-goals",
+    "title": "LESSON TITLE HERE (Template)",
     "section": "Motivation and Learning Goals",
-    "text": "Motivation and Learning Goals\n\nGoal 1: …\nGoal 2: …\nGoal 3: …"
+    "text": "Motivation and Learning Goals\n\nUnderstand how analytic decisions shape research findings\n\nPractice reproducible data analysis and documentation\n\nDevelop skills in collaborative and rotating research roles"
   },
   {
-    "objectID": "Rotation/module_rotation.html#prerequisites",
-    "href": "Rotation/module_rotation.html#prerequisites",
-    "title": "Rotation Based Classroom Activity",
-    "section": "Prerequisites",
-    "text": "Prerequisites\nWhat do students need to know before starting the lesson, 2-5 sentences."
-  },
-  {
-    "objectID": "Rotation/module_rotation.html#implementation",
-    "href": "Rotation/module_rotation.html#implementation",
-    "title": "Rotation Based Classroom Activity",
-    "section": "Implementation",
-    "text": "Implementation\n\nGuide to Included Materials\n\n\n\n\n\n\n\n\nType\nFile/Link\nDescription\n\n\n\n\nInstructor Handout\nfiles/instructor-handout.pdf\nNotes for pacing and assessment\n\n\nStudent Worksheet\nfiles/student-worksheet.qmd\nSteps and prompts for students\n\n\nSlides (optional)\nfiles/slides.pdf\nOverview figures and key questions\n\n\nDataset A\ndata/dataset-a.csv\nRaw measurements\n\n\nDataset B\ndata/dataset-b.csv\nCleaned subset\n\n\n\n\n\nPractical Tips\nParagraphs with detailed instructor notes. - Common misconceptions, pacing notes, facilitation prompts, equity & inclusion notes, accessibility."
-  },
-  {
-    "objectID": "Rotation/module_rotation.html#assessment",
-    "href": "Rotation/module_rotation.html#assessment",
-    "title": "Rotation Based Classroom Activity",
-    "section": "Assessment",
-    "text": "Assessment\n\nFormative: clicker questions, think-pair-share prompts, checkpoint plots.\nSummative: rubric for final figure + 300-word memo (include criteria for accuracy, clarity, uncertainty, and decisions).\nAnswer keys / exemplars: where housed and access notes.\n\nParagraph(s) describing assessment suggestions."
-  },
-  {
-    "objectID": "Rotation/module_rotation.html#variations",
-    "href": "Rotation/module_rotation.html#variations",
-    "title": "Rotation Based Classroom Activity",
-    "section": "Variations and Extensions",
-    "text": "Variations and Extensions\n\nLevel Variations\nParagraphs and notes on how the lesson could be modified to be more foundational or more advanced.\n###Follow-ups and links to other work Paragraphs and notes on how the learning outcomes from this lesson can be reinforced, repeated, or built-upon later in the course."
-  },
-  {
-    "objectID": "Rotation/module_rotation.html#references",
-    "href": "Rotation/module_rotation.html#references",
-    "title": "Rotation Based Classroom Activity",
-    "section": "References & Further Reading",
-    "text": "References & Further Reading\n\nCite datasets, software docs, and any scholarship you reference in this module."
-  },
-  {
-    "objectID": "Rotation/module_rotation.html#acknowledgments",
-    "href": "Rotation/module_rotation.html#acknowledgments",
-    "title": "Rotation Based Classroom Activity",
-    "section": "Acknowledgments",
-    "text": "Acknowledgments\nAALAC Grant #####, R&R collaborators, etc."
-  },
-  {
-    "objectID": "Rotation/final_project.html",
-    "href": "Rotation/final_project.html",
-    "title": "Project",
-    "section": "",
-    "text": "As a “capstone” project for the course, you will work in small groups to produce a report documenting a data set of your group’s choosing. This report will draw on your data wrangling, visualization, summarization and ethics knowledge built throughout the course. Importantly, this report must be reproducible, meaning that another person must be able to easily recreate your report based on the raw materials you provide without modifying those materials.\nThe report that your group produces will be the result of a structured, asynchronous brainstorming activity that takes place in six phases. The labor for the first five phases technically takes place individually; however, team work is still crucial to your group’s success, because your individual work in each phase of the project builds directly on your group mate’s work from a previous phase. This means that groups where each person engages consistently over time will be the most successful.\nThe timeline, requirements, and logistics for each phase of the project are described below.\n\nPhase 1: Preparation (Weeks 4-6)\nPhase 2: Description (Weeks 7-9)\nPhase 3: Summarization (Weeks 10-11)\nPhase 4: Visualization (Week 12-13)\nPhase 5: Ethics and Citations (Week 14)\nPhase 6: Final Report (Weeks 15)"
-  },
-  {
-    "objectID": "Rotation/final_project.html#overview",
-    "href": "Rotation/final_project.html#overview",
-    "title": "Project",
-    "section": "",
-    "text": "As a “capstone” project for the course, you will work in small groups to produce a report documenting a data set of your group’s choosing. This report will draw on your data wrangling, visualization, summarization and ethics knowledge built throughout the course. Importantly, this report must be reproducible, meaning that another person must be able to easily recreate your report based on the raw materials you provide without modifying those materials.\nThe report that your group produces will be the result of a structured, asynchronous brainstorming activity that takes place in six phases. The labor for the first five phases technically takes place individually; however, team work is still crucial to your group’s success, because your individual work in each phase of the project builds directly on your group mate’s work from a previous phase. This means that groups where each person engages consistently over time will be the most successful.\nThe timeline, requirements, and logistics for each phase of the project are described below.\n\nPhase 1: Preparation (Weeks 4-6)\nPhase 2: Description (Weeks 7-9)\nPhase 3: Summarization (Weeks 10-11)\nPhase 4: Visualization (Week 12-13)\nPhase 5: Ethics and Citations (Week 14)\nPhase 6: Final Report (Weeks 15)"
-  },
-  {
-    "objectID": "Rotation/final_project.html#phase1",
-    "href": "Rotation/final_project.html#phase1",
-    "title": "Project",
-    "section": "Phase 1: Preparation (Weeks 4-6)",
-    "text": "Phase 1: Preparation (Weeks 4-6)\nDuring this preparatory phase, you will have two tasks:\n\nFinding a group\n\nYou should find two other classmates from your section of SDS 100 to form a group with, in order to make groups of three\nIf the number of students enrolled in your section of SDS 100 is not divisible by three, you may be able to form a group of two, group of four, or work with a student enrolled in another section. If you are unable to form a group of three from the pool of students enrolled in your section of SDS 100, please consult your instructor.\nWhen you have formed your group, please fill out the Final Project Group Form, which is linked on the Moodle page.\n\nFinding a data set\n\nEach member of the group will find and contribute a data set suitable for use during the remaining phases\nThe criteria for suitable data sets is explained in the Data Set Criteria section below.\nWhen you have chosen a suitable data set, please fill out the Submit your Project Data quiz, which is linked on the Moodle page.\n\n\n\nData Set Criteria\nThe data need to be downloadable (i.e., the data may not exist only in an  package such as openintro or moderndive), and cannot be data used in SDS 100 or your companion class.\nThe data must also fit the following characteristics:\n\nThere must be at least 4 variables total (not including any ID variables)\n\nThere must be least 2 categorical variables, with at least 2 groups in each categorical variable\n\nThere should not be severe imbalance in the number of observations in each group. For example, you should not have one group of data with 49 observations, and a 1 observation for the second group.\n\nThere must be least 2 numeric variables\n\nEach variable must have least 50 valid observations (i.e., there must be at least 50 observations after excluding NA values), and no more than 10,000 observations.\n\nYou can use the SDS 100 Data Checker to help check whether your data meet the necessary criteria. Because data comes in so many different forms, an automated tool like this won’t catch all possible problems, and some of the things it warns you about might not be an issue, but it’s a good starting point.\nThink about the data selection phase as an opportunity reorient the curriculum towards your interests or the interests of Smithies in general. There are a variety of metrics that you could use to explore and select data. Below are a few possible approaches (though there are many more ways to think about this!):\n\nYou might select a data set that has a variable with a “nice” distribution or a “not nice” distribution\nYou might choose a large data set that illuminates data wrangling techniques like filtering and selecting\nYou might select a data set from a discipline that you didn’t see represented in the class already\nYou might look for a data set with problematic ethical considerations or with poor documentation\n\nYou are welcome to use data from any source that meets the above requirements. Here are a few resources to get you started:\n\nFiveThirtyEight makes the data they use in their articles publicly available.\nThe UCI Machine Learning Repository has a collection of data sets used in machine learning.\nKaggle has a large collection of user-uploaded data sets, often used in competitions hosted on the website.\n\n\n\nFinishing Phase 1\nWhen you have formed a group of three, you should fill out the “Final project group form” on the Moodle page. You should form a group and fill out the form before the start of Week 6.\nWhen you believe you have found a suitable data set for the project, you should seek approval to use these for these data by filling the “Final Project Data” form on Moodle.\nYou expected to submit a data set for approval during Week 4. If your data set is approved, you are done with this phase of the project. If your data set is not suitable, you have a second opportunity to submit a data set for approval during Week 6. If your second data set is also not suitable, then you will be assigned a data set to use."
-  },
-  {
-    "objectID": "Rotation/final_project.html#phase2",
-    "href": "Rotation/final_project.html#phase2",
-    "title": "Project",
-    "section": "Phase 2: Data Description (Weeks 7-9)",
-    "text": "Phase 2: Data Description (Weeks 7-9)\nDuring this phase of the project, you will write an introduction to your data that acquaints a reader with its topic, basic features, and its context. Your description should be written in a Quarto document, and should focus on addressing the main question: What is the data about?\nAs you address this main question, there are some specific things you should do:\n\nYou should describe the source of the data, and how data were generated. For example, are the data from a survey? a laboratory experiment? a government report?\n\nBe sure to include a hyperlink to the location where the data were retrieved from.\n\nYou should explain what was the main research question or motivation was for collecting and assembling these data\nYou should identify the unit of observation. In other words, explain what a row represents in your data.\nA good way to help your reader understand this is to pick a single row in your data set, and interpret it. For example, the first row in your data might represent a 21-year-old female college student living in Northampton, Massachusetts with 15 years of education and who prefers dogs over cats.\nUse dplyr::select() to choose between four and 10 variables that you think are the most essential and/or most interesting variables in the data to analyze.\n\nIf your data already has between 4 and 10 variables, and you don’t want to discard any, skip this step.\n\nUse dplyr::filter() (or other functions) to discard rows in your data sets that you don’t want to include in your analysis\n\nFor example, missing values, or a group of data with only 1 or 2 observations\n\nUse the dplyr::glimpse() function to give the reader an overview of your data set’s content.\nWrite a bulleted list naming and describing each variable.\n\n\nFinishing Phase 2\nTo complete Phase 2, you should first make sure your Quarto document renders into an HTML document. Then, you should submit your rendered HTML document, your Quarto document and any necessary data files to the Final Project Phase 2 assignment on Moodle before the start of Week 10.\nFinally, you should send your Quarto document and any necessary data files to the next group member in your rotation schedule before the start of Week 10. Be sure to consult the project rotation schedule on Moodle to double check you are sending your document to the right person, and to double check who you should expect to receive a document from."
-  },
-  {
-    "objectID": "Rotation/final_project.html#phase3",
-    "href": "Rotation/final_project.html#phase3",
-    "title": "Project",
-    "section": "Phase 3: Summarization (Weeks 10-11)",
-    "text": "Phase 3: Summarization (Weeks 10-11)\nTo start Phase 3, you’ll receive a Quarto document from one of your group members. This document should already contain a general description of the data, so be sure to read it, and note any questions that you have.\nIn this phase, your task will be creating tables of summary statistics. You should create at least three summary tables, and at least one of these tables should be multivariate (i.e., the summary should incorporate at least two variables).\nFor each table your create, write at least one sentence explaining what you can learn about about the data based on these statistics. Be sure that all the tables you create are cross-referenced in your writing, just like you learned how to do in Lab 10.\n\nFinishing Phase 3\nTo complete Phase 3, you should first make sure the Quarto document renders into an HTML document. Then, you should submit the rendered HTML document, the Quarto document and any necessary data files to the Final Project Phase 3 assignment on Moodle before the start of Week 12.\nFinally, you should send this Quarto document and any necessary data files to the next group member in your rotation schedule before the start of Lab 11. Be sure to consult the project rotation schedule on Moodle to double check you are sending your document to the right person, and to double check who you should expect to receive a document from."
-  },
-  {
-    "objectID": "Rotation/final_project.html#phase4",
-    "href": "Rotation/final_project.html#phase4",
-    "title": "Project",
-    "section": "Phase 4: Visualization (Weeks 12)",
-    "text": "Phase 4: Visualization (Weeks 12)\nTo start Phase 4, you’ll receive a Quarto document from one of your group members. This document should already contain a general description of the data, and several tables of summary statistics. Be sure to review these sections, and note any questions that you have.\nIn this phase, your task will be creating data visualizations. You should create at least four visualizations. Among your visualizations, you should have at least two univariate visualization (one utilizing a categorical variable, the other utilizing a numeric variable), at least one bivariate visualization, and at least one trivariate visualization.\nFor each of your plots write 2–3 sentences describing the plots. Your descriptions should discuss the variables used, and what can be learned about the data from the plot. Be sure that all of your figures are cross-referenced in your writing, just like you learned how to do in Lab 10.\n\nFinishing Phase 4\nTo complete Phase 4, you should first make sure the Quarto document renders into an HTML document. Then, you should submit the rendered HTML document, the Quarto document and any necessary data files to the Final Project Phase 4 assignment on Moodle before the start of Week 13.\nFinally, you should send this Quarto document and any necessary data files to the next group member in your rotation schedule before the start of Week 14. Be sure to consult the project rotation schedule on Moodle to double check you are sending your document to the right person, and to double check who you should expect to receive a document from."
-  },
-  {
-    "objectID": "Rotation/final_project.html#phase5",
-    "href": "Rotation/final_project.html#phase5",
-    "title": "Project",
-    "section": "Phase 5: Ethics and Citations (Week 13)",
-    "text": "Phase 5: Ethics and Citations (Week 13)\nTo start Phase 5, you’ll receive a Quarto document from one of your group members. This document should already contain a general description of the data, several tables of summary statistics, and several data visualizations. Be sure to review these sections, and note any questions that you have.\nFirst, add at least one bibliographic citation to your document. Note that to do this you will need to:\n\nCreate a BibTeX database with at least one piece of scholarship\nCreate at least one reference in the text\n\nNext, write a brief statement concerning ethical issues surrounding your data .\n\nFirst, write a few sentences about the data’s provenance. Where did this data come from? Who created/sourced it and for what purpose?\nSecond, list a few potential uses for this data (either realized in existing work or not-yet-realized)\nLastly, write about any potential harmful impacts that you can imagine could come from using this data\n\nFinally, take a few minutes to consider how this data set fits into the curricular goals of SDS 100. Then, in 2-3 sentences, explain where you see this data set fitting into SDS 100 curriculum. Be specific in your recommendation, listing the particular topic(s) and lab number(s) that you feel this data set would most effectively synergize with.\n\nCompleting Phase 5\nTo complete Phase 5, check all of the formatting from the previous weeks, including:\n\nLists\nUse of bold and italics\nTables\nFigures\nVariable names\nCross-references\nSpelling, grammar, and paragraph breaks\n\nNext, make sure the Quarto document renders into an HTML document. Then, you should submit the rendered HTML document, the Quarto document and any necessary data files to the Final Project Phase 5 assignment on Moodle before the start of Week 14.\nSince the rotation phase of the project has ended, you do not need to rotate the Quarto document to another group member."
-  },
-  {
-    "objectID": "Rotation/final_project.html#phase6",
-    "href": "Rotation/final_project.html#phase6",
-    "title": "Project",
-    "section": "Phase 6: Final Report (Finals Period)",
-    "text": "Phase 6: Final Report (Finals Period)\nDuring the final lab meeting of the semester, your group will meet and choose one of the three data sets your have reported on to write about for your final report. Once your group has chosen a data set, your group will collaborate on a final report that documents and describes the data, and makes an argument for using these data for a future SDS 100 lab activity. This report should be a polished, narrative document that weaves together prose, code, and output (like figure and tables) to build it’s argument.\nYour final report should include at least the following features\n\nA rich written introduction to the data’s purpose, source, and context.\nAt least one embedded image (not counting data graphics)\nAn overview of the data set’s content, including a glimpse of the data and detailed descriptions of the variables\nAt least two summary tables of the data that are interpreted and cross-referenced in writing\nAt least two visualizations of the data, one of which must be at least bivariate. All visualizations should be interpreted and cross-referenced in writing\nA discussion of the data’s impact and what specific contributions this data set would make to a specific SDS 100 lab\nA discussion of any meaningful limitations and ethical considerations of the data\nAt least one BibTex formatted in-text citation, and a bibliography section for your references created using BibTex\n\nIdeally, these components will be easy to create, because you have been addressing these same topics throughout phases 2, 3, 4 and 5! Be sure to look at the gallery of past reports for inspiration!\nYour report should be well formatted, legible, and coherent. For example, writing should be formatted paragraphs (not as section headers), and unrecorded lists should be formatted into bullet points using markdown, and URLs should be included as hyperlinked text.\nA few notes of technical advice:\n\nWhen importing data from local files, use relative file paths in your code. This will make the code more portable between your group member’s computers.\nMake sure that the name of everyone in your group appears in the author: field in the YAML header! When a report has multiple authors, you can list them using the following formatting in your YAML header:\nauthor:   \n  - Reg I. Gigas\n  - Drag A. Pult\n  - Art I. Cuno\nBe sure to render your document as a self-contained HTML file. To accomplish this, change the default format: html in your document’s YAML header to\nformat:\n  html:\n    embed-resources: true\n\n\nCompleting Phase 6\nYour group’s final report should be submitted on Moodle before 3pm ET on Friday, May 9th. When submitting your project on Moodle, be sure to submit:\n\nYour rendered HTML file\nYour Quarto document\nYour bibtex references file\nYour data file (if necessary to render the Quarto document)\n\nIf you are importing data from a Google Sheet, make sure it is accessible by your instructor.\n\n\nOnly one person needs to submit these documents for your whole group.\n\nReflection on the Project\nAfter the final report is submitted, you should also complete the Peer and Self Reflection assignment on Moodle. This assignment should be completed before 11:59pm ET on Thursday, May 8th.\nThis assignment will ask you to reflect on how your team worked together over the course of the final project. Your responses on this assignment will be one of several factors in helping me that determine whether you earn project participation token."
-  },
-  {
-    "objectID": "Rotation/final_project.html#the-project-rotation-schedule",
-    "href": "Rotation/final_project.html#the-project-rotation-schedule",
-    "title": "Project",
-    "section": "The Project Rotation Schedule",
-    "text": "The Project Rotation Schedule\nAt the end of Phase 2, Phase 3, and Phase 4, you will “rotate” your work between group members. This means that at the start of Phase 3, Phase 4, and Phase 5, your work will pick up where another group member’s has left off in the previous phase, and another group member’s work will start where you left off in the previous phase.\nThe pattern of rotating documents between group members is easiest to explain using an example. Imagine that you have the following group of 3 students\n\nReg I. Gigas, who chose a data set about archaeological excavations of ancient ruins\nDrag A. Pult, who chose a data set about paranormal encounters\nArt I. Cuno, who chose a data set about climate change\n\nThe table below tracks which data set each student will work on during Phases 2, 3, 4, and 5 of the project\n\n\n\n\n\n\n\n\n\n\nReg’s Data\nDrag’s Data\nArt’s Data\n\n\n\n\nPhase 2 (Describing)\nReg I. Gigas\nDrag A. Pult\nArt I. Cuno\n\n\nPhase 3 (Summarizing)\nArt I. Cuno\nReg I. Gigas\nDrag A. Pult\n\n\nPhase 4 (Visualizing)\nDrag A. Pult\nArt I. Cuno\nReg I. Gigas\n\n\nPhase 5 (Ethics and Impact)\nReg I. Gigas\nDrag A. Pult\nArt I. Cuno\n\n\n\nConsider Reg. I Gigas as an example. During Phase 2, Reg works on describing their own data. At the end of Phase 2, the first rotation occurs. Reg passes all their materials (e.g., their data, their Quarto document, and their image) to the person below them in the “Drag’s Data” column (Art I. Cuno) and receives materials from Drag A. Pult. This means that during Phase 3, Art will work on summarizing the data they receive from Reg, picking up where Reg left off. And, Reg will work on summarizing the data they receive from Drag, picking up where Drag left off.\nAt the end of Phase 3, this process repeats again: Reg passes their work to to the person below them (Art), Drag passes their work to the person below them (Reg) and Art passes their work to the person below them (Reg). This means that during Phase 4, Reg picks up where Art left off (who was summarizing Drag’s data), and works on visualizing Drag’s data.\nAt the end of Phase 4, the documents rotate one last time; Reg passes their work to Art, Drag passes their work to Art, and Art passes their work to Reg. This means that during Phase 5, Reg once again works on their own data. After Phase 5, there are no more rotations."
-  },
-  {
-    "objectID": "Rotation/final_project.html#gallery",
-    "href": "Rotation/final_project.html#gallery",
-    "title": "Project",
-    "section": "Gallery",
-    "text": "Gallery\nThe following projects were submitted in previous semesters and received full credit. You may find them helpful as guides, but please do not interpret them as Platonic ideals of an SDS 100 project! Each of these projects could easily be improved upon.\n\nFood Composition\nThe Lasting Legacy of Redlining"
-  },
-  {
-    "objectID": "module-template.html#prerequisites",
-    "href": "module-template.html#prerequisites",
+    "objectID": "Reproducible-Code-Self-Assessment/reflection_website.html#prerequisites",
+    "href": "Reproducible-Code-Self-Assessment/reflection_website.html#prerequisites",
     "title": "LESSON TITLE HERE (Template)",
     "section": "Prerequisites",
-    "text": "Prerequisites\nWhat do students need to know before starting the lesson, 2-5 sentences."
+    "text": "Prerequisites\nStudents should have prior exposure to basic data analysis concepts and familiarity with either R or Python. They should also be comfortable interpreting summary statistics and simple visualizations."
   },
   {
-    "objectID": "module_template_02.html",
-    "href": "module_template_02.html",
-    "title": "?meta:module_title",
-    "section": "",
-    "text": "What do students need to know before starting the lesson, 2-5 sentences."
-  },
-  {
-    "objectID": "module_template_02.html#prerequisites",
-    "href": "module_template_02.html#prerequisites",
-    "title": "?meta:module_title",
-    "section": "",
-    "text": "What do students need to know before starting the lesson, 2-5 sentences."
-  },
-  {
-    "objectID": "module_template_02.html#implementation",
-    "href": "module_template_02.html#implementation",
-    "title": "?meta:module_title",
+    "objectID": "Reproducible-Code-Self-Assessment/reflection_website.html#implementation",
+    "href": "Reproducible-Code-Self-Assessment/reflection_website.html#implementation",
+    "title": "LESSON TITLE HERE (Template)",
     "section": "Implementation",
-    "text": "Implementation\n\nGuide to Included Materials\n\n\n\n\n\n\n\n\nType\nFile/Link\nDescription\n\n\n\n\nInstructor Handout\nfiles/instructor-handout.pdf\nNotes for pacing and assessment\n\n\nStudent Worksheet\nfiles/student-worksheet.qmd\nSteps and prompts for students\n\n\nSlides (optional)\nfiles/slides.pdf\nOverview figures and key questions\n\n\nDataset A\ndata/dataset-a.csv\nRaw measurements\n\n\nDataset B\ndata/dataset-b.csv\nCleaned subset\n\n\n\n\n\nPractical Tips\nParagraphs with detailed instructor notes. - Common misconceptions, pacing notes, facilitation prompts, equity & inclusion notes, accessibility."
+    "text": "Implementation\n\nGuide to Included Materials\n\n\n\n\n\n\n\n\nType\nFile/Link\nDescription\n\n\n\n\nInstructor Handout\nfiles/instructor-handout.pdf\nNotes for pacing and assessment\n\n\nStudent Worksheet\nfiles/student-worksheet.qmd\nSteps and prompts for students\n\n\nSlides (optional)\nfiles/slides.pdf\nOverview figures and key questions\n\n\nDataset A\ndata/dataset-a.csv\nRaw measurements\n\n\nDataset B\ndata/dataset-b.csv\nCleaned subset\n\n\n\n\n\nPractical Tips\nProvide clear expectations for role rotation and documentation early in the project. Anticipate common misconceptions about uncertainty and replication. Consider accessibility needs and provide alternative formats where appropriate."
   },
   {
-    "objectID": "module_template_02.html#assessment",
-    "href": "module_template_02.html#assessment",
-    "title": "?meta:module_title",
+    "objectID": "Reproducible-Code-Self-Assessment/reflection_website.html#assessment",
+    "href": "Reproducible-Code-Self-Assessment/reflection_website.html#assessment",
+    "title": "LESSON TITLE HERE (Template)",
     "section": "Assessment",
-    "text": "Assessment"
+    "text": "Assessment\n\nFormative: clicker questions, think-pair-share prompts, checkpoint plots\n\nSummative: rubric for final figure plus a 300-word memo assessing analytic decisions\n\nAnswer keys / exemplars: stored with instructor materials"
   },
   {
-    "objectID": "module_template_02.html#variations",
-    "href": "module_template_02.html#variations",
-    "title": "?meta:module_title",
+    "objectID": "Reproducible-Code-Self-Assessment/reflection_website.html#variations",
+    "href": "Reproducible-Code-Self-Assessment/reflection_website.html#variations",
+    "title": "LESSON TITLE HERE (Template)",
     "section": "Variations and Extensions",
-    "text": "Variations and Extensions\n\nLevel Variations\nParagraphs and notes on how the lesson could be modified to be more foundational or more advanced.\n###Follow-ups and links to other work Paragraphs and notes on how the learning outcomes from this lesson can be reinforced, repeated, or built-upon later in the course."
+    "text": "Variations and Extensions\n\nLevel Variations\nThis module can be simplified by reducing the number of analytic choices or expanded by incorporating additional datasets or modeling techniques.\n\n\nFollow-ups and Links to Other Work\nLearning outcomes can be reinforced through later assignments focused on replication, robustness checks, or peer review of analyses."
   },
   {
-    "objectID": "module_template_02.html#references",
-    "href": "module_template_02.html#references",
-    "title": "?meta:module_title",
+    "objectID": "Reproducible-Code-Self-Assessment/reflection_website.html#references",
+    "href": "Reproducible-Code-Self-Assessment/reflection_website.html#references",
+    "title": "LESSON TITLE HERE (Template)",
     "section": "References & Further Reading",
-    "text": "References & Further Reading\n\nCite datasets, software docs, and any scholarship you reference in this module."
+    "text": "References & Further Reading\nCite datasets, software documentation, and any relevant scholarship referenced in the module."
   },
   {
-    "objectID": "module_template_02.html#acknowledgments",
-    "href": "module_template_02.html#acknowledgments",
-    "title": "?meta:module_title",
+    "objectID": "Reproducible-Code-Self-Assessment/reflection_website.html#acknowledgments",
+    "href": "Reproducible-Code-Self-Assessment/reflection_website.html#acknowledgments",
+    "title": "LESSON TITLE HERE (Template)",
     "section": "Acknowledgments",
-    "text": "Acknowledgments"
+    "text": "Acknowledgments\nThis module was supported by AALAC Grant ##### and contributions from R&R collaborators."
   },
   {
     "objectID": "template.html",
@@ -257,41 +124,6 @@
     "title": "Hello Quarto",
     "section": "",
     "text": "This is a simple test page for Quarto rendering.\n\n\n\n# Simple R computation\nx &lt;- 1:10"
-  },
-  {
-    "objectID": "Rotation/project_f22-3-b.html",
-    "href": "Rotation/project_f22-3-b.html",
-    "title": "The Lasting Legacy of Redlining",
-    "section": "",
-    "text": "Code\nlibrary(tidyverse)\nredlining_data &lt;- read_csv(\"https://raw.githubusercontent.com/fivethirtyeight/data/master/redlining/metro-grades.csv\")\n\n\n\n\nThe data that will be used here is one of FiveThirtyEight’s data sources for their “The Lasting Legacy of Redlining” article.1 This data set has the 2020 total population estimates by race/ethnicity (based on the 2020 census) for combined zones of each redlining grade (which can range from A (“Best”) to D (“Hazardous”)2) from the Home Owners’ Loan Corporation’s (HOLC) maps drawn in 1935-40. The maps were provided from the Mapping Inequality project.\n\nThe data set also includes population estimates in the surrounding area of each metropolitan area’s HOLC map and location quotients (LQs, which are compared to their proximity to 1, which indicates an accurate representation of a population)3 for each racial/ethnic group and HOLC grade. You can find more information on the data set, variables, and calculations in the Github link listed above.\nOne unit of observation corresponds to a metropolitan area’s combined total population estimates, surrounding area population estimates, percentages of both, and LQs for all of the zones in that area that correspond to the same HOLC grade.\nFor example, the first observation describes the aforementioned data points for all locations within Akron, OH that have an “A” HOLC grade. Reading the columns from left to right, the first row tells us that:\n\nThe metropolitan area is Akron, Ohio.\nThe grade of the combined HOLC zones within Akron, OH is A.\nThe non-Hispanic white population is 24702.\nThe non-Hispanic Black population is 8624.\nThe Hispanic/Latino population is 956.\nThe Asian population is 688.\nThe population of those in any other race/ethnicity group is 1993.\nThe total population in these HOLC zones is 36963.\nThe estimated percentage of non-Hispanic white residents in HOLC zones with an A grade in Akron, OH out of the total population is 66.83%.\nThe estimated percentage of non-Hispanic Black residents in HOLC zones with an A grade in Akron, OH out of the total population is 23.33%.\nThe estimated percentage of Hispanic/Latino residents in HOLC zones with an A grade in Akron, OH out of the total population is 2.59%.\nThe estimated percentage of Asian residents in HOLC zones with an A grade in Akron, OH out of the total population is 1.86%.\nThe estimated percentage of residents with another race/ethnicity in HOLC zones with an A grade in Akron, OH out of the total population is 5.39%.\nThe non-Hispanic white location quotient (LQ) is 0.94.\nThe non-Hispanic Black location quotient (LQ) is 1.41.\nThe Hispanic/Latino location quotient (LQ) is 1.\nThe Asian location quotient (LQ) is 0.46.\nThe other race/ethnicity location quotient (LQ) is 0.97.\nThe estimated non-Hispanic white population within surrounding area of the HOLC zones is 304399.\nThe estimated non-Hispanic Black population within surrounding area of the HOLC zones is 70692.\nThe estimated Hispanic/Latino population within surrounding area of the HOLC zones is 11037.\nThe estimated Asian population within surrounding area of the HOLC zones is 17295.\nThe estimated other race/ethnicity population within surrounding area of the HOLC zones is 23839.\nThe estimated percentage of non-Hispanic white residents in the surrounding area around the HOLC zones out of the total surrounding area population is 71.24%.\nThe estimated percentage of non-Hispanic Black residents in the surrounding area around the HOLC zones out of the total surrounding area population is 16.55%.\nThe estimated percentage of Hispanic/Latino residents in the surrounding area around the HOLC zones out of the total surrounding area population is 2.58%.\nThe estimated percentage of Asian residents in the surrounding area around the HOLC zones out of the total surrounding area population is 4.05%.\nThe estimated percentage of other race/ethnicity residents in the surrounding area around the HOLC zones out of the total surrounding area population is 5.58%.\n\nIt is important to note that the population estimates are rounded to the next integer and the percentages are rounded to the nearest 2 decimal places."
-  },
-  {
-    "objectID": "Rotation/project_f22-3-b.html#introduction-to-the-data",
-    "href": "Rotation/project_f22-3-b.html#introduction-to-the-data",
-    "title": "The Lasting Legacy of Redlining",
-    "section": "",
-    "text": "The data that will be used here is one of FiveThirtyEight’s data sources for their “The Lasting Legacy of Redlining” article.1 This data set has the 2020 total population estimates by race/ethnicity (based on the 2020 census) for combined zones of each redlining grade (which can range from A (“Best”) to D (“Hazardous”)2) from the Home Owners’ Loan Corporation’s (HOLC) maps drawn in 1935-40. The maps were provided from the Mapping Inequality project.\n\nThe data set also includes population estimates in the surrounding area of each metropolitan area’s HOLC map and location quotients (LQs, which are compared to their proximity to 1, which indicates an accurate representation of a population)3 for each racial/ethnic group and HOLC grade. You can find more information on the data set, variables, and calculations in the Github link listed above.\nOne unit of observation corresponds to a metropolitan area’s combined total population estimates, surrounding area population estimates, percentages of both, and LQs for all of the zones in that area that correspond to the same HOLC grade.\nFor example, the first observation describes the aforementioned data points for all locations within Akron, OH that have an “A” HOLC grade. Reading the columns from left to right, the first row tells us that:\n\nThe metropolitan area is Akron, Ohio.\nThe grade of the combined HOLC zones within Akron, OH is A.\nThe non-Hispanic white population is 24702.\nThe non-Hispanic Black population is 8624.\nThe Hispanic/Latino population is 956.\nThe Asian population is 688.\nThe population of those in any other race/ethnicity group is 1993.\nThe total population in these HOLC zones is 36963.\nThe estimated percentage of non-Hispanic white residents in HOLC zones with an A grade in Akron, OH out of the total population is 66.83%.\nThe estimated percentage of non-Hispanic Black residents in HOLC zones with an A grade in Akron, OH out of the total population is 23.33%.\nThe estimated percentage of Hispanic/Latino residents in HOLC zones with an A grade in Akron, OH out of the total population is 2.59%.\nThe estimated percentage of Asian residents in HOLC zones with an A grade in Akron, OH out of the total population is 1.86%.\nThe estimated percentage of residents with another race/ethnicity in HOLC zones with an A grade in Akron, OH out of the total population is 5.39%.\nThe non-Hispanic white location quotient (LQ) is 0.94.\nThe non-Hispanic Black location quotient (LQ) is 1.41.\nThe Hispanic/Latino location quotient (LQ) is 1.\nThe Asian location quotient (LQ) is 0.46.\nThe other race/ethnicity location quotient (LQ) is 0.97.\nThe estimated non-Hispanic white population within surrounding area of the HOLC zones is 304399.\nThe estimated non-Hispanic Black population within surrounding area of the HOLC zones is 70692.\nThe estimated Hispanic/Latino population within surrounding area of the HOLC zones is 11037.\nThe estimated Asian population within surrounding area of the HOLC zones is 17295.\nThe estimated other race/ethnicity population within surrounding area of the HOLC zones is 23839.\nThe estimated percentage of non-Hispanic white residents in the surrounding area around the HOLC zones out of the total surrounding area population is 71.24%.\nThe estimated percentage of non-Hispanic Black residents in the surrounding area around the HOLC zones out of the total surrounding area population is 16.55%.\nThe estimated percentage of Hispanic/Latino residents in the surrounding area around the HOLC zones out of the total surrounding area population is 2.58%.\nThe estimated percentage of Asian residents in the surrounding area around the HOLC zones out of the total surrounding area population is 4.05%.\nThe estimated percentage of other race/ethnicity residents in the surrounding area around the HOLC zones out of the total surrounding area population is 5.58%.\n\nIt is important to note that the population estimates are rounded to the next integer and the percentages are rounded to the nearest 2 decimal places."
-  },
-  {
-    "objectID": "Rotation/project_f22-3-b.html#footnotes",
-    "href": "Rotation/project_f22-3-b.html#footnotes",
-    "title": "The Lasting Legacy of Redlining",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nhttps://projects.fivethirtyeight.com/redlining/↩︎\nYou can read more about the redlining zone classifications here.↩︎\nMore information on location quotients.↩︎"
-  },
-  {
-    "objectID": "Assessing-Dubious-Research/p-hacking.html",
-    "href": "Assessing-Dubious-Research/p-hacking.html",
-    "title": "Activity to explore p-hacking",
-    "section": "",
-    "text": "During the course, we have learned about some of the perils of dubious practices such as overfitting models, making errors in extrapolation, and ignoring or misinterpreting null results. While there is not a single way to conduct an analysis, researchers need to be transparent in their decision-making process and acknowledge the limitations behind their research.\nBefore today’s class, you were asked to read the Five Thirty Eight Article “Science Isn’t Broken It’s just a hell of a lot harder than we give it credit for” (https://fivethirtyeight.com/features/science-isnt-broken).\nToday you will be working in pairs to explore the potential problems that arise when a non-ethical process is used to determine what to publish.\nYou will be working through the interactive visualization “Hack Your Way to Scientific Glory” provided by Five Thirty Eight (https://projects.fivethirtyeight.com/p-hacking), playing the role of a social scientist “with a hunch” about the association between who is in office (Republicans vs. Democrats) and the state of the economy.\nAn alternative location for the page can be found at https://web.archive.org/web/20250117051842/http://projects.fivethirtyeight.com/p-hacking.\nYour mission is to come up with a set of analytic choices that lead to a “statistically significant” result (e.g, p &lt; 0.05).\n\n\n\nThe leader will be the person whose birthday is coming up next. The leader is responsible for organizing work on the activity.\nThe scribe will be the other person. The scribe is responsible for writing up the first draft of the submission and working with the leader to submit your report.\n\n\n\n\n\n\n\n\n\nFigure 1: Five Thirty Eight p-hacking explorer\n\n\n\n\n\n\n\n\n\nIf the leader’s birthday is an ODD number, you will be fitting models for REPUBLICANS\nIf the leader’s birthday is an EVEN number, you will be fitting models for DEMOCRATS\n\n\n\n\nOnce you access the website, you’ll need to make some decisions.\n\nWhich politicians do you want to include?\nHow do you want to measure economic performance?\nOther options\n\n\n\n\n\nWhat do you conclude about the outcome when more REPUBLICANS/DEMOCRATS are in office?\n\n\n\n\n\n\n\nIn a brief report (no more than one page, single spaced plus a figure) aimed at an audience of your classmates, summarize your model and your results. Include a screenshot of the scatterplot and the result. What do you conclude? Be sure to discuss the potential issues of p-hacking and the “Garden of Forking Paths”"
-  },
-  {
-    "objectID": "Assessing-Dubious-Research/p-hacking.html#hack-your-way-to-scientific-glory",
-    "href": "Assessing-Dubious-Research/p-hacking.html#hack-your-way-to-scientific-glory",
-    "title": "Activity to explore p-hacking",
-    "section": "",
-    "text": "During the course, we have learned about some of the perils of dubious practices such as overfitting models, making errors in extrapolation, and ignoring or misinterpreting null results. While there is not a single way to conduct an analysis, researchers need to be transparent in their decision-making process and acknowledge the limitations behind their research.\nBefore today’s class, you were asked to read the Five Thirty Eight Article “Science Isn’t Broken It’s just a hell of a lot harder than we give it credit for” (https://fivethirtyeight.com/features/science-isnt-broken).\nToday you will be working in pairs to explore the potential problems that arise when a non-ethical process is used to determine what to publish.\nYou will be working through the interactive visualization “Hack Your Way to Scientific Glory” provided by Five Thirty Eight (https://projects.fivethirtyeight.com/p-hacking), playing the role of a social scientist “with a hunch” about the association between who is in office (Republicans vs. Democrats) and the state of the economy.\nAn alternative location for the page can be found at https://web.archive.org/web/20250117051842/http://projects.fivethirtyeight.com/p-hacking.\nYour mission is to come up with a set of analytic choices that lead to a “statistically significant” result (e.g, p &lt; 0.05).\n\n\n\nThe leader will be the person whose birthday is coming up next. The leader is responsible for organizing work on the activity.\nThe scribe will be the other person. The scribe is responsible for writing up the first draft of the submission and working with the leader to submit your report.\n\n\n\n\n\n\n\n\n\nFigure 1: Five Thirty Eight p-hacking explorer\n\n\n\n\n\n\n\n\n\nIf the leader’s birthday is an ODD number, you will be fitting models for REPUBLICANS\nIf the leader’s birthday is an EVEN number, you will be fitting models for DEMOCRATS\n\n\n\n\nOnce you access the website, you’ll need to make some decisions.\n\nWhich politicians do you want to include?\nHow do you want to measure economic performance?\nOther options\n\n\n\n\n\nWhat do you conclude about the outcome when more REPUBLICANS/DEMOCRATS are in office?\n\n\n\n\n\n\n\nIn a brief report (no more than one page, single spaced plus a figure) aimed at an audience of your classmates, summarize your model and your results. Include a screenshot of the scatterplot and the result. What do you conclude? Be sure to discuss the potential issues of p-hacking and the “Garden of Forking Paths”"
   },
   {
     "objectID": "Recognizing-Reproducible-Research/Recognizing-Reproducible-Research.html",
@@ -315,395 +147,157 @@
     "text": "Instructions\nThe following instructions will walk you through a reproducibility assessment for a prior study. The goal is to assess whether the study is already reproducible: if you find yourself doing the authors’ work to improve its reproducibility, then you are doing too much.\n\nChoose an Article\nFirst, choose an article to assess. The article should contain empirical research, i.e. there is data-based evidence and it is analyzed in order to answer a research question or test a reseach hypothesis. Important: You should find the journal website where the article was originally published, and download the article and its information from that primary source. Do not rely on preprint servers or secondary research websites like ResearchGate. Download the article and copy it’s DOI (Digitial Object Identifier) and a full citation for the article here:\nDOI:\nCitation:\n\n\nAccess its materials\nAs it turns out, most research articles contain only a fraction of the information that is needed to reproduce them in the article body itself. Remaining information, or supplementary materials may be found elsewhere. Try to find all of these materials before starting your audit. Where should you look?\nTry the following:\n\nLook for a link to “supplementary materials” on the journal website where the article was published. There may be more than one document or file.\nLook for a “data availability” statement or similar section in the article. This may describe where to find data and other materials associated with the work.\nSearch for web links in the article text, especially to digital repositories or archives where additional data, methods, and information may be stored. Examples include GitHub, GitLab, Zenodo, Harvard Dataverse, Figshare, OSF, and more.\nCheck the article’s references and endnotes for references to data sources, code, and/or software used in the research.\n\nSave all of the supplementary files taht you find into one folder for your project. Start a document in your project folder where you can copy clues and links from the manuscript.\n\n\nComputational environment\nBased on the information available to you, what computing environment did the authors use for their research?\n\nOperating system:\nMain software and version(s):\nAdditional software package(s) or plugin(s) and version(s):\n\nThe operating system is likely Linux, MacOS or Windows. Include the version, if known.\nThe main software for open data science is likely Python or R, whereas proprietary software could include platforms like SAS, SPSS, ArcGIS, etc.\n\n\nData sources\nFirst, list all of the data sources described in the research paper, including data that the authors created themselves. Second, investigate the actual data availability of each source, the availability of documentation for each data source, lineage information about data acquisition or creation, and permissiveness of reuse.\nComplete a table with your findings, using the following example structure:\n\n\n\n\n\n\n\n\n\n\nData source\ndata availability\ndocumentation\nlineage\nreuse\n\n\n\n\nSource1\nprovided in full\nstandard\nautomated\nopen\n\n\n…\n…\n…\n…\n…\n\n\nSourceN\ninaccessible\nnonstandard\ndescribed\ncopyright\n\n\n\nCategorize data availability as one of the following, ordered from best-case scenario to worst-case scenario:\n\nProvided in full with the paper as supplemental materials or with a DOI link to a digital archive\nProvided with limitations to protect intellectual property or privacy, requiring credentials and clearance or modifying the data with some process of anonymization or simulation.\nLinked to a source for download, but not in a formal archive or with a DOI.\nPublic data that may be acquired separately through your own efforts.\nInaccessible data that cannot be acquired.\n\nCategorize documentation as one of the following, ordered from best-case scenario to worst-case scenario:\n\nStandard metadata appropriate to the data source type is provided by the authors. For example, geospatial data should be documented with FGDC or ISO-191* metadata standards and survey data can be documented with DDI (Data Documentation Initiative) standards.\nNonstandard documentation of the data source that does not conform to a metadata standard, but is clear about the data characteristics, variables, variable definitions, etc. for another researcher to understand everything they need to know about the data source in order to use it.\nInadequate documentation lacks key information about which data files contain which information, which variables are important and how their values are defined, how missing data is recorded, or other essential information for using the data appropriately.\n\nCategorize lineage as one of the following, ordered from best-case scenario to worst-case scenario:\n\nAutomated lineage includes code or very explicit workflows to essentially automate the acquisition or creation of the data source, e.g. through use of application programming interface (API) code or files required to conduct an online survey.\nDescribed lineage includes enough description about how to acquire or create the data that someone could reasonably re-create teh data.\nInadequate lineage lacks enough information for someone to confidently re-acquire or re-create the data.\n\nCategorize reuse as one of the following, ordered from best-case scenario to worst-case scenario. Note that just because a research article is open-access does not necessarily mean that the data is also open-access.\n\nOpen license includes an open source or open-access intellectual property license explicitly permitting the reuse and redistribution of the data.\nRestricted license includes an intellectual property license explicitly permitting your use of the data, but limiting is applications or redistribution.\nCopyright means that the data is explicitly restricted by copyright or implicitly restricted by copyright because the authors have not included any intellectual license for the data.\n\n\n\nMethods\nin progress…\n\n\nResults\nin progress…"
   },
   {
-    "objectID": "Rotation/rotation_activity.html",
-    "href": "Rotation/rotation_activity.html",
-    "title": "LESSON TITLE HERE (Template)",
+    "objectID": "Assessing-Dubious-Research/multiple_comparisons.html",
+    "href": "Assessing-Dubious-Research/multiple_comparisons.html",
+    "title": "Activity to explore multiple comparisons",
     "section": "",
-    "text": "Teaching Materials » Modules » ?meta:module_title"
+    "text": "During the course, we have learned about some of the perils of dubious practices such as overfitting models, making errors in extrapolation, and ignoring or misinterpreting null results. While there is not a single way to conduct an analysis, researchers need to be transparent in their decision-making process and acknowledge the limitations behind their research.\nToday you will be working in pairs to explore the potential problems that arise when care isn’t taken to account for multiple comparisons."
   },
   {
-    "objectID": "Rotation/rotation_activity.html#motivation-and-learning-goals",
-    "href": "Rotation/rotation_activity.html#motivation-and-learning-goals",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "Motivation and Learning Goals",
-    "text": "Motivation and Learning Goals\n\nGoal 1: …\nGoal 2: …\nGoal 3: …"
-  },
-  {
-    "objectID": "Rotation/rotation_activity.html#prerequisites",
-    "href": "Rotation/rotation_activity.html#prerequisites",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "Prerequisites",
-    "text": "Prerequisites\nWhat do students need to know before starting the lesson, 2-5 sentences."
-  },
-  {
-    "objectID": "Rotation/rotation_activity.html#implementation",
-    "href": "Rotation/rotation_activity.html#implementation",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "Implementation",
-    "text": "Implementation\n\nGuide to Included Materials\n\n\n\n\n\n\n\n\nType\nFile/Link\nDescription\n\n\n\n\nInstructor Handout\nfiles/instructor-handout.pdf\nNotes for pacing and assessment\n\n\nStudent Worksheet\nfiles/student-worksheet.qmd\nSteps and prompts for students\n\n\nSlides (optional)\nfiles/slides.pdf\nOverview figures and key questions\n\n\nDataset A\ndata/dataset-a.csv\nRaw measurements\n\n\nDataset B\ndata/dataset-b.csv\nCleaned subset\n\n\n\n\n\nPractical Tips\nParagraphs with detailed instructor notes. - Common misconceptions, pacing notes, facilitation prompts, equity & inclusion notes, accessibility."
-  },
-  {
-    "objectID": "Rotation/rotation_activity.html#assessment",
-    "href": "Rotation/rotation_activity.html#assessment",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "Assessment",
-    "text": "Assessment\n\nFormative: clicker questions, think-pair-share prompts, checkpoint plots.\nSummative: rubric for final figure + 300-word memo (include criteria for accuracy, clarity, uncertainty, and decisions).\nAnswer keys / exemplars: where housed and access notes.\n\nParagraph(s) describing assessment suggestions."
-  },
-  {
-    "objectID": "Rotation/rotation_activity.html#variations",
-    "href": "Rotation/rotation_activity.html#variations",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "Variations and Extensions",
-    "text": "Variations and Extensions\n\nLevel Variations\nParagraphs and notes on how the lesson could be modified to be more foundational or more advanced.\n###Follow-ups and links to other work Paragraphs and notes on how the learning outcomes from this lesson can be reinforced, repeated, or built-upon later in the course."
-  },
-  {
-    "objectID": "Rotation/rotation_activity.html#references",
-    "href": "Rotation/rotation_activity.html#references",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "References & Further Reading",
-    "text": "References & Further Reading\n\nCite datasets, software docs, and any scholarship you reference in this module."
-  },
-  {
-    "objectID": "Rotation/rotation_activity.html#acknowledgments",
-    "href": "Rotation/rotation_activity.html#acknowledgments",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "Acknowledgments",
-    "text": "Acknowledgments\nAALAC Grant #####, R&R collaborators"
-  },
-  {
-    "objectID": "Reproducible-Code-Self-Assessment/reflection_website.html",
-    "href": "Reproducible-Code-Self-Assessment/reflection_website.html",
-    "title": "LESSON TITLE HERE (Template)",
+    "objectID": "Assessing-Dubious-Research/multiple_comparisons.html#the-perils-of-multiple-comparison",
+    "href": "Assessing-Dubious-Research/multiple_comparisons.html#the-perils-of-multiple-comparison",
+    "title": "Activity to explore multiple comparisons",
     "section": "",
-    "text": "Teaching Materials » Modules » ?meta:module_title"
+    "text": "During the course, we have learned about some of the perils of dubious practices such as overfitting models, making errors in extrapolation, and ignoring or misinterpreting null results. While there is not a single way to conduct an analysis, researchers need to be transparent in their decision-making process and acknowledge the limitations behind their research.\nToday you will be working in pairs to explore the potential problems that arise when care isn’t taken to account for multiple comparisons."
   },
   {
-    "objectID": "Reproducible-Code-Self-Assessment/reflection_website.html#motivation-and-learning-goals",
-    "href": "Reproducible-Code-Self-Assessment/reflection_website.html#motivation-and-learning-goals",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "Motivation and Learning Goals",
-    "text": "Motivation and Learning Goals\n\nGoal 1: …\nGoal 2: …\nGoal 3: …"
+    "objectID": "Assessing-Dubious-Research/multiple_comparisons.html#question-1",
+    "href": "Assessing-Dubious-Research/multiple_comparisons.html#question-1",
+    "title": "Activity to explore multiple comparisons",
+    "section": "Question 1",
+    "text": "Question 1\nA statistical analyst carried out an investigation of the association of gender and teaching evaluations at a university. They undertook exploratory analysis of the data and carried out a number of bivariate comparisons. The multiple items on the teaching evaluation were consolidated to a single measure based on these exploratory analyses. They used this information to construct a multivariable regression model that found evidence for biases.\nWhat issues might arise based on such an analytic approach?\nSOLUTION:\nThe use of the observed data to select the predictors included in the multivariable model will tend to inflate Type-I error rates. Use of a holdout sample (or other cross-validation approach) would be necessary to avoid anti-conservative inferences."
   },
   {
-    "objectID": "Reproducible-Code-Self-Assessment/reflection_website.html#prerequisites",
-    "href": "Reproducible-Code-Self-Assessment/reflection_website.html#prerequisites",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "Prerequisites",
-    "text": "Prerequisites\nWhat do students need to know before starting the lesson, 2-5 sentences."
+    "objectID": "Assessing-Dubious-Research/multiple_comparisons.html#question-2",
+    "href": "Assessing-Dubious-Research/multiple_comparisons.html#question-2",
+    "title": "Activity to explore multiple comparisons",
+    "section": "Question 2",
+    "text": "Question 2\nThe team wants assess how bad the potential is for inflation of Type-I errors using their approach Imagine that they have 100 predictor variables and one outcome measured for \\(n=250\\) observations).\nThe investigators use the following procedure:\n\nFit each of the 100 bivariate models for the outcome as a function of a single predictor, then\nInclude all of the significant predictors in the overall model.\n\nWhat is the distribution of the p-value for the overall F-test for the MLR model, assuming that there are no associations between any of the predictors and the outcome (all are assumed to be multivariate normal and independent). Carry out a simulation to check your answer. (Hint: what happens if we just fit all the predictors? The following code may be helpful.)\n\nnumsim &lt;- 1000\nset.seed(1998)\ngenmodel &lt;- function(p = 100, n = 250, alpha = 0.05, twostage = TRUE) {\n  X &lt;- matrix(rnorm(p * n), nrow = n)\n  y &lt;- rnorm(n)\n  keep &lt;- logical(p)\n  for (i in 1:p) {\n    mod &lt;- lm(y ~ X[, i])\n    testpval &lt;- coef(summary(mod))[2, 4]\n    keep[i] &lt;- testpval &lt; alpha\n  }\n  if (twostage == TRUE) {\n    keep &lt;- logical(p)\n    for (i in 1:p) {\n      mod &lt;- lm(y ~ X[, i])\n      testpval &lt;- coef(summary(mod))[2, 4]\n      keep[i] &lt;- testpval &lt; alpha\n    }\n    smallX &lt;- data.frame(y, X[, keep])\n  } else { # include all predictors\n    smallX &lt;- data.frame(y, X)\n  }\n  overall &lt;- lm(y ~ ., data = smallX)\n  return(overallp = broom::glance(overall)$p.value)\n}\n\nSOLUTION:"
   },
   {
-    "objectID": "Reproducible-Code-Self-Assessment/reflection_website.html#implementation",
-    "href": "Reproducible-Code-Self-Assessment/reflection_website.html#implementation",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "Implementation",
-    "text": "Implementation\n\nGuide to Included Materials\n\n\n\n\n\n\n\n\nType\nFile/Link\nDescription\n\n\n\n\nInstructor Handout\nfiles/instructor-handout.pdf\nNotes for pacing and assessment\n\n\nStudent Worksheet\nfiles/student-worksheet.qmd\nSteps and prompts for students\n\n\nSlides (optional)\nfiles/slides.pdf\nOverview figures and key questions\n\n\nDataset A\ndata/dataset-a.csv\nRaw measurements\n\n\nDataset B\ndata/dataset-b.csv\nCleaned subset\n\n\n\n\n\nPractical Tips\nParagraphs with detailed instructor notes. - Common misconceptions, pacing notes, facilitation prompts, equity & inclusion notes, accessibility."
+    "objectID": "Assessing-Dubious-Research/p-hacking.html",
+    "href": "Assessing-Dubious-Research/p-hacking.html",
+    "title": "Activity to explore p-hacking",
+    "section": "",
+    "text": "During the course, we have learned about some of the perils of dubious practices such as overfitting models, making errors in extrapolation, and ignoring or misinterpreting null results. While there is not a single way to conduct an analysis, researchers need to be transparent in their decision-making process and acknowledge the limitations behind their research.\nBefore today’s class, you were asked to read the Five Thirty Eight Article “Science Isn’t Broken It’s just a hell of a lot harder than we give it credit for” (https://fivethirtyeight.com/features/science-isnt-broken).\nToday you will be working in pairs to explore the potential problems that arise when a non-ethical process is used to determine what to publish.\nYou will be working through the interactive visualization “Hack Your Way to Scientific Glory” provided by Five Thirty Eight (https://projects.fivethirtyeight.com/p-hacking), playing the role of a social scientist “with a hunch” about the association between who is in office (Republicans vs. Democrats) and the state of the economy.\nAn alternative location for the page can be found at https://web.archive.org/web/20250117051842/http://projects.fivethirtyeight.com/p-hacking.\nYour mission is to come up with a set of analytic choices that lead to a “statistically significant” result (e.g, p &lt; 0.05).\n\n\n\nThe leader will be the person whose birthday is coming up next. The leader is responsible for organizing work on the activity.\nThe scribe will be the other person. The scribe is responsible for writing up the first draft of the submission and working with the leader to submit your report.\n\n\n\n\n\n\n\n\n\nFigure 1: Five Thirty Eight p-hacking explorer\n\n\n\n\n\n\n\n\n\nIf the leader’s birthday is an ODD number, you will be fitting models for REPUBLICANS\nIf the leader’s birthday is an EVEN number, you will be fitting models for DEMOCRATS\n\n\n\n\nOnce you access the website, you’ll need to make some decisions.\n\nWhich politicians do you want to include?\nHow do you want to measure economic performance?\nOther options\n\n\n\n\n\nWhat do you conclude about the outcome when more REPUBLICANS/DEMOCRATS are in office?\n\n\n\n\n\n\n\nIn a brief report (no more than one page, single spaced plus a figure) aimed at an audience of your classmates, summarize your model and your results. Include a screenshot of the scatterplot and the result. What do you conclude? Be sure to discuss the potential issues of p-hacking and the “Garden of Forking Paths”"
   },
   {
-    "objectID": "Reproducible-Code-Self-Assessment/reflection_website.html#assessment",
-    "href": "Reproducible-Code-Self-Assessment/reflection_website.html#assessment",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "Assessment",
-    "text": "Assessment\n\nFormative: clicker questions, think-pair-share prompts, checkpoint plots.\nSummative: rubric for final figure + 300-word memo (include criteria for accuracy, clarity, uncertainty, and decisions).\nAnswer keys / exemplars: where housed and access notes.\n\nParagraph(s) describing assessment suggestions."
-  },
-  {
-    "objectID": "Reproducible-Code-Self-Assessment/reflection_website.html#variations",
-    "href": "Reproducible-Code-Self-Assessment/reflection_website.html#variations",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "Variations and Extensions",
-    "text": "Variations and Extensions\n\nLevel Variations\nParagraphs and notes on how the lesson could be modified to be more foundational or more advanced.\n###Follow-ups and links to other work Paragraphs and notes on how the learning outcomes from this lesson can be reinforced, repeated, or built-upon later in the course."
-  },
-  {
-    "objectID": "Reproducible-Code-Self-Assessment/reflection_website.html#references",
-    "href": "Reproducible-Code-Self-Assessment/reflection_website.html#references",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "References & Further Reading",
-    "text": "References & Further Reading\n\nCite datasets, software docs, and any scholarship you reference in this module."
-  },
-  {
-    "objectID": "Reproducible-Code-Self-Assessment/reflection_website.html#acknowledgments",
-    "href": "Reproducible-Code-Self-Assessment/reflection_website.html#acknowledgments",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "Acknowledgments",
-    "text": "Acknowledgments\nAALAC Grant #####, R&R collaborators"
+    "objectID": "Assessing-Dubious-Research/p-hacking.html#hack-your-way-to-scientific-glory",
+    "href": "Assessing-Dubious-Research/p-hacking.html#hack-your-way-to-scientific-glory",
+    "title": "Activity to explore p-hacking",
+    "section": "",
+    "text": "During the course, we have learned about some of the perils of dubious practices such as overfitting models, making errors in extrapolation, and ignoring or misinterpreting null results. While there is not a single way to conduct an analysis, researchers need to be transparent in their decision-making process and acknowledge the limitations behind their research.\nBefore today’s class, you were asked to read the Five Thirty Eight Article “Science Isn’t Broken It’s just a hell of a lot harder than we give it credit for” (https://fivethirtyeight.com/features/science-isnt-broken).\nToday you will be working in pairs to explore the potential problems that arise when a non-ethical process is used to determine what to publish.\nYou will be working through the interactive visualization “Hack Your Way to Scientific Glory” provided by Five Thirty Eight (https://projects.fivethirtyeight.com/p-hacking), playing the role of a social scientist “with a hunch” about the association between who is in office (Republicans vs. Democrats) and the state of the economy.\nAn alternative location for the page can be found at https://web.archive.org/web/20250117051842/http://projects.fivethirtyeight.com/p-hacking.\nYour mission is to come up with a set of analytic choices that lead to a “statistically significant” result (e.g, p &lt; 0.05).\n\n\n\nThe leader will be the person whose birthday is coming up next. The leader is responsible for organizing work on the activity.\nThe scribe will be the other person. The scribe is responsible for writing up the first draft of the submission and working with the leader to submit your report.\n\n\n\n\n\n\n\n\n\nFigure 1: Five Thirty Eight p-hacking explorer\n\n\n\n\n\n\n\n\n\nIf the leader’s birthday is an ODD number, you will be fitting models for REPUBLICANS\nIf the leader’s birthday is an EVEN number, you will be fitting models for DEMOCRATS\n\n\n\n\nOnce you access the website, you’ll need to make some decisions.\n\nWhich politicians do you want to include?\nHow do you want to measure economic performance?\nOther options\n\n\n\n\n\nWhat do you conclude about the outcome when more REPUBLICANS/DEMOCRATS are in office?\n\n\n\n\n\n\n\nIn a brief report (no more than one page, single spaced plus a figure) aimed at an audience of your classmates, summarize your model and your results. Include a screenshot of the scatterplot and the result. What do you conclude? Be sure to discuss the potential issues of p-hacking and the “Garden of Forking Paths”"
   },
   {
     "objectID": "Rotation/rotation_website.html",
     "href": "Rotation/rotation_website.html",
     "title": "Rotation-Based Classroom Project",
     "section": "",
-    "text": "Teaching Materials » Modules » ?meta:module_title"
+    "text": "Teaching Materials » Modules » Rotation-Based Classroom Project"
   },
   {
     "objectID": "Rotation/rotation_website.html#motivation-and-learning-goals",
     "href": "Rotation/rotation_website.html#motivation-and-learning-goals",
     "title": "Rotation-Based Classroom Project",
     "section": "Motivation and Learning Goals",
-    "text": "Motivation and Learning Goals\n\nGoal 1: …\nGoal 2: …\nGoal 3: …"
+    "text": "Motivation and Learning Goals\n\nUnderstand how analytic decisions shape research findings\n\nPractice reproducible data analysis and documentation\n\nDevelop skills in collaborative and rotating research roles"
   },
   {
     "objectID": "Rotation/rotation_website.html#prerequisites",
     "href": "Rotation/rotation_website.html#prerequisites",
     "title": "Rotation-Based Classroom Project",
     "section": "Prerequisites",
-    "text": "Prerequisites\nWhat do students need to know before starting the lesson, 2-5 sentences."
+    "text": "Prerequisites\nStudents should have prior exposure to basic data analysis concepts and familiarity with either R or Python. They should also be comfortable interpreting summary statistics and simple visualizations."
   },
   {
     "objectID": "Rotation/rotation_website.html#implementation",
     "href": "Rotation/rotation_website.html#implementation",
     "title": "Rotation-Based Classroom Project",
     "section": "Implementation",
-    "text": "Implementation\n\nGuide to Included Materials\n\n\n\n\n\n\n\n\nType\nFile/Link\nDescription\n\n\n\n\nInstructor Handout\nfiles/instructor-handout.pdf\nNotes for pacing and assessment\n\n\nStudent Worksheet\nfiles/student-worksheet.qmd\nSteps and prompts for students\n\n\nSlides (optional)\nfiles/slides.pdf\nOverview figures and key questions\n\n\nDataset A\ndata/dataset-a.csv\nRaw measurements\n\n\nDataset B\ndata/dataset-b.csv\nCleaned subset\n\n\n\n\n\nPractical Tips\nParagraphs with detailed instructor notes. - Common misconceptions, pacing notes, facilitation prompts, equity & inclusion notes, accessibility."
+    "text": "Implementation\n\nGuide to Included Materials\n\n\n\n\n\n\n\n\nType\nFile/Link\nDescription\n\n\n\n\nInstructor Handout\nfiles/instructor-handout.pdf\nNotes for pacing and assessment\n\n\nStudent Worksheet\nfiles/student-worksheet.qmd\nSteps and prompts for students\n\n\nSlides (optional)\nfiles/slides.pdf\nOverview figures and key questions\n\n\nDataset A\ndata/dataset-a.csv\nRaw measurements\n\n\nDataset B\ndata/dataset-b.csv\nCleaned subset\n\n\n\n\n\nPractical Tips\nProvide clear expectations for role rotation and documentation early in the project. Anticipate common misconceptions about uncertainty and replication. Consider accessibility needs and provide alternative formats where appropriate."
   },
   {
     "objectID": "Rotation/rotation_website.html#assessment",
     "href": "Rotation/rotation_website.html#assessment",
     "title": "Rotation-Based Classroom Project",
     "section": "Assessment",
-    "text": "Assessment\n\nFormative: clicker questions, think-pair-share prompts, checkpoint plots.\nSummative: rubric for final figure + 300-word memo (include criteria for accuracy, clarity, uncertainty, and decisions).\nAnswer keys / exemplars: where housed and access notes.\n\nParagraph(s) describing assessment suggestions."
+    "text": "Assessment\n\nFormative: clicker questions, think-pair-share prompts, checkpoint plots\n\nSummative: rubric for final figure plus a 300-word memo assessing analytic decisions\n\nAnswer keys / exemplars: stored with instructor materials"
   },
   {
     "objectID": "Rotation/rotation_website.html#variations",
     "href": "Rotation/rotation_website.html#variations",
     "title": "Rotation-Based Classroom Project",
     "section": "Variations and Extensions",
-    "text": "Variations and Extensions\n\nLevel Variations\nParagraphs and notes on how the lesson could be modified to be more foundational or more advanced.\n###Follow-ups and links to other work Paragraphs and notes on how the learning outcomes from this lesson can be reinforced, repeated, or built-upon later in the course."
+    "text": "Variations and Extensions\n\nLevel Variations\nThis module can be simplified by reducing the number of analytic choices or expanded by incorporating additional datasets or modeling techniques.\n\n\nFollow-ups and Links to Other Work\nLearning outcomes can be reinforced through later assignments focused on replication, robustness checks, or peer review of analyses."
   },
   {
     "objectID": "Rotation/rotation_website.html#references",
     "href": "Rotation/rotation_website.html#references",
     "title": "Rotation-Based Classroom Project",
     "section": "References & Further Reading",
-    "text": "References & Further Reading\n\nCite datasets, software docs, and any scholarship you reference in this module."
+    "text": "References & Further Reading\nCite datasets, software documentation, and any relevant scholarship referenced in the module."
   },
   {
     "objectID": "Rotation/rotation_website.html#acknowledgments",
     "href": "Rotation/rotation_website.html#acknowledgments",
     "title": "Rotation-Based Classroom Project",
     "section": "Acknowledgments",
-    "text": "Acknowledgments\nAALAC Grant #####, R&R collaborators"
+    "text": "Acknowledgments\nThis module was supported by AALAC Grant ##### and contributions from R&R collaborators."
   },
   {
     "objectID": "Constructing-Reproduction-Documentation/organization_website.html",
     "href": "Constructing-Reproduction-Documentation/organization_website.html",
     "title": "LESSON TITLE HERE (Template)",
     "section": "",
-    "text": "Teaching Materials » Modules » ?meta:module_title"
+    "text": "Teaching Materials » Modules » Rotation-Based Classroom Project"
   },
   {
     "objectID": "Constructing-Reproduction-Documentation/organization_website.html#motivation-and-learning-goals",
     "href": "Constructing-Reproduction-Documentation/organization_website.html#motivation-and-learning-goals",
     "title": "LESSON TITLE HERE (Template)",
     "section": "Motivation and Learning Goals",
-    "text": "Motivation and Learning Goals\n\nGoal 1: …\nGoal 2: …\nGoal 3: …"
+    "text": "Motivation and Learning Goals\n\nUnderstand how analytic decisions shape research findings\n\nPractice reproducible data analysis and documentation\n\nDevelop skills in collaborative and rotating research roles"
   },
   {
     "objectID": "Constructing-Reproduction-Documentation/organization_website.html#prerequisites",
     "href": "Constructing-Reproduction-Documentation/organization_website.html#prerequisites",
     "title": "LESSON TITLE HERE (Template)",
     "section": "Prerequisites",
-    "text": "Prerequisites\nWhat do students need to know before starting the lesson, 2-5 sentences."
+    "text": "Prerequisites\nStudents should have prior exposure to basic data analysis concepts and familiarity with either R or Python. They should also be comfortable interpreting summary statistics and simple visualizations."
   },
   {
     "objectID": "Constructing-Reproduction-Documentation/organization_website.html#implementation",
     "href": "Constructing-Reproduction-Documentation/organization_website.html#implementation",
     "title": "LESSON TITLE HERE (Template)",
     "section": "Implementation",
-    "text": "Implementation\n\nGuide to Included Materials\n\n\n\n\n\n\n\n\nType\nFile/Link\nDescription\n\n\n\n\nInstructor Handout\nfiles/instructor-handout.pdf\nNotes for pacing and assessment\n\n\nStudent Worksheet\nfiles/student-worksheet.qmd\nSteps and prompts for students\n\n\nSlides (optional)\nfiles/slides.pdf\nOverview figures and key questions\n\n\nDataset A\ndata/dataset-a.csv\nRaw measurements\n\n\nDataset B\ndata/dataset-b.csv\nCleaned subset\n\n\n\n\n\nPractical Tips\nParagraphs with detailed instructor notes. - Common misconceptions, pacing notes, facilitation prompts, equity & inclusion notes, accessibility."
+    "text": "Implementation\n\nGuide to Included Materials\n\n\n\n\n\n\n\n\nType\nFile/Link\nDescription\n\n\n\n\nInstructor Handout\nfiles/instructor-handout.pdf\nNotes for pacing and assessment\n\n\nStudent Worksheet\nfiles/student-worksheet.qmd\nSteps and prompts for students\n\n\nSlides (optional)\nfiles/slides.pdf\nOverview figures and key questions\n\n\nDataset A\ndata/dataset-a.csv\nRaw measurements\n\n\nDataset B\ndata/dataset-b.csv\nCleaned subset\n\n\n\n\n\nPractical Tips\nProvide clear expectations for role rotation and documentation early in the project. Anticipate common misconceptions about uncertainty and replication. Consider accessibility needs and provide alternative formats where appropriate."
   },
   {
     "objectID": "Constructing-Reproduction-Documentation/organization_website.html#assessment",
     "href": "Constructing-Reproduction-Documentation/organization_website.html#assessment",
     "title": "LESSON TITLE HERE (Template)",
     "section": "Assessment",
-    "text": "Assessment\n\nFormative: clicker questions, think-pair-share prompts, checkpoint plots.\nSummative: rubric for final figure + 300-word memo (include criteria for accuracy, clarity, uncertainty, and decisions).\nAnswer keys / exemplars: where housed and access notes.\n\nParagraph(s) describing assessment suggestions."
+    "text": "Assessment\n\nFormative: clicker questions, think-pair-share prompts, checkpoint plots\n\nSummative: rubric for final figure plus a 300-word memo assessing analytic decisions\n\nAnswer keys / exemplars: stored with instructor materials"
   },
   {
     "objectID": "Constructing-Reproduction-Documentation/organization_website.html#variations",
     "href": "Constructing-Reproduction-Documentation/organization_website.html#variations",
     "title": "LESSON TITLE HERE (Template)",
     "section": "Variations and Extensions",
-    "text": "Variations and Extensions\n\nLevel Variations\nParagraphs and notes on how the lesson could be modified to be more foundational or more advanced.\n###Follow-ups and links to other work Paragraphs and notes on how the learning outcomes from this lesson can be reinforced, repeated, or built-upon later in the course."
+    "text": "Variations and Extensions\n\nLevel Variations\nThis module can be simplified by reducing the number of analytic choices or expanded by incorporating additional datasets or modeling techniques.\n\n\nFollow-ups and Links to Other Work\nLearning outcomes can be reinforced through later assignments focused on replication, robustness checks, or peer review of analyses."
   },
   {
     "objectID": "Constructing-Reproduction-Documentation/organization_website.html#references",
     "href": "Constructing-Reproduction-Documentation/organization_website.html#references",
     "title": "LESSON TITLE HERE (Template)",
     "section": "References & Further Reading",
-    "text": "References & Further Reading\n\nCite datasets, software docs, and any scholarship you reference in this module."
+    "text": "References & Further Reading\nCite datasets, software documentation, and any relevant scholarship referenced in the module."
   },
   {
     "objectID": "Constructing-Reproduction-Documentation/organization_website.html#acknowledgments",
     "href": "Constructing-Reproduction-Documentation/organization_website.html#acknowledgments",
     "title": "LESSON TITLE HERE (Template)",
     "section": "Acknowledgments",
-    "text": "Acknowledgments\nAALAC Grant #####, R&R collaborators"
-  },
-  {
-    "objectID": "Assessing-Dubious-Research/assessing_website.html",
-    "href": "Assessing-Dubious-Research/assessing_website.html",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "",
-    "text": "Teaching Materials » Modules » ?meta:module_title"
-  },
-  {
-    "objectID": "Assessing-Dubious-Research/assessing_website.html#motivation-and-learning-goals",
-    "href": "Assessing-Dubious-Research/assessing_website.html#motivation-and-learning-goals",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "Motivation and Learning Goals",
-    "text": "Motivation and Learning Goals\n\nGoal 1: …\nGoal 2: …\nGoal 3: …"
-  },
-  {
-    "objectID": "Assessing-Dubious-Research/assessing_website.html#prerequisites",
-    "href": "Assessing-Dubious-Research/assessing_website.html#prerequisites",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "Prerequisites",
-    "text": "Prerequisites\nWhat do students need to know before starting the lesson, 2-5 sentences."
-  },
-  {
-    "objectID": "Assessing-Dubious-Research/assessing_website.html#implementation",
-    "href": "Assessing-Dubious-Research/assessing_website.html#implementation",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "Implementation",
-    "text": "Implementation\n\nGuide to Included Materials\n\n\n\n\n\n\n\n\nType\nFile/Link\nDescription\n\n\n\n\nInstructor Handout\nfiles/instructor-handout.pdf\nNotes for pacing and assessment\n\n\nStudent Worksheet\nfiles/student-worksheet.qmd\nSteps and prompts for students\n\n\nSlides (optional)\nfiles/slides.pdf\nOverview figures and key questions\n\n\nDataset A\ndata/dataset-a.csv\nRaw measurements\n\n\nDataset B\ndata/dataset-b.csv\nCleaned subset\n\n\n\n\n\nPractical Tips\nParagraphs with detailed instructor notes. - Common misconceptions, pacing notes, facilitation prompts, equity & inclusion notes, accessibility."
-  },
-  {
-    "objectID": "Assessing-Dubious-Research/assessing_website.html#assessment",
-    "href": "Assessing-Dubious-Research/assessing_website.html#assessment",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "Assessment",
-    "text": "Assessment\n\nFormative: clicker questions, think-pair-share prompts, checkpoint plots.\nSummative: rubric for final figure + 300-word memo (include criteria for accuracy, clarity, uncertainty, and decisions).\nAnswer keys / exemplars: where housed and access notes.\n\nParagraph(s) describing assessment suggestions."
-  },
-  {
-    "objectID": "Assessing-Dubious-Research/assessing_website.html#variations",
-    "href": "Assessing-Dubious-Research/assessing_website.html#variations",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "Variations and Extensions",
-    "text": "Variations and Extensions\n\nLevel Variations\nParagraphs and notes on how the lesson could be modified to be more foundational or more advanced.\n###Follow-ups and links to other work Paragraphs and notes on how the learning outcomes from this lesson can be reinforced, repeated, or built-upon later in the course."
-  },
-  {
-    "objectID": "Assessing-Dubious-Research/assessing_website.html#references",
-    "href": "Assessing-Dubious-Research/assessing_website.html#references",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "References & Further Reading",
-    "text": "References & Further Reading\n\nCite datasets, software docs, and any scholarship you reference in this module."
-  },
-  {
-    "objectID": "Assessing-Dubious-Research/assessing_website.html#acknowledgments",
-    "href": "Assessing-Dubious-Research/assessing_website.html#acknowledgments",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "Acknowledgments",
-    "text": "Acknowledgments\nAALAC Grant #####, R&R collaborators"
-  },
-  {
-    "objectID": "Pre-Registration/preregisration_website.html",
-    "href": "Pre-Registration/preregisration_website.html",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "",
-    "text": "Teaching Materials » Modules » ?meta:module_title"
-  },
-  {
-    "objectID": "Pre-Registration/preregisration_website.html#motivation-and-learning-goals",
-    "href": "Pre-Registration/preregisration_website.html#motivation-and-learning-goals",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "Motivation and Learning Goals",
-    "text": "Motivation and Learning Goals\n\nGoal 1: …\nGoal 2: …\nGoal 3: …"
-  },
-  {
-    "objectID": "Pre-Registration/preregisration_website.html#prerequisites",
-    "href": "Pre-Registration/preregisration_website.html#prerequisites",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "Prerequisites",
-    "text": "Prerequisites\nWhat do students need to know before starting the lesson, 2-5 sentences."
-  },
-  {
-    "objectID": "Pre-Registration/preregisration_website.html#implementation",
-    "href": "Pre-Registration/preregisration_website.html#implementation",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "Implementation",
-    "text": "Implementation\n\nGuide to Included Materials\n\n\n\n\n\n\n\n\nType\nFile/Link\nDescription\n\n\n\n\nInstructor Handout\nfiles/instructor-handout.pdf\nNotes for pacing and assessment\n\n\nStudent Worksheet\nfiles/student-worksheet.qmd\nSteps and prompts for students\n\n\nSlides (optional)\nfiles/slides.pdf\nOverview figures and key questions\n\n\nDataset A\ndata/dataset-a.csv\nRaw measurements\n\n\nDataset B\ndata/dataset-b.csv\nCleaned subset\n\n\n\n\n\nPractical Tips\nParagraphs with detailed instructor notes. - Common misconceptions, pacing notes, facilitation prompts, equity & inclusion notes, accessibility."
-  },
-  {
-    "objectID": "Pre-Registration/preregisration_website.html#assessment",
-    "href": "Pre-Registration/preregisration_website.html#assessment",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "Assessment",
-    "text": "Assessment\n\nFormative: clicker questions, think-pair-share prompts, checkpoint plots.\nSummative: rubric for final figure + 300-word memo (include criteria for accuracy, clarity, uncertainty, and decisions).\nAnswer keys / exemplars: where housed and access notes.\n\nParagraph(s) describing assessment suggestions."
-  },
-  {
-    "objectID": "Pre-Registration/preregisration_website.html#variations",
-    "href": "Pre-Registration/preregisration_website.html#variations",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "Variations and Extensions",
-    "text": "Variations and Extensions\n\nLevel Variations\nParagraphs and notes on how the lesson could be modified to be more foundational or more advanced.\n###Follow-ups and links to other work Paragraphs and notes on how the learning outcomes from this lesson can be reinforced, repeated, or built-upon later in the course."
-  },
-  {
-    "objectID": "Pre-Registration/preregisration_website.html#references",
-    "href": "Pre-Registration/preregisration_website.html#references",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "References & Further Reading",
-    "text": "References & Further Reading\n\nCite datasets, software docs, and any scholarship you reference in this module."
-  },
-  {
-    "objectID": "Pre-Registration/preregisration_website.html#acknowledgments",
-    "href": "Pre-Registration/preregisration_website.html#acknowledgments",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "Acknowledgments",
-    "text": "Acknowledgments\nAALAC Grant #####, R&R collaborators"
-  },
-  {
-    "objectID": "Recognizing-Reproducible-Research/recognizing_website.html",
-    "href": "Recognizing-Reproducible-Research/recognizing_website.html",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "",
-    "text": "Teaching Materials » Modules » ?meta:module_title"
-  },
-  {
-    "objectID": "Recognizing-Reproducible-Research/recognizing_website.html#motivation-and-learning-goals",
-    "href": "Recognizing-Reproducible-Research/recognizing_website.html#motivation-and-learning-goals",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "Motivation and Learning Goals",
-    "text": "Motivation and Learning Goals\n\nGoal 1: …\nGoal 2: …\nGoal 3: …"
-  },
-  {
-    "objectID": "Recognizing-Reproducible-Research/recognizing_website.html#prerequisites",
-    "href": "Recognizing-Reproducible-Research/recognizing_website.html#prerequisites",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "Prerequisites",
-    "text": "Prerequisites\nWhat do students need to know before starting the lesson, 2-5 sentences."
-  },
-  {
-    "objectID": "Recognizing-Reproducible-Research/recognizing_website.html#implementation",
-    "href": "Recognizing-Reproducible-Research/recognizing_website.html#implementation",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "Implementation",
-    "text": "Implementation\n\nGuide to Included Materials\n\n\n\n\n\n\n\n\nType\nFile/Link\nDescription\n\n\n\n\nInstructor Handout\nfiles/instructor-handout.pdf\nNotes for pacing and assessment\n\n\nStudent Worksheet\nfiles/student-worksheet.qmd\nSteps and prompts for students\n\n\nSlides (optional)\nfiles/slides.pdf\nOverview figures and key questions\n\n\nDataset A\ndata/dataset-a.csv\nRaw measurements\n\n\nDataset B\ndata/dataset-b.csv\nCleaned subset\n\n\n\n\n\nPractical Tips\nParagraphs with detailed instructor notes. - Common misconceptions, pacing notes, facilitation prompts, equity & inclusion notes, accessibility."
-  },
-  {
-    "objectID": "Recognizing-Reproducible-Research/recognizing_website.html#assessment",
-    "href": "Recognizing-Reproducible-Research/recognizing_website.html#assessment",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "Assessment",
-    "text": "Assessment\n\nFormative: clicker questions, think-pair-share prompts, checkpoint plots.\nSummative: rubric for final figure + 300-word memo (include criteria for accuracy, clarity, uncertainty, and decisions).\nAnswer keys / exemplars: where housed and access notes.\n\nParagraph(s) describing assessment suggestions."
-  },
-  {
-    "objectID": "Recognizing-Reproducible-Research/recognizing_website.html#variations",
-    "href": "Recognizing-Reproducible-Research/recognizing_website.html#variations",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "Variations and Extensions",
-    "text": "Variations and Extensions\n\nLevel Variations\nParagraphs and notes on how the lesson could be modified to be more foundational or more advanced.\n###Follow-ups and links to other work Paragraphs and notes on how the learning outcomes from this lesson can be reinforced, repeated, or built-upon later in the course."
-  },
-  {
-    "objectID": "Recognizing-Reproducible-Research/recognizing_website.html#references",
-    "href": "Recognizing-Reproducible-Research/recognizing_website.html#references",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "References & Further Reading",
-    "text": "References & Further Reading\n\nCite datasets, software docs, and any scholarship you reference in this module."
-  },
-  {
-    "objectID": "Recognizing-Reproducible-Research/recognizing_website.html#acknowledgments",
-    "href": "Recognizing-Reproducible-Research/recognizing_website.html#acknowledgments",
-    "title": "LESSON TITLE HERE (Template)",
-    "section": "Acknowledgments",
-    "text": "Acknowledgments\nAALAC Grant #####, R&R collaborators"
+    "text": "Acknowledgments\nThis module was supported by AALAC Grant ##### and contributions from R&R collaborators."
   }
 ]
