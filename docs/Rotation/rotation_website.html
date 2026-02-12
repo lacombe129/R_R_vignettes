@@ -6,8 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-02-08">
-<meta name="keywords" content="reproducibility, uncertainty, data visualization">
+<meta name="dcterms.date" content="2026-02-12">
+<meta name="keywords" content="reproducibility, data visualization, file paths, working directories, collaboration">
 
 <title>Rotation-Based Classroom Project – Reproducibility and Replication Teaching Modules</title>
 <style>
@@ -349,7 +349,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Rotation-Based Classroom Project</h1>
-<p class="subtitle lead">A hands-on, data-driven teaching module</p>
+<p class="subtitle lead">An Iterative Group Activity to Build Shared Lab Reports</p>
 </div>
 
 
@@ -359,14 +359,14 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Scott LaCombe </p>
+             <p>Scott J. LaCombe </p>
           </div>
   </div>
     
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">February 8, 2026</p>
+      <p class="date">February 12, 2026</p>
     </div>
   </div>
   
@@ -377,7 +377,7 @@ ul.task-list li input[type="checkbox"] {
 <div>
   <div class="keywords">
     <div class="block-title">Keywords</div>
-    <p>reproducibility, uncertainty, data visualization</p>
+    <p>reproducibility, data visualization, file paths, working directories, collaboration</p>
   </div>
 </div>
 
@@ -397,18 +397,15 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This module introduces students to a rotation-based research workflow designed to highlight reproducibility, uncertainty, and analytical decision-making. Students work with shared data, rotate roles within research teams, and reflect on how analytic choices affect results. The project emphasizes transparent documentation and iterative improvement. By the end of the module, students will have produced a reproducible analysis and reflected on research practices.</p>
+<p>As a “capstone” project for the course, students will work in small groups to produce a report documenting a data set of their group’s choosing. Their job is to identify a dataset and then summarize and visualize key elements of the data in a written report. Each group member selects a separate dataset, but each stage of the project involves sending their data and code to another group member, who completes the next task. The report is gradually completed over several weeks, with students completing one task at each phase and then sending the work to another student. After 5 weeks, all group members will have seen and shared everyone’s reports. By sending the report to other students and requiring that all code runs on someone else’s computer, students can actively learn about file paths and working directories, as well as software dependencies.</p>
 </div>
 </div>
 <section id="motivation-and-learning-goals" class="level2 callout-success">
 <h2 class="anchored" data-anchor-id="motivation-and-learning-goals">Motivation and Learning Goals</h2>
 <ul>
-<li>Understand how analytic decisions shape research findings<br>
-</li>
-<li>Practice reproducible data analysis and documentation<br>
-</li>
-<li>Develop skills in collaborative and rotating research roles<br>
-</li>
+<li>Goal 1: Learn how to write code and organize data in a way that is reproducible.</li>
+<li>Goal 2: Understand how to collaborate with others on a project involving data analysis.</li>
+<li>Goal 3: Learn how to critically evaluate and explore sources of data.</li>
 </ul>
 </section>
 <div class="callout callout-style-default callout-warning callout-titled">
@@ -421,7 +418,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This module is designed for upper-division undergraduate courses and works well in methods, data analysis, or research design classes. It can be implemented in in-person, hybrid, or online formats. Estimated time commitment is <strong>5–6 class periods</strong>.</p>
+<p>This project is designed for introductory courses that use a programming language. While it is written for R users, it could easily be adapted to other software as well. It is mostly asynchronous, and could be used for in-person or online learning. Group sizes can vary from three to five. It is designed to take place over 6 weeks, with work completed at home with the exception of week 6, which would require a lab day for group discussion:</p>
 </div>
 </div>
 <div class="quick-facts">
@@ -439,7 +436,7 @@ v1.0
 Level
 </dt>
 <dd>
-Upper-division undergraduates
+Introductory course, undergraduates
 </dd>
 <dt>
 Time
@@ -451,13 +448,13 @@ Time
 Keywords
 </dt>
 <dd>
-reproducibility, uncertainty, data visualization
+reproducibility, data visualization, file paths, working directories, collaboration
 </dd>
 <dt>
 Prerequisites
 </dt>
 <dd>
-Intro to R or Python; basic statistics
+None- recommended for introducing R or other programming languages
 </dd>
 <dt>
 Data Sources
@@ -469,13 +466,13 @@ Your dataset 1; Your dataset 2
 Software
 </dt>
 <dd>
-R (tidyverse) or Python (pandas, matplotlib/plotnine)
+R (tidyverse)
 </dd>
 <dt>
 Contact
 </dt>
 <dd>
-you@example.edu
+slacombe@missouri.edu
 </dd>
 <dt>
 License
@@ -487,7 +484,7 @@ CC BY 4.0
 </div>
 <section id="prerequisites" class="level2">
 <h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>
-<p>Students should have prior exposure to basic data analysis concepts and familiarity with either R or Python. They should also be comfortable interpreting summary statistics and simple visualizations.</p>
+<p>No prerequisites are required, this project is designed for introductory classes. However, it is suggested that students first learn the basics of R (or whatever software they are using) before starting the project. It is designed to take place in the second half of the semester after students have learned the principles of loading data, cleaning it, and visualizing it.</p>
 </section>
 <section id="implementation" class="level2">
 <h2 class="anchored" data-anchor-id="implementation">Implementation</h2>
@@ -495,7 +492,7 @@ CC BY 4.0
 <h3 class="anchored" data-anchor-id="materials">Guide to Included Materials</h3>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 24%">
+<col style="width: 25%">
 <col style="width: 37%">
 <col style="width: 37%">
 </colgroup>
@@ -509,28 +506,8 @@ CC BY 4.0
 <tbody>
 <tr class="odd">
 <td>Instructor Handout</td>
-<td><code>files/instructor-handout.pdf</code></td>
-<td>Notes for pacing and assessment</td>
-</tr>
-<tr class="even">
-<td>Student Worksheet</td>
-<td><code>files/student-worksheet.qmd</code></td>
-<td>Steps and prompts for students</td>
-</tr>
-<tr class="odd">
-<td>Slides (optional)</td>
-<td><code>files/slides.pdf</code></td>
-<td>Overview figures and key questions</td>
-</tr>
-<tr class="even">
-<td>Dataset A</td>
-<td><code>data/dataset-a.csv</code></td>
-<td>Raw measurements</td>
-</tr>
-<tr class="odd">
-<td>Dataset B</td>
-<td><code>data/dataset-b.csv</code></td>
-<td>Cleaned subset</td>
+<td><code>files/student_overview.pdf</code></td>
+<td>Overview of the timeline and project specifics</td>
 </tr>
 </tbody>
 </table>

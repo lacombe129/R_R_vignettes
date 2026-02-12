@@ -200,21 +200,21 @@
     "href": "Rotation/rotation_website.html#motivation-and-learning-goals",
     "title": "Rotation-Based Classroom Project",
     "section": "Motivation and Learning Goals",
-    "text": "Motivation and Learning Goals\n\nUnderstand how analytic decisions shape research findings\n\nPractice reproducible data analysis and documentation\n\nDevelop skills in collaborative and rotating research roles"
+    "text": "Motivation and Learning Goals\n\nGoal 1: Learn how to write code and organize data in a way that is reproducible.\nGoal 2: Understand how to collaborate with others on a project involving data analysis.\nGoal 3: Learn how to critically evaluate and explore sources of data."
   },
   {
     "objectID": "Rotation/rotation_website.html#prerequisites",
     "href": "Rotation/rotation_website.html#prerequisites",
     "title": "Rotation-Based Classroom Project",
     "section": "Prerequisites",
-    "text": "Prerequisites\nStudents should have prior exposure to basic data analysis concepts and familiarity with either R or Python. They should also be comfortable interpreting summary statistics and simple visualizations."
+    "text": "Prerequisites\nNo prerequisites are required, this project is designed for introductory classes. However, it is suggested that students first learn the basics of R (or whatever software they are using) before starting the project. It is designed to take place in the second half of the semester after students have learned the principles of loading data, cleaning it, and visualizing it."
   },
   {
     "objectID": "Rotation/rotation_website.html#implementation",
     "href": "Rotation/rotation_website.html#implementation",
     "title": "Rotation-Based Classroom Project",
     "section": "Implementation",
-    "text": "Implementation\n\nGuide to Included Materials\n\n\n\n\n\n\n\n\nType\nFile/Link\nDescription\n\n\n\n\nInstructor Handout\nfiles/instructor-handout.pdf\nNotes for pacing and assessment\n\n\nStudent Worksheet\nfiles/student-worksheet.qmd\nSteps and prompts for students\n\n\nSlides (optional)\nfiles/slides.pdf\nOverview figures and key questions\n\n\nDataset A\ndata/dataset-a.csv\nRaw measurements\n\n\nDataset B\ndata/dataset-b.csv\nCleaned subset\n\n\n\n\n\nPractical Tips\nProvide clear expectations for role rotation and documentation early in the project. Anticipate common misconceptions about uncertainty and replication. Consider accessibility needs and provide alternative formats where appropriate."
+    "text": "Implementation\n\nGuide to Included Materials\n\n\n\n\n\n\n\n\nType\nFile/Link\nDescription\n\n\n\n\nInstructor Handout\nfiles/student_overview.pdf\nOverview of the timeline and project specifics\n\n\n\n\n\nPractical Tips\nProvide clear expectations for role rotation and documentation early in the project. Anticipate common misconceptions about uncertainty and replication. Consider accessibility needs and provide alternative formats where appropriate."
   },
   {
     "objectID": "Rotation/rotation_website.html#assessment",
@@ -296,6 +296,62 @@
   {
     "objectID": "Constructing-Reproduction-Documentation/organization_website.html#acknowledgments",
     "href": "Constructing-Reproduction-Documentation/organization_website.html#acknowledgments",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Acknowledgments",
+    "text": "Acknowledgments\nThis module was supported by AALAC Grant ##### and contributions from R&R collaborators."
+  },
+  {
+    "objectID": "Recognizing-Reproducible-Research/recognizing_website.html",
+    "href": "Recognizing-Reproducible-Research/recognizing_website.html",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "",
+    "text": "Teaching Materials » Modules » Rotation-Based Classroom Project"
+  },
+  {
+    "objectID": "Recognizing-Reproducible-Research/recognizing_website.html#motivation-and-learning-goals",
+    "href": "Recognizing-Reproducible-Research/recognizing_website.html#motivation-and-learning-goals",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Motivation and Learning Goals",
+    "text": "Motivation and Learning Goals\n\nUnderstand how analytic decisions shape research findings\n\nPractice reproducible data analysis and documentation\n\nDevelop skills in collaborative and rotating research roles"
+  },
+  {
+    "objectID": "Recognizing-Reproducible-Research/recognizing_website.html#prerequisites",
+    "href": "Recognizing-Reproducible-Research/recognizing_website.html#prerequisites",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Prerequisites",
+    "text": "Prerequisites\nStudents should have prior exposure to basic data analysis concepts and familiarity with either R or Python. They should also be comfortable interpreting summary statistics and simple visualizations."
+  },
+  {
+    "objectID": "Recognizing-Reproducible-Research/recognizing_website.html#implementation",
+    "href": "Recognizing-Reproducible-Research/recognizing_website.html#implementation",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Implementation",
+    "text": "Implementation\n\nGuide to Included Materials\n\n\n\n\n\n\n\n\nType\nFile/Link\nDescription\n\n\n\n\nInstructor Handout\nfiles/instructor-handout.pdf\nNotes for pacing and assessment\n\n\nStudent Worksheet\nfiles/student-worksheet.qmd\nSteps and prompts for students\n\n\nSlides (optional)\nfiles/slides.pdf\nOverview figures and key questions\n\n\nDataset A\ndata/dataset-a.csv\nRaw measurements\n\n\nDataset B\ndata/dataset-b.csv\nCleaned subset\n\n\n\n\n\nPractical Tips\nProvide clear expectations for role rotation and documentation early in the project. Anticipate common misconceptions about uncertainty and replication. Consider accessibility needs and provide alternative formats where appropriate."
+  },
+  {
+    "objectID": "Recognizing-Reproducible-Research/recognizing_website.html#assessment",
+    "href": "Recognizing-Reproducible-Research/recognizing_website.html#assessment",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Assessment",
+    "text": "Assessment\n\nFormative: clicker questions, think-pair-share prompts, checkpoint plots\n\nSummative: rubric for final figure plus a 300-word memo assessing analytic decisions\n\nAnswer keys / exemplars: stored with instructor materials"
+  },
+  {
+    "objectID": "Recognizing-Reproducible-Research/recognizing_website.html#variations",
+    "href": "Recognizing-Reproducible-Research/recognizing_website.html#variations",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "Variations and Extensions",
+    "text": "Variations and Extensions\n\nLevel Variations\nThis module can be simplified by reducing the number of analytic choices or expanded by incorporating additional datasets or modeling techniques.\n\n\nFollow-ups and Links to Other Work\nLearning outcomes can be reinforced through later assignments focused on replication, robustness checks, or peer review of analyses."
+  },
+  {
+    "objectID": "Recognizing-Reproducible-Research/recognizing_website.html#references",
+    "href": "Recognizing-Reproducible-Research/recognizing_website.html#references",
+    "title": "LESSON TITLE HERE (Template)",
+    "section": "References & Further Reading",
+    "text": "References & Further Reading\nCite datasets, software documentation, and any relevant scholarship referenced in the module."
+  },
+  {
+    "objectID": "Recognizing-Reproducible-Research/recognizing_website.html#acknowledgments",
+    "href": "Recognizing-Reproducible-Research/recognizing_website.html#acknowledgments",
     "title": "LESSON TITLE HERE (Template)",
     "section": "Acknowledgments",
     "text": "Acknowledgments\nThis module was supported by AALAC Grant ##### and contributions from R&R collaborators."
