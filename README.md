@@ -4,7 +4,7 @@ The examples presented in this repository accompany the manuscript draft *"Teach
 ## Updating this repository
 *For contributors to the repository updating the classroom activities and the quarto webpages:*
 
-**How to add or update lesson details to for the GitHub pages.**
+**How to add or update lesson details to the GitHub pages.**
 
 1. Find the folder with the title that matches the lesson you wish to update.
 2. Open and edit the .qmd file that has the same name of the lesson you wish to update. Template text is already present, and you can update title, author, and text throughout to provide details for the lesson.
